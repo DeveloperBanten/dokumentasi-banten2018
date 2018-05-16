@@ -3,8 +3,8 @@
 	<channel>
 		<title>DMS Jawara eGov</title>
 		<description>DMS Jawara eGov</description>
-		<link>https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018</link>
-		<atom:link href="https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>API</title>
@@ -22,8 +22,8 @@
 
 </description>
 				<pubDate>Sat, 23 Aug 2014 06:25:06 +0700</pubDate>
-				<link>https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/2014/08/api</link>
-				<guid isPermaLink="true">https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/2014/08/api</guid>
+				<link>http://localhost:4000/2014/08/api</link>
+				<guid isPermaLink="true">http://localhost:4000/2014/08/api</guid>
 			</item>
 		
 			<item>
@@ -35,8 +35,8 @@
 &lt;p&gt;Integer at viverra turpis. Duis aliquam mattis sapien tempor eleifend. Mauris nec eleifend risus, quis mollis neque. Vivamus non dapibus justo, vel ornare magna. Nunc in nulla venenatis, imperdiet diam in, accumsan massa. Etiam congue augue ipsum, sit amet rutrum nisi blandit quis. Cras in lectus non lorem auctor consequat a vel sem. Aliquam erat volutpat. Fusce lobortis vel orci vitae ullamcorper. Phasellus id eleifend eros. Mauris vulputate, nisi vel auctor auctor, quam enim tincidunt felis, vitae fermentum odio tortor eget est. Integer ornare blandit lectus a accumsan.&lt;/p&gt;
 </description>
 				<pubDate>Wed, 23 Jul 2014 06:25:06 +0700</pubDate>
-				<link>https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/2014/07/rumus-meeting</link>
-				<guid isPermaLink="true">https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/2014/07/rumus-meeting</guid>
+				<link>http://localhost:4000/2014/07/rumus-meeting</link>
+				<guid isPermaLink="true">http://localhost:4000/2014/07/rumus-meeting</guid>
 			</item>
 		
 			<item>
@@ -48,8 +48,8 @@
 &lt;p&gt;Praesent sit amet auctor justo. Suspendisse pretium rutrum vehicula. Cras ut porta urna. Morbi massa odio, eleifend vitae dictum eget, mattis nec metus. Praesent pellentesque metus eu massa pharetra facilisis. Suspendisse potenti. Vestibulum pellentesque pharetra tristique. Nam ut lobortis felis. Proin sit amet consequat ipsum. Curabitur et mattis justo, sit amet feugiat lectus. Sed eleifend eget arcu non pretium. Suspendisse rhoncus erat quis leo laoreet rhoncus. Aliquam quis metus vitae enim cursus sodales. In euismod tortor id odio fermentum, non pretium ipsum iaculis. Quisque consectetur elementum nisi, et posuere odio vulputate ac. Ut consequat, velit eget fermentum ultrices, ligula odio fringilla diam, sit amet accumsan elit velit tempus dolor.&lt;/p&gt;
 </description>
 				<pubDate>Mon, 23 Jun 2014 06:25:06 +0700</pubDate>
-				<link>https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/2014/06/banten-satu-data</link>
-				<guid isPermaLink="true">https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/2014/06/banten-satu-data</guid>
+				<link>http://localhost:4000/2014/06/banten-satu-data</link>
+				<guid isPermaLink="true">http://localhost:4000/2014/06/banten-satu-data</guid>
 			</item>
 		
 	</channel>

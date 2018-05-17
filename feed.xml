@@ -3,8 +3,8 @@
 	<channel>
 		<title>DMS Jawara eGov</title>
 		<description>DMS Jawara eGov</description>
-		<link>https://developerbanten.github.io/dokumentasi-banten2018/</link>
-		<atom:link href="https://developerbanten.github.io/dokumentasi-banten2018//feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018</link>
+		<atom:link href="https://developerbanten.github.io/dokumentasi-banten2018//dokumentasi-banten2018/feed.xml" rel="self" type="application/rss+xml" />
 		
 	</channel>
 </rss>

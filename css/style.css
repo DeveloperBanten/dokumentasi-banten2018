@@ -153,6 +153,13 @@ a.article, a.article:hover {
     width: 100%;
 }
 
+ 
+img {
+    vertical-align: middle;
+    max-width: 80%;
+    height: auto;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

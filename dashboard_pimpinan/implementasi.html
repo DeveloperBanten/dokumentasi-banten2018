@@ -191,8 +191,8 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li> 
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li> 
                             </ul>
                         </div>
                     </div>
@@ -207,7 +207,392 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
                 
             
             <div class="post-content">
-            <p>Implementasi.md</p>
+            <h2 id="daftar-isi">Daftar Isi</h2>
+<ul id="markdown-toc">
+  <li><a href="#daftar-isi" id="markdown-toc-daftar-isi">Daftar Isi</a></li>
+  <li><a href="#implementasi-dashboard-pimpinan" id="markdown-toc-implementasi-dashboard-pimpinan">Implementasi Dashboard Pimpinan</a>    <ul>
+      <li><a href="#1-halaman-depan-dashboard-pimpinan" id="markdown-toc-1-halaman-depan-dashboard-pimpinan">1. Halaman Depan Dashboard Pimpinan</a></li>
+      <li><a href="#2-tampilan-login" id="markdown-toc-2-tampilan-login">2. Tampilan Login</a></li>
+      <li><a href="#3-tampilan-awal" id="markdown-toc-3-tampilan-awal">3. Tampilan Awal</a></li>
+      <li><a href="#4-menu-home" id="markdown-toc-4-menu-home">4. Menu Home</a></li>
+      <li><a href="#5-tampilam-halaman-utama-home" id="markdown-toc-5-tampilam-halaman-utama-home">5. Tampilam Halaman Utama (Home)</a></li>
+      <li><a href="#6-dashboard" id="markdown-toc-6-dashboard">6. Dashboard</a>        <ul>
+          <li><a href="#61-dashboard-kepegawaian" id="markdown-toc-61-dashboard-kepegawaian">6.1 Dashboard kepegawaian</a>            <ul>
+              <li><a href="#611-prosentase-dan-grafik-jumlah-pegawai" id="markdown-toc-611-prosentase-dan-grafik-jumlah-pegawai">6.1.1 Prosentase dan Grafik Jumlah Pegawai</a></li>
+              <li><a href="#612-prosentase-dan-grafik-kenaikan-pangkat-pegawai-otomatis" id="markdown-toc-612-prosentase-dan-grafik-kenaikan-pangkat-pegawai-otomatis">6.1.2 Prosentase dan Grafik Kenaikan Pangkat Pegawai Otomatis</a></li>
+              <li><a href="#613-prosentase-dan-grafik-pensiun-pegawai" id="markdown-toc-613-prosentase-dan-grafik-pensiun-pegawai">6.1.3 Prosentase dan Grafik Pensiun Pegawai</a></li>
+              <li><a href="#614-prosentase-dan-grafik-usia-asn" id="markdown-toc-614-prosentase-dan-grafik-usia-asn">6.1.4 Prosentase dan Grafik Usia ASN</a></li>
+              <li><a href="#615-prosentase-dan-grafik-jumlah-pegawai-esselon" id="markdown-toc-615-prosentase-dan-grafik-jumlah-pegawai-esselon">6.1.5 Prosentase dan Grafik Jumlah Pegawai Esselon</a></li>
+              <li><a href="#616-prosentase-dan-grafik-pangkat-pegawai" id="markdown-toc-616-prosentase-dan-grafik-pangkat-pegawai">6.1.6 Prosentase dan Grafik Pangkat Pegawai</a></li>
+            </ul>
+          </li>
+          <li><a href="#62--dashboard-kependudukan" id="markdown-toc-62--dashboard-kependudukan">6.2  Dashboard Kependudukan</a>            <ul>
+              <li><a href="#621-prosentase-dan-grafik-jumlah-penduduk" id="markdown-toc-621-prosentase-dan-grafik-jumlah-penduduk">6.2.1 Prosentase dan Grafik Jumlah Penduduk</a></li>
+            </ul>
+          </li>
+          <li><a href="#63-dashboard-kesehatan" id="markdown-toc-63-dashboard-kesehatan">6.3 Dashboard Kesehatan</a>            <ul>
+              <li><a href="#631-prosentase-dan-grafik-jumlah-tim-medis" id="markdown-toc-631-prosentase-dan-grafik-jumlah-tim-medis">6.3.1 Prosentase dan Grafik Jumlah Tim Medis</a></li>
+            </ul>
+          </li>
+          <li><a href="#64-dashboard-kependidikan" id="markdown-toc-64-dashboard-kependidikan">6.4 Dashboard Kependidikan</a>            <ul>
+              <li><a href="#641-prosentase-dan-grafik-jumlah-tenaga-pendidik" id="markdown-toc-641-prosentase-dan-grafik-jumlah-tenaga-pendidik">6.4.1 Prosentase dan Grafik Jumlah Tenaga Pendidik</a></li>
+            </ul>
+          </li>
+          <li><a href="#65-dashboard-epormas" id="markdown-toc-65-dashboard-epormas">6.5 Dashboard Epormas</a></li>
+          <li><a href="#651-prosentase-dan-grafik-jumlah-laporan" id="markdown-toc-651-prosentase-dan-grafik-jumlah-laporan">6.5.1 Prosentase dan Grafik Jumlah Laporan</a></li>
+        </ul>
+      </li>
+      <li><a href="#7-data-kepegawaian" id="markdown-toc-7-data-kepegawaian">7. Data Kepegawaian</a>        <ul>
+          <li><a href="#71-list-pegawai" id="markdown-toc-71-list-pegawai">7.1 List Pegawai</a>            <ul>
+              <li><a href="#711-form-tabel-tambah-jumlah-pegawai" id="markdown-toc-711-form-tabel-tambah-jumlah-pegawai">7.1.1 Form Tabel Tambah Jumlah Pegawai</a></li>
+            </ul>
+          </li>
+          <li><a href="#72-list-pegawai-kpo" id="markdown-toc-72-list-pegawai-kpo">7.2 List Pegawai KPO</a>            <ul>
+              <li><a href="#721-form-tabel-tambah-pegawai-kpo-kenaikan-pangkat-otomatis" id="markdown-toc-721-form-tabel-tambah-pegawai-kpo-kenaikan-pangkat-otomatis">7.2.1 Form Tabel Tambah Pegawai KPO (Kenaikan Pangkat Otomatis)</a></li>
+            </ul>
+          </li>
+          <li><a href="#73-list-pegawai-esselon" id="markdown-toc-73-list-pegawai-esselon">7.3 List Pegawai Esselon</a>            <ul>
+              <li><a href="#731-form-tabel-tambah-jumlah-pegawai-esselon" id="markdown-toc-731-form-tabel-tambah-jumlah-pegawai-esselon">7.3.1 Form Tabel Tambah Jumlah Pegawai Esselon</a></li>
+            </ul>
+          </li>
+          <li><a href="#74-list-usia-asn-aparatur-sipil-negara" id="markdown-toc-74-list-usia-asn-aparatur-sipil-negara">7.4 List Usia ASN (Aparatur Sipil Negara)</a>            <ul>
+              <li><a href="#741-form-tabel-tambah-usia-asn-aparatur-sipil-negara" id="markdown-toc-741-form-tabel-tambah-usia-asn-aparatur-sipil-negara">7.4.1 Form Tabel Tambah Usia ASN (Aparatur Sipil Negara)</a></li>
+            </ul>
+          </li>
+          <li><a href="#75-list-pegawai-yang-akan-pensiun" id="markdown-toc-75-list-pegawai-yang-akan-pensiun">7.5 List Pegawai Yang Akan Pensiun</a>            <ul>
+              <li><a href="#751-form-tabel-tambah-jumlah-pegawai-yang-akan-pensiun" id="markdown-toc-751-form-tabel-tambah-jumlah-pegawai-yang-akan-pensiun">7.5.1 Form Tabel Tambah Jumlah Pegawai Yang Akan Pensiun</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#8-data-kependudukan" id="markdown-toc-8-data-kependudukan">8. Data Kependudukan</a>        <ul>
+          <li><a href="#81-list-penduduk" id="markdown-toc-81-list-penduduk">8.1 List Penduduk</a>            <ul>
+              <li><a href="#811-form-tabel-tambah-penduduk" id="markdown-toc-811-form-tabel-tambah-penduduk">8.1.1 Form Tabel Tambah Penduduk</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#9-data-kesehatan" id="markdown-toc-9-data-kesehatan">9. Data Kesehatan</a>        <ul>
+          <li><a href="#91-list-tim-medis" id="markdown-toc-91-list-tim-medis">9.1 List Tim Medis</a>            <ul>
+              <li><a href="#911-form-tabel-tambah-tim-medis" id="markdown-toc-911-form-tabel-tambah-tim-medis">9.1.1 Form Tabel Tambah Tim Medis</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#10-data-kependidikan" id="markdown-toc-10-data-kependidikan">10. Data Kependidikan</a>        <ul>
+          <li><a href="#101-list-pendidik" id="markdown-toc-101-list-pendidik">10.1 List Pendidik</a>            <ul>
+              <li><a href="#1011-form-tabel-tambah-pendidik" id="markdown-toc-1011-form-tabel-tambah-pendidik">10.1.1 Form Tabel Tambah Pendidik</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#11-data-epormas" id="markdown-toc-11-data-epormas">11. Data Epormas</a>        <ul>
+          <li><a href="#111-list-laporan" id="markdown-toc-111-list-laporan">11.1 List Laporan</a>            <ul>
+              <li><a href="#1111-form-tabel-tambah-laporan" id="markdown-toc-1111-form-tabel-tambah-laporan">11.1.1 Form Tabel Tambah Laporan</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#12--menu-users" id="markdown-toc-12--menu-users">12.  Menu Users</a>        <ul>
+          <li><a href="#121-users-list" id="markdown-toc-121-users-list">12.1. Users List</a>            <ul>
+              <li><a href="#1211-form-tabel-add-new-user" id="markdown-toc-1211-form-tabel-add-new-user">12.1.1. Form Tabel Add New User</a></li>
+            </ul>
+          </li>
+          <li><a href="#122-list-role-user" id="markdown-toc-122-list-role-user">12.2. List Role User</a>            <ul>
+              <li><a href="#1221--form-tabel-add-role-user" id="markdown-toc-1221--form-tabel-add-role-user">12.2.1.  Form Tabel Add Role User</a></li>
+            </ul>
+          </li>
+          <li><a href="#123-list-permissions" id="markdown-toc-123-list-permissions">12.3. List Permissions</a>            <ul>
+              <li><a href="#1231-form-tabel-add-permissions" id="markdown-toc-1231-form-tabel-add-permissions">12.3.1 Form Tabel Add Permissions</a></li>
+            </ul>
+          </li>
+          <li><a href="#124--profile-user" id="markdown-toc-124--profile-user">12.4  Profile User</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="implementasi-dashboard-pimpinan">Implementasi Dashboard Pimpinan</h2>
+<p>Implementasi aplikasi Dashboard Pimpinan merupakan hasil perancangan dan desain dari apliksi Dashboard Pimpinan yang telah dibuat. Didalam implementasi aplikasi ini nantinya akan dijelaskan langkah-langkah penggunaan dari tipa-tiap menu yang ada pada aplikasi Dashboard Pimpinan yang sudah terintegrasi tersebut.</p>
+
+<p>Untuk memulai akses terhadap aplikasi <strong>Dashboard Pimpinan</strong>. Buka web browser (IE, Mozila Firefox atau yang lainnya) dengan menulis alamat url http://dashboard-01.dev.bantenprov.go.id kemudian tekan <strong>Enter</strong> pada tombol keyboard atau klik tombol <strong>Go</strong> pada browser. Akan muncul tampilan halaman depan Dashboard Pimpinan seperti gambar dibawah ini.</p>
+
+<h3 id="1-halaman-depan-dashboard-pimpinan">1. Halaman Depan Dashboard Pimpinan</h3>
+<p><a href="../images/dashboard-pimpinan/implementasi/halaman-awal-0.png"><img src="../images/dashboard-pimpinan/implementasi/halaman-awal-0.png" alt="tampilan-Halaman-depan" /></a>
+Gambar 1. Halaman Depan Dashboard Pimpinan</p>
+
+<h3 id="2-tampilan-login">2. Tampilan Login</h3>
+<p>Untuk masuk kedalam aplikasi maka admin perlu untuk  login kedalam aplikasi Dashboard Pimpinan dengan mengklik LOGIN seperti gambar dibawah ini:
+<a href="../images/dashboard-pimpinan/implementasi/klik-login.png"><img src="../images/dashboard-pimpinan/implementasi/klik-login.png" alt="klik login" /></a></p>
+
+<p>Sehingga akan menampilkan tampilan seperti dibawah ini:
+<a href="../images/dashboard-pimpinan/implementasi/tampilan-login-admin-1.png"><img src="../images/dashboard-pimpinan/implementasi/tampilan-login-admin-1.png" alt="tampilan-login-admin" /></a>
+Gambar 2. Tampilan Login</p>
+
+<p>Masukkan User Id dan Password, Setelah di isi lengkap dan benar, klik button <strong>LOGIN</strong> atau tekan tombol <strong>Enter</strong> pada keyboard. Sehingga akan menampilkan halaman utama sebagai berikut.</p>
+
+<h3 id="3-tampilan-awal">3. Tampilan Awal</h3>
+<p><a href="../images/dashboard-pimpinan/implementasi/dashboard-home-awal.png"><img src="../images/dashboard-pimpinan/implementasi/dashboard-home-awal.png" alt="dashboard-home-awal" /></a>
+Gambar 3. Tampilan Awal</p>
+
+<h3 id="4-menu-home">4. Menu Home</h3>
+<p>Halaman muka (home) Dashboard Pimpinan Menampilkan 4 grafik:</p>
+
+<ul>
+  <li><em>Dashboard Kepegawaian</em></li>
+  <li><em>Dashboard Kependudukan</em></li>
+  <li><em>Dashboard Kesehatan</em></li>
+  <li><em>Dashboard Kependidikan</em></li>
+  <li><em>Dashboard Epormas</em></li>
+</ul>
+
+<p>Seperti ditunjukan pada gambar berikut ini:</p>
+
+<h3 id="5-tampilam-halaman-utama-home">5. Tampilam Halaman Utama (Home)</h3>
+<p><a href="../images/dashboard-pimpinan/implementasi/dashboard-home-awal.png"><img src="../images/dashboard-pimpinan/implementasi/dashboard-home-awal.png" alt="dashboard-home-awal" /></a>
+Gambar 4. Tampilan Halaman Utama</p>
+
+<h3 id="6-dashboard">6. Dashboard</h3>
+<p>Konten Dashboard untuk melihat dashboard apa saja yang sudah terintegrasi dengan Dashboard Pimpinan, Berikut ini adalah Dashboard-Dashboard yang sudah terintegrasi dengan Dashboard Pimpinan :</p>
+
+<h4 id="61-dashboard-kepegawaian">6.1 Dashboard kepegawaian</h4>
+<p>Didalam menu dashboard ada beberapa cakupan diantaranya <em>Kepegawaian</em> (yang didalamnya mencakup Jumlah Pegawai, Kenaikan Pangkat Pegawai Otomatis, Pegawai yang Akan Pensiun, Usia ASN, Pegawai Esselon dan Pangkat Pegawai), Kesehatan, .dengan mengklik tombol kepegawaian sistem aplikasi akan menampilkan seperti ditujukan pada gambar dibawah ini:</p>
+
+<h5 id="611-prosentase-dan-grafik-jumlah-pegawai">6.1.1 Prosentase dan Grafik Jumlah Pegawai</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/view-more-detail-jumlah-pegawai.png"><img src="../images/dashboard-pimpinan/implementasi/view-more-detail-jumlah-pegawai.png" alt="view-more-detail-jumlah-pegawai" /></a>
+Gambar 5. Tampilan Prosentase dan Grafik Jumlah pegawai</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Jumlah Pegawai dalam bentuk prosentase dan grafik</p>
+
+<h5 id="612-prosentase-dan-grafik-kenaikan-pangkat-pegawai-otomatis">6.1.2 Prosentase dan Grafik Kenaikan Pangkat Pegawai Otomatis</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/view-more-detail-kenaikan-pangkat-pegawai-otomatis.png"><img src="../images/dashboard-pimpinan/implementasi/view-more-detail-kenaikan-pangkat-pegawai-otomatis.png" alt="view-more-detail-kenaikan-pangkat-pegawai-otomatis" /></a>
+Gambar 6. Tampilan Prosentase dan Grafik  Kenaikan Pangkat Pegawai Otomatis</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Kenaikan Pangkat Pegawai Otomatis dalam bentuk prosentase dan grafik</p>
+
+<h5 id="613-prosentase-dan-grafik-pensiun-pegawai">6.1.3 Prosentase dan Grafik Pensiun Pegawai</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/view-more-detail-pensiun-pegawai.png"><img src="../images/dashboard-pimpinan/implementasi/view-more-detail-pensiun-pegawai.png" alt="view-more-detail-pensiun-pegawai" /></a>
+Gambar 7. Tampilan Prosentase dan Grafik Pensin Pegawai</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Pegawai yang Akan Pensiun dalam bentuk prosentase dan grafik</p>
+
+<h5 id="614-prosentase-dan-grafik-usia-asn">6.1.4 Prosentase dan Grafik Usia ASN</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/uat-kepegawaian-usia-asn.png"><img src="../images/dashboard-pimpinan/implementasi/uat-kepegawaian-usia-asn.png" alt="Usia aparatur sipil negara" /></a>
+Gambar 8. Tampilan Prosentase dan Grafik Usia ASN</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Usia Aparatur Sipil Negara (ASN) dalam bentuk prosentase dan grafik</p>
+
+<h5 id="615-prosentase-dan-grafik-jumlah-pegawai-esselon">6.1.5 Prosentase dan Grafik Jumlah Pegawai Esselon</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/uat-kepegawaian-pegawai-esselon.png"><img src="../images/dashboard-pimpinan/implementasi/uat-kepegawaian-pegawai-esselon.png" alt="jumlah pegawai esselon" /></a>
+Gambar 9. Tampilan Prosentase dan Grafik Jumlah Pegawai Esselon</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Jumlah Pegawai Esselon dalam bentuk prosentase dan grafik</p>
+
+<h5 id="616-prosentase-dan-grafik-pangkat-pegawai">6.1.6 Prosentase dan Grafik Pangkat Pegawai</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/uat-kepegawaian-pangkat-pegawai.png"><img src="../images/dashboard-pimpinan/implementasi/uat-kepegawaian-pangkat-pegawai.png" alt="jumlah pangkat pegawai" /></a>
+Gambar 10. Tampilan Prosentase dan Grafik Pangkat Pegawai</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Pangkat Pegawai dalam bentuk prosentase dan grafik</p>
+
+<h4 id="62--dashboard-kependudukan">6.2  Dashboard Kependudukan</h4>
+
+<h5 id="621-prosentase-dan-grafik-jumlah-penduduk">6.2.1 Prosentase dan Grafik Jumlah Penduduk</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/uat-kependudukan-penduduk.png"><img src="../images/dashboard-pimpinan/implementasi/uat-kependudukan-penduduk.png" alt="Jumlah penduduk" /></a>
+Gambar 11 . Tampilan Prosentase dan Grafik Jumlah Penduduk</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Jumlah Penduduk dalam bentuk prosentase dan grafik</p>
+
+<h4 id="63-dashboard-kesehatan">6.3 Dashboard Kesehatan</h4>
+
+<h5 id="631-prosentase-dan-grafik-jumlah-tim-medis">6.3.1 Prosentase dan Grafik Jumlah Tim Medis</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/uat-kesehatan-tim-medis.png"><img src="../images/dashboard-pimpinan/implementasi/uat-kesehatan-tim-medis.png" alt="Jumlah tim medis" /></a>
+Gambar 12. Tampilan Prosentase dan Grafik Jumlah Tim Medis</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Jumlah Tim Medis dalam bentuk prosentase dan grafik</p>
+
+<h4 id="64-dashboard-kependidikan">6.4 Dashboard Kependidikan</h4>
+
+<h5 id="641-prosentase-dan-grafik-jumlah-tenaga-pendidik">6.4.1 Prosentase dan Grafik Jumlah Tenaga Pendidik</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/uat-kependidikan-pendidik.png"><img src="../images/dashboard-pimpinan/implementasi/uat-kependidikan-pendidik.png" alt="Jumlah pendidik" /></a>
+Gambar 13. Tampilan Prosentase dan Grafik Jumlah Tenaga Pendidik</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Jumlah Tenaga Pendidik dalam bentuk prosentase dan grafik</p>
+
+<h4 id="65-dashboard-epormas">6.5 Dashboard Epormas</h4>
+
+<h4 id="651-prosentase-dan-grafik-jumlah-laporan">6.5.1 Prosentase dan Grafik Jumlah Laporan</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/uat-epormas-jumlah-laporan.png"><img src="../images/dashboard-pimpinan/implementasi/uat-epormas-jumlah-laporan.png" alt="Jumlah laporan" /></a>
+Gambar 14. Tampilan Prosentase dan Grafik Jumlah Laporan</p>
+
+<p>Pada <em>page</em> ini <em>user</em> dapat melihat data Jumlah Laporan dalam bentuk prosentase dan grafik</p>
+
+<h3 id="7-data-kepegawaian">7. Data Kepegawaian</h3>
+<p>Menu Data Kepegawaian adalah yang dipergunakan untuk Superadmin dan Admin, dimana bisa untuk Input, Hapus, Edit, Update, View data yang ada diseluruh Dinas Provinsi Banten. Didalam Menu Data Kepegawaian ada beberapa bagian menu, diantaranya adalah dengan tampilan gambar seperti dibawah ini:</p>
+
+<h4 id="71-list-pegawai">7.1 List Pegawai</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-pegawai.png"><img src="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-pegawai.png" alt="dashboard-list-tabel-pegawai" /></a>
+Gambar 15. tampilan List Pegawai</p>
+
+<p>Didalam <em>page</em> terdapat <em>list Pegawai</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>Pegawai</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="711-form-tabel-tambah-jumlah-pegawai">7.1.1 Form Tabel Tambah Jumlah Pegawai</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-pegawai-admin.png"><img src="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-pegawai-admin.png" alt="form-tabel-tambah-pegawai-admin" /></a>
+Gambar 16. Tampilan Form Tabel Tambah Jumlah Pegawai</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input pegawai</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>pegawai</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>pegawai</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>pegawai</em>.</p>
+
+<h4 id="72-list-pegawai-kpo">7.2 List Pegawai KPO</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-pegawai-kenaikan-pangkat-otomatis.png"><img src="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-pegawai-kenaikan-pangkat-otomatis.png" alt="dashboard-list-tabel-pegawai-kenaikan-pangkat-otomatis" /></a>
+Gambar 17. Tampilan List Pegawai KPO</p>
+
+<p>Didalam <em>page</em> terdapat <em>list Pegawai KPO</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>Pegawai KPO</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="721-form-tabel-tambah-pegawai-kpo-kenaikan-pangkat-otomatis">7.2.1 Form Tabel Tambah Pegawai KPO (Kenaikan Pangkat Otomatis)</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-pegawai-kenaikan-pangkat-otomatis-admin.png"><img src="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-pegawai-kenaikan-pangkat-otomatis-admin.png" alt="form-tabel-tambah-pegawai-kenaikan-pangkat-otomatis-admin" /></a>
+Gambar 18. Tampilan Form Tabel Tambah Pegawai KPO</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input pegawai KPO</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>pegawai KPO</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>pegawai KPO</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>pegawai KPO</em>.</p>
+
+<h4 id="73-list-pegawai-esselon">7.3 List Pegawai Esselon</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-jumlah-pegawai-esselon.png"><img src="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-jumlah-pegawai-esselon.png" alt="dashboard-list-tabel-jumlah-pegawai-esselon" /></a>
+Gambar 19. Tampilan List Pegawai Esselon</p>
+
+<p>Didalam <em>page</em> terdapat <em>list Pegawai Esselon</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>Pegawai Esselon</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="731-form-tabel-tambah-jumlah-pegawai-esselon">7.3.1 Form Tabel Tambah Jumlah Pegawai Esselon</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-jumlah-pegawai-esselon-admin.png"><img src="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-jumlah-pegawai-esselon-admin.png" alt="form-tabel-tambah-jumlah-pegawai-esselon-admin" /></a>
+Gambar 20. Tampilan Form Tabel Tambah Jumlah Pegawai Esselon</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input pegawai esselon</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>pegawai esselon</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>pegawai esselon</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>pegawai esselon</em>.</p>
+
+<h4 id="74-list-usia-asn-aparatur-sipil-negara">7.4 List Usia ASN (Aparatur Sipil Negara)</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-jumlah-usia-asn.png"><img src="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-jumlah-usia-asn.png" alt="dashboard-list-tabel-jumlah-usia-asn" /></a>
+Gambar 21. Tampilan List usia ASN</p>
+
+<p>Didalam <em>page</em> terdapat <em>list usia ASN</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>usia ASN</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="741-form-tabel-tambah-usia-asn-aparatur-sipil-negara">7.4.1 Form Tabel Tambah Usia ASN (Aparatur Sipil Negara)</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-Jumlah-usia-asn-admin.png"><img src="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-Jumlah-usia-asn-admin.png" alt="form-tabel-tambah-Jumlah-usia-asn-admin" /></a>
+Gambar 22. Tampilan Form Tabel Tambah Usia ASN</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input usia ASN</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>usia ASN</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>usia ASN</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>usia ASN</em>.</p>
+
+<h4 id="75-list-pegawai-yang-akan-pensiun">7.5 List Pegawai Yang Akan Pensiun</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-pegawai-yang-akan-pensiun.png"><img src="../images/dashboard-pimpinan/implementasi/dashboard-list-tabel-pegawai-yang-akan-pensiun.png" alt="dashboard-list-tabel-pegawai-yang-akan-pensiun" /></a>
+Gambar 23. Tampilan List Pegawai yang akan Pensiun</p>
+
+<p>Didalam <em>page</em> terdapat <em>list pegawai yang akan pensiun</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>pegawai yang akan pensiun</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="751-form-tabel-tambah-jumlah-pegawai-yang-akan-pensiun">7.5.1 Form Tabel Tambah Jumlah Pegawai Yang Akan Pensiun</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-pegawai-yang-akan-pensiun-admin.png"><img src="../images/dashboard-pimpinan/implementasi/form-tabel-tambah-pegawai-yang-akan-pensiun-admin.png" alt="form-tabel-tambah-pegawai-yang-akan-pensiun-admin" /></a>
+Gambar 24. Tampilan Form Tabel Tambah Jumlah Pegawai yang akan Pensiun</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input pegawai yang akan pensiun</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>pegawai yang akan pensiun</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>pegawai yang akn pensiun</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>pegawai yang akan pensiun</em>.</p>
+
+<h3 id="8-data-kependudukan">8. Data Kependudukan</h3>
+<p>Menu Data Kependudukan adalah yang dipergunakan untuk Superadmin dan Admin, dimana bisa untuk Input, Hapus, Edit, Update, View data yang ada diseluruh Dinas Provinsi Banten. Didalam Menu Data Kependudukan ada beberapa bagian menu, diantaranya adalah dengan tampilan gambar seperti dibawah ini:</p>
+
+<h4 id="81-list-penduduk">8.1 List Penduduk</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/list-penduduk.png"><img src="../images/dashboard-pimpinan/implementasi/list-penduduk.png" alt="list Penduduk" /></a>
+Gambar 25. Tampilan List Penduduk</p>
+
+<p>Didalam <em>page</em> terdapat <em>list penduduk</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>penduduk</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="811-form-tabel-tambah-penduduk">8.1.1 Form Tabel Tambah Penduduk</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/tambah-penduduk.png"><img src="../images/dashboard-pimpinan/implementasi/tambah-penduduk.png" alt="Tambah Penduduk" /></a>
+Gambar 26. Tampilan Form Tabel Tambah Penduduk</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input penduduk</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>penduduk</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>penduduk</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>penduduk</em>.</p>
+
+<h3 id="9-data-kesehatan">9. Data Kesehatan</h3>
+<p>Menu Data Kesehatan adalah yang dipergunakan untuk Superadmin dan Admin, dimana bisa untuk Input, Hapus, Edit, Update, View data yang ada diseluruh Dinas Provinsi Banten. Didalam Menu Data Kependudukan ada beberapa bagian menu, diantaranya adalah dengan tampilan gambar seperti dibawah ini:</p>
+
+<h4 id="91-list-tim-medis">9.1 List Tim Medis</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/list-tim-medis.png"><img src="../images/dashboard-pimpinan/implementasi/list-tim-medis.png" alt="List Tim Medis" /></a>
+Gambar 27. Tampilan List Tim Medis</p>
+
+<p>Didalam <em>page</em> terdapat <em>list tim medis</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>tim medis</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="911-form-tabel-tambah-tim-medis">9.1.1 Form Tabel Tambah Tim Medis</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/tambah-penduduk.png"><img src="../images/dashboard-pimpinan/implementasi/tambah-penduduk.png" alt="Tambah Tim Medis" /></a>
+Gambar 28. Tampilan Form Tabel Tambah Tim Medis</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input tim medis</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>tim medis</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>tim medis</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>tim medis</em>.</p>
+
+<h3 id="10-data-kependidikan">10. Data Kependidikan</h3>
+<p>Menu Data Kependidikan adalah yang dipergunakan untuk Superadmin dan Admin, dimana bisa untuk Input, Hapus, Edit, Update, View data yang ada diseluruh Dinas Provinsi Banten. Didalam Menu Data Kependudukan ada beberapa bagian menu, diantaranya adalah dengan tampilan gambar seperti dibawah ini:</p>
+
+<h4 id="101-list-pendidik">10.1 List Pendidik</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/list-pendidik.png"><img src="../images/dashboard-pimpinan/implementasi/list-pendidik.png" alt="List Pendidik" /></a>
+Gambar 29. Tampilan List Pendidik</p>
+
+<p>Didalam <em>page</em> terdapat <em>list pendidik</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>pendidik</em> dengan cara mengklik tombol “Create”, <em>user</em> juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="1011-form-tabel-tambah-pendidik">10.1.1 Form Tabel Tambah Pendidik</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/tambah-pendidik.png"><img src="../images/dashboard-pimpinan/implementasi/tambah-pendidik.png" alt="Tambah Pendidik" /></a>
+Gambar 30. Tampilan List Form Tabel Tambah Pendidik</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input pendidik</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>pendidik</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>pendidik</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>pendidik</em>.</p>
+
+<h3 id="11-data-epormas">11. Data Epormas</h3>
+<p>Menu Data Epormas adalah yang dipergunakan untuk Superadmin dan Admin, dimana bisa untuk Input, Hapus, Edit, Update, View data yang ada diseluruh Dinas Provinsi Banten. Didalam Menu Data Kependudukan ada beberapa bagian menu, diantaranya adalah dengan tampilan gambar seperti dibawah ini:</p>
+
+<h4 id="111-list-laporan">11.1 List Laporan</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/list-laporan.png"><img src="../images/dashboard-pimpinan/implementasi/list-laporan.png" alt="List Laporan" /></a>
+Gambar 31. Tampilan List Laporan</p>
+
+<p>Didalam <em>page</em> terdapat <em>list laporan</em> masyarakat yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>laporan</em> dengan cara mengklik tombol “Create”, admin juga dapat mengedit dan mendelete data pada <em>page</em> ini.</p>
+
+<h5 id="1111-form-tabel-tambah-laporan">11.1.1 Form Tabel Tambah Laporan</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/tambah-laporan.png"><img src="../images/dashboard-pimpinan/implementasi/tambah-laporan.png" alt="Tambah Laporan" /></a>
+Gambar 32. Tampilan Form Tabel Tambah Laporan</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form laporan</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>laporan</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>pendidik</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>laporan</em>.</p>
+
+<h3 id="12--menu-users">12.  Menu Users</h3>
+<p>Menu Users adalah tampilan aplikasi yang dipergunakan untuk Superadmin dan Admin, di mana bisa untuk Input, Hapus, Edit, Update, View data yang ada, dengan menekan atau klik tombol <strong>create</strong> akan tampil form tabel untuk penambahan data. Didalam menu users ada beberapa bagian menu, diantaranya adalah dengan tampilan gambar seperti dibawah ini:</p>
+
+<h4 id="121-users-list">12.1. Users List</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/users-list-tabel-admin.png"><img src="../images/dashboard-pimpinan/implementasi/users-list-tabel-admin.png" alt="users-list-tabel-admin" /></a>
+Gambar 33. Tampilan User List</p>
+
+<p>Didalam <em>page</em> terdapat <em>list user</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>role user</em> dengan cara mengklik tombol “Create”, dan sistem aplikasi akan menampilkan gambar di bawah ini.</p>
+
+<h5 id="1211-form-tabel-add-new-user">12.1.1. Form Tabel Add New User</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/add-user-admin.png"><img src="../images/dashboard-pimpinan/implementasi/add-user-admin.png" alt="add-user-admin" /></a>
+Gambar 34. Tampilan Form Tabel Add New User</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input new user</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>New User</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>user</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>user</em>.</p>
+
+<h4 id="122-list-role-user">12.2. List Role User</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/role-users-list-admin.png"><img src="../images/dashboard-pimpinan/implementasi/role-users-list-admin.png" alt="role-users-list-admin" /></a>
+Gambar 35. Tampilan List Role User</p>
+
+<p>Didalam <em>page</em> terdapat <em>list role user</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>role user</em> dengan cara mengklik tombol “Create”, dan sistem aplikasi akan menampilkan gambar di bawah ini.</p>
+
+<h5 id="1221--form-tabel-add-role-user">12.2.1.  Form Tabel Add Role User</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/form-tabel-add-role-user-admin.png"><img src="../images/dashboard-pimpinan/implementasi/form-tabel-add-role-user-admin.png" alt="form-tabel-add-role-user-admin" /></a>
+Gambar 36. Tampilan Form Tabel Add Role User</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input role user</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>New Role User</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>role user</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>role user</em>.</p>
+
+<h4 id="123-list-permissions">12.3. List Permissions</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/permissions-list-admin.png"><img src="../images/dashboard-pimpinan/implementasi/permissions-list-admin.png" alt="permissions-list-admin" /></a>
+Gambar 37. Tampilan List Permissions</p>
+
+<p>Didalam <em>page</em> terdapat <em>list permissions</em> yang terdapat pada aplikasi Dashboard Pimpinan. Didalam <em>page</em> ini admin dapat menambahkan <em>permissions</em> dengan cara mengklik tombol “Create”, dan sistem aplikasi akan menampilakan gambar di bawah ini.</p>
+
+<h5 id="1231-form-tabel-add-permissions">12.3.1 Form Tabel Add Permissions</h5>
+<p><a href="../images/dashboard-pimpinan/implementasi/form-tabel-add-permission-admin.png"><img src="../images/dashboard-pimpinan/implementasi/form-tabel-add-permission-admin.png" alt="form-tabel-add-permission-admin" /></a>
+Gambar 38. Tampilan Form Tabel Add Permissions</p>
+
+<p>Didalam <em>page</em> ini terdapat <em>form input new permissions</em> yang berisi beberapa <em>field</em> untuk menambahkan <em>New Permissions</em> pada aplikasi. Jika sudah mengisi semua <em>field</em> admin dapat memilih tombol “submit” untuk menambahkan <em>permissions</em>, tombol “reset” untuk membersihkan <em>field</em> menjadi kosong lagi atau tombol “back” untuk membatalkan menambahkan <em>permissions</em>.</p>
+
+<h4 id="124--profile-user">12.4  Profile User</h4>
+<p><a href="../images/dashboard-pimpinan/implementasi/user-profile-admin-edit.jpeg"><img src="../images/dashboard-pimpinan/implementasi/user-profile-admin-edit.jpeg" alt="user-profile-admin-edit" /></a>
+Gambar 39. Tampilan Profile User
+Didalam <em>page</em> ini admin dapat melihat <em>list user</em> yang terdaftar diaplikasi Dashboard Pimpinan.</p>
 
             </div>
             

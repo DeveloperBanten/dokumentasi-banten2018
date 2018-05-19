@@ -142,6 +142,9 @@
 
                 <ul class="list-unstyled CTAs">
                     <li><a href="https://github.com/DeveloperBanten/dokumentasi-banten2018" class="download">Download source</a></li> 
+                    <li>
+                         <p class="copyright">&copy;2018 DMS Jawara eGov.  </p>
+                    </li>
                 </ul>
 
             </nav>
@@ -202,12 +205,296 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
         <div class="col-md-12">
           <div class="article">
             <div class="well">
-                <h1><a href="/yankes/desain-dan-perancangan.html">May 16, 2018 - Desain dan Perancangan</a></h1>
+                <h3>
+
+                    <a href="/yankes/desain-dan-perancangan.html">Yankes - Desain dan Perancangan</a>
+                </h3>
             
                 
             
             <div class="post-content">
-            <p>Desain dan Perancangan.md</p>
+            <h2 id="abstrak">ABSTRAK</h2>
+<p>Sistem informasi saat ini semakin berkembang pesat membuat semua pekerjaan dikehidupan ini banyak yang sudah beralih dibantu oleh teknologi informasi. Teknologi yang dapat membatu lebih mudah, cepat, aman dan efektif jelas sangatlah membantu siapa saja yang memanfaatkannya. Termasuk didalamnya untuk membantu setiap orang dalam mencari informasi tentang pelayanan klinis maupun administratifnya didalam bidang kesehatan.
+Rumah sakit merupakan salah satu instansi pelayanan umum yang memerlukan sistem informasi. Informasi tersebut berdampak langsung terhadap kualitas pelayanan kesehatan. Oleh karena itu rumah sakit memerlukan sebuah sistem-sistem informasi manajemen untuk meningkatkan mutu pellayanan medis yang terintergrasi dengan fungsi utama rumah sakit kedalam satu sistem terpadu yang tersimpan dalam pusat datebase sehingga dapat membantu masyarakat dalam mencari informasi secara cepat, efisien dan efektif.</p>
+
+<h2 id="daftar-isi">Daftar Isi</h2>
+<ul id="markdown-toc">
+  <li><a href="#abstrak" id="markdown-toc-abstrak">ABSTRAK</a></li>
+  <li><a href="#daftar-isi" id="markdown-toc-daftar-isi">Daftar Isi</a></li>
+  <li><a href="#1-pendahuluan" id="markdown-toc-1-pendahuluan">1. PENDAHULUAN</a></li>
+  <li><a href="#2-metode-penelitian" id="markdown-toc-2-metode-penelitian">2. METODE PENELITIAN</a>    <ul>
+      <li><a href="#21-metode-yang-digunakan" id="markdown-toc-21-metode-yang-digunakan">2.1 Metode yang Digunakan</a></li>
+      <li><a href="#22-metode-pengumpulan-data" id="markdown-toc-22-metode-pengumpulan-data">2.2 Metode Pengumpulan Data</a></li>
+      <li><a href="#23-metode-analisis" id="markdown-toc-23-metode-analisis">2.3 Metode Analisis</a></li>
+      <li><a href="#24-perancangan-aplikasi" id="markdown-toc-24-perancangan-aplikasi">2.4 Perancangan Aplikasi</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-hasil-dan-pembahasan" id="markdown-toc-3-hasil-dan-pembahasan">3. HASIL DAN PEMBAHASAN</a>    <ul>
+      <li><a href="#31-kebutuhan-software-dan-hardware" id="markdown-toc-31-kebutuhan-software-dan-hardware">3.1 Kebutuhan Software dan Hardware</a>        <ul>
+          <li><a href="#311-software" id="markdown-toc-311-software">3.1.1 Software</a></li>
+          <li><a href="#312-hardware" id="markdown-toc-312-hardware">3.1.2 Hardware</a></li>
+        </ul>
+      </li>
+      <li><a href="#32-analisis-permasalahan" id="markdown-toc-32-analisis-permasalahan">3.2 Analisis Permasalahan</a></li>
+      <li><a href="#33-solusi" id="markdown-toc-33-solusi">3.3 Solusi</a></li>
+      <li><a href="#34-perancangan-aplikasi" id="markdown-toc-34-perancangan-aplikasi">3.4 Perancangan Aplikasi</a></li>
+      <li><a href="#35-perancangan-database" id="markdown-toc-35-perancangan-database">3.5 Perancangan Database</a>        <ul>
+          <li><a href="#351-tujuan-perancangan-database" id="markdown-toc-351-tujuan-perancangan-database">3.5.1 Tujuan perancangan database:</a></li>
+          <li><a href="#352-proses-perancangan-database" id="markdown-toc-352-proses-perancangan-database">3.5.2 Proses Perancangan Database</a></li>
+        </ul>
+      </li>
+      <li><a href="#36-perancangan-sistem" id="markdown-toc-36-perancangan-sistem">3.6 Perancangan Sistem</a>        <ul>
+          <li><a href="#361-super-admin" id="markdown-toc-361-super-admin">3.6.1 Super Admin</a>            <ul>
+              <li><a href="#3611-use-case-diagram-super-admin" id="markdown-toc-3611-use-case-diagram-super-admin">3.6.1.1 Use Case Diagram Super Admin</a></li>
+              <li><a href="#3612-activity-diagram-super-admin" id="markdown-toc-3612-activity-diagram-super-admin">3.6.1.2 Activity Diagram Super Admin</a>                <ul>
+                  <li><a href="#36121-super-admin-login" id="markdown-toc-36121-super-admin-login">3.6.1.2.1 Super Admin Login</a></li>
+                </ul>
+              </li>
+              <li><a href="#3613-sequence-diagram-super-admin" id="markdown-toc-3613-sequence-diagram-super-admin">3.6.1.3 Sequence Diagram Super Admin</a></li>
+              <li><a href="#3614-state-chart-diagram-super-admin" id="markdown-toc-3614-state-chart-diagram-super-admin">3.6.1.4 State Chart Diagram Super Admin</a>                <ul>
+                  <li><a href="#36141-super-admin-login" id="markdown-toc-36141-super-admin-login">3.6.1.4.1 Super Admin Login</a></li>
+                  <li><a href="#36142-super-admin-input-admin-rs" id="markdown-toc-36142-super-admin-input-admin-rs">3.6.1.4.2 Super Admin Input Admin RS</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#362-pasien" id="markdown-toc-362-pasien">3.6.2 Pasien</a>            <ul>
+              <li><a href="#3621-case-diagram-pasien" id="markdown-toc-3621-case-diagram-pasien">3.6.2.1 Case Diagram Pasien</a></li>
+              <li><a href="#3622-activity-diagram-pasien" id="markdown-toc-3622-activity-diagram-pasien">3.6.2.2 Activity Diagram Pasien</a>                <ul>
+                  <li><a href="#36221-pasien-registrasi" id="markdown-toc-36221-pasien-registrasi">3.6.2.2.1 Pasien Registrasi</a></li>
+                  <li><a href="#36222-pasien-login" id="markdown-toc-36222-pasien-login">3.6.2.2.2 Pasien Login</a></li>
+                  <li><a href="#36223-pasien-lihat-rumah-sakit" id="markdown-toc-36223-pasien-lihat-rumah-sakit">3.6.2.2.3 Pasien Lihat Rumah Sakit</a></li>
+                  <li><a href="#36224-pasien-lihat-dokter" id="markdown-toc-36224-pasien-lihat-dokter">3.6.2.2.4 Pasien Lihat Dokter</a></li>
+                  <li><a href="#36225-pasien-lihat-kamar-inap" id="markdown-toc-36225-pasien-lihat-kamar-inap">3.6.2.2.5 Pasien Lihat Kamar Inap</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#363-tampilan-dalam-aplikasi-mobile-android" id="markdown-toc-363-tampilan-dalam-aplikasi-mobile-android">3.6.3 Tampilan dalam Aplikasi Mobile (Android)</a>            <ul>
+              <li><a href="#3631-layout-tampilan-dashboard" id="markdown-toc-3631-layout-tampilan-dashboard">3.6.3.1 Layout Tampilan Dashboard</a></li>
+              <li><a href="#3632-layout-tampilan-menu-rumah-sakit" id="markdown-toc-3632-layout-tampilan-menu-rumah-sakit">3.6.3.2 Layout Tampilan Menu Rumah Sakit</a></li>
+              <li><a href="#3633-layout-tampilan-profile-rumah-sakit" id="markdown-toc-3633-layout-tampilan-profile-rumah-sakit">3.6.3.3 Layout Tampilan Profile Rumah Sakit</a></li>
+              <li><a href="#3634-layout-tampilan-menu-dokter" id="markdown-toc-3634-layout-tampilan-menu-dokter">3.6.3.4 Layout Tampilan Menu Dokter</a></li>
+              <li><a href="#3635-layout-tampilan-profile-dokter" id="markdown-toc-3635-layout-tampilan-profile-dokter">3.6.3.5 Layout Tampilan Profile Dokter</a></li>
+              <li><a href="#3636-layout-tampilan-rawat-inap" id="markdown-toc-3636-layout-tampilan-rawat-inap">3.6.3.6 Layout Tampilan Rawat Inap</a></li>
+              <li><a href="#3637-layout-tampilan-detail-rawat-inap" id="markdown-toc-3637-layout-tampilan-detail-rawat-inap">3.6.3.7 Layout Tampilan Detail Rawat Inap</a></li>
+              <li><a href="#3638-layout-tampilan-ambulance" id="markdown-toc-3638-layout-tampilan-ambulance">3.6.3.8 Layout Tampilan Ambulance</a></li>
+              <li><a href="#3639-layout-tampilan-berita" id="markdown-toc-3639-layout-tampilan-berita">3.6.3.9 Layout Tampilan Berita</a></li>
+              <li><a href="#36310--layout-tampilan-artikel" id="markdown-toc-36310--layout-tampilan-artikel">3.6.3.10  Layout Tampilan Artikel</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#4-penutup" id="markdown-toc-4-penutup">4. PENUTUP</a></li>
+</ul>
+
+<h2 id="1-pendahuluan">1. PENDAHULUAN</h2>
+<p>Melihat semain majunya perkembangan teknologi sekarang ini, dibutuhkan suatu sistem informasi yang bisa memudahkan serta meningkatkan efisiensi kinerja dalam berbagai hal. Hasil dari sistem informasi yang baik adalah sistem informasi yang memudahkan dan berguna bagi instasi yang menggunakan. Sistem kerja yang tertata sesuai struktur yang ada adalah hal yang bisa meningkatkan kinerja dari suatu instansi.
+Seiring dengan berkembangnya teknologi informasi dengan pesat dan banyaknya kebutuhan dalam teknologi informasi, dimana banyak instansi yang ingin menggunakan teknologi yang ada secara optimal sesuai kebutuhan mencapai hasil kerja yang baik bagi instansi tersebut. Dengan melihat institusi rumah sakit selalu mendapatkan tekanan untuk dapat memperbaiki pelayanan medis, mengurasi kesalahan medis, menyediakan akses informasi yang tepat waktu, dan pada saat yang sama harus bisa memonitor aktifitas pelayanan serta mengendaliakan biaya operasional. Untuk dapat memenuhi tuntutan ini, rumah sakit harus memiliki sistem informasi manajemen ( SIM ) terintegrasi yang bisa sharing informasi real-time, tepat dan akurat. Sistem informasi manajemen ini tidak bisa berjalan secara otomatis apabila tidk didukung sistem perangat lunak (Software Systems) atau sistem enterprise (Enterprise Software) yang sudah terdaftar dalam server rumah sakit tersebut.</p>
+
+<h2 id="2-metode-penelitian">2. METODE PENELITIAN</h2>
+<p>Untuk memperoleh data yang dapat menunjang aplikasi ini, maka diperlukan data teoritis dan data instansi terkait untuk mendapatkan data dan informasi yang berhubung dengan aplikasi ini.
+Adapun penyususan melakukan beberapa penelitian yang diakukan dengan :</p>
+
+<h3 id="21-metode-yang-digunakan">2.1 Metode yang Digunakan</h3>
+<p>penulis mengunakan metode prorotype untuk melakukan perancangan aplikasi pengaduan berbasis web dan android ini.
+•	Ilustrasi Alur Prototyping</p>
+
+<p><a href="../images/yankes/desain-dan-perancangan/alur-prototype.png"><img src="../images/yankes/desain-dan-perancangan/alur-prototype.png" alt="alur prototype" /></a></p>
+
+<h3 id="22-metode-pengumpulan-data">2.2 Metode Pengumpulan Data</h3>
+<p>Untuk mengumpulan data yang diperlukan untuk membangun sistem ini diadakan wawancara dan studi pustaka. Pengumpulan data ini dilakukan untuk mengetahui permasalahan dan gambaran sistem yang sedang berjalan sehingga dapat mengembangkannya untuk membentuk sistem baru yang dapat mendukung sistem yang sedang berjalan.
+•	Studi pustaka, melakukan pengumpulan informasi dari buku text, internet sebagai referensi.
+•	Wawancara, melakukan pengumpulan informasi dari hasil diskusi dengan pihak terkait sebagai bahan referensi</p>
+
+<h3 id="23-metode-analisis">2.3 Metode Analisis</h3>
+<p>Pada metode ini dibuat aplikasi dengan melakukan analisis terhadap sistem yang sedang berjalan, analisis permasalahan yang ada, dan diberikan solusi untuk mengatasi permasalahan yang ada.</p>
+
+<h3 id="24-perancangan-aplikasi">2.4 Perancangan Aplikasi</h3>
+<p>Setelah mengetahui masalah yang masyarakat hadapi pada saat melakukan pengaduan, maka akan dirancang aplikasi yang sesuai dengan kebutuhan untuk mempermudah masyarakat mencari informasi tentang rumah sakit khususnya di Banten.
+Berikut adalah delapan aturan emas dalam perancangan user interface dalam pembuatan aplikasi yang dikemukakan oleh Shneiderman dan Plaisant (2010: 74 ), yaitu:</p>
+<ol>
+  <li>Berusaha untuk konsisten Konsisten serangkaian action harus ada disituaasi yang sama, dalam perancangan User Interface, konsistensi sangat dianjurkan agar para pengguna tidak akan bingung dengan desain yang kita buat.</li>
+  <li>Kegunaan yang universal Mengenali kebutuhan dari berbagai user akan desain untuk kemudahan pemakai seperti misalnya, penggunaan shortcut untuk meningkatkan kecepatan interaksi dengan aplikasi yang kita buat.</li>
+  <li>Memberikan Feedback yang informatif Untuk setiap tindakan pengguna, harus ada sistem feedback. Untuk setiap tindakan yang sering dilakukan dan tidak terlalu penting, dapat diberikan Feedback yang sederhana.</li>
+  <li>Merancang dialog untuk menghasilkan suatu penutupaan Urutan tindakan sebaiknya diorganisir dalam suatu kelompok dengan bagian awal, tengah, dan akhir.</li>
+  <li>Prevent Errors Sebiasa mungkin desain aplokasi kita agar pengguna tidak melakukan kesalahan fatal. Dan apabila pengguna melakukan kesalahan, maka aplikasi harus mendeteksi kesalahan dan menuntun pengguna untuk memperbaiki kesalah tersebut.</li>
+  <li>Memudahkan untuk kembali ke tindakan sebelumnya. Hal ini dapat mengurangi kekhawatiran pengguna untuk mengambil tindakan. Karena, apabila terdapat kesalahan pengguna akan mudah kembali ketindakan sebelumnya.</li>
+  <li>Mendukung kendali internal Memberikan pengguna kendali penuh terhadap aplikasi yang digunakan. Karena para pengguna lebih suka merasa bahwa mereka yang memegang kendali terhadap apikasi daripada mereka yang dikendali aplikasi.</li>
+  <li>Mengurangi ingatan jangka pendek Jangan membuat para pengguna mengingat terlalu banyak akan tampilan halaman, kode, dan tombol-tombol. Sebaikya jadikan semua itu simple.</li>
+</ol>
+
+<h2 id="3-hasil-dan-pembahasan">3. HASIL DAN PEMBAHASAN</h2>
+<h3 id="31-kebutuhan-software-dan-hardware">3.1 Kebutuhan Software dan Hardware</h3>
+<p>Adapun alat bantu software dan hardware dalam melakukan analisis dan perancangan aadalah sebagai berikut:</p>
+
+<h4 id="311-software">3.1.1 Software</h4>
+<p>•	Ubuntu 17.04
+•	Typora (Markdown) &amp; dillinger.io
+•	Gliffy Diagram</p>
+
+<h4 id="312-hardware">3.1.2 Hardware</h4>
+<p>Laptop dengan spesifikasi sebagai berikut:
+•	Intel Celeron N2830 Speed 2.16 Ghz Turbo Boost 2.14 Ghz
+•	Memori DDR3 2GB
+•	Hard disk 500GB</p>
+
+<h3 id="32-analisis-permasalahan">3.2 Analisis Permasalahan</h3>
+<p>Permasalahan yang terjadi dalam masyarakat saat ini adalah sebagai berikut:</p>
+<ol>
+  <li>Kurang efektif dalam hal waktu pada saat ingin melakukan konsultasi pasien harus bertemu dengan dokter dirumah sakit tanpa mengetahui apakah dokter tersebut hadir atau tidak</li>
+  <li>Kurangnya informasi yang diterima oeh masyarakat tentang jumlah ruang rawat inap sehingga susah melarikan orang yang sedang sakit</li>
+  <li>Kurangnya informasi tentang obat yang dikonsumsi oleh pasien</li>
+</ol>
+
+<h3 id="33-solusi">3.3 Solusi</h3>
+<p>Solusi yang kami tawarkan adalah pembuatan sebuah sistem informasi manajemen yang mencakup;</p>
+<ol>
+  <li>Konten Konsultasi antara pasien dan dokter</li>
+  <li>Konten jumlah ruang rawat inap yang tersedia di rumah sakit</li>
+  <li>Konten obat yag memberikan info tentang obat yang terdapat di rumah sakit beserta harganya</li>
+</ol>
+
+<h3 id="34-perancangan-aplikasi">3.4 Perancangan Aplikasi</h3>
+<p>“Aplikasi dan Perancangan Sistem Informasi Manajemen Rumah Sakit Provinsi Banten Berbasis Web” adalah sebuah aplikasi yang memberikan informasi tentang segala kegiatan pelayanan klinis maupun administratif rumah sakit yang terdapat di Banten. masyarakat dapat mengakses aplikasi ini dengan cara membuka aplikasi dari web. Semua informasi dapat di input oleh pihak rumah sakit, admin dan apoteker yang nanti akan tersimpan semua data kedalam pusat database.</p>
+
+<h3 id="35-perancangan-database">3.5 Perancangan Database</h3>
+<p>pada database yang digunakan oleh single user atau hanya beberapa user saja, perancangan database tidak sulit. tetapi jika ukuran database yang sedang atau besar ( 25 - ratusan user yang berisikan jutaan bytes informasi dan melibatkan ratusan query dan program program aplikasi) perancangan database menjadi sangat komplek. Oleh karena itu para pemakai mengharapkan penggunaan database yang sedemikian rupa sehingga sistem harus dapat memenuhi kebutuhan-kebutuhan seluruh user tersebut.</p>
+
+<h4 id="351-tujuan-perancangan-database">3.5.1 Tujuan perancangan database:</h4>
+<p>•	Untuk memenuhi informasi yang diberisikan kebutuhan-kebutuhan user secara khusus dan aplikasi-aplikasinya.
+•	Memudahkan pengertian struktur informasi
+•	Mendukung kebutuhan-kebutuhan pemrosesan dan beberapa obyek penampilan (response time, processing time dan storage space)</p>
+
+<h4 id="352-proses-perancangan-database">3.5.2 Proses Perancangan Database</h4>
+<p>proses perancangan database terdiri dari 6 tahap:
+•	Tahap 1, Pengumpulan data dan analisis
+•	Tahap 2, Perancangan database secara konseptual
+•	tahap 3, Pemilihan DBMS
+•	Tahap 4, Perancangan Database secara logika (data model mapping)
+•	Tahap 5, Perancangan database secara fisik
+•	Tahap 6, Implementasi sistem database
+semakin banyak permintaan kepada aplikasi dapat mempengaruhi data yg terdapat di database. Contoh relasi permintaan aplikasi dengan status dan log</p>
+
+<p><a href="../images/yankes/desain-dan-perancangan/rancangan-database.jpg"><img src="../images/yankes/desain-dan-perancangan/rancangan-database.jpg" alt="rancangan database" /></a></p>
+
+<h3 id="36-perancangan-sistem">3.6 Perancangan Sistem</h3>
+<p>Permodelan rancangan sistem yang dgunakan adalah UML (Unified Modeling Language). Menurut Whitten dan Bentley (2007, p.381), Unified Modeling Language adalah kumpulan rancangan diagram untuk membangun sebuah sistem atau aplikasi yang dimana setiap diagram menyediakan sistem informasi kepada tim pengembang dengan berbagai sudut pandang yang berbeda-beda. UML yang kami gunakan terdiri dari use case diagram, activity diagram, sequence diagram, state chart diagram, class diagram, technology diagram dan deployment diagram.</p>
+
+<h4 id="361-super-admin">3.6.1 Super Admin</h4>
+<h5 id="3611-use-case-diagram-super-admin">3.6.1.1 Use Case Diagram Super Admin</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/use-case-super-admin.png"><img src="../images/yankes/desain-dan-perancangan/use-case-super-admin.png" alt="use case" /></a></p>
+
+<h5 id="3612-activity-diagram-super-admin">3.6.1.2 Activity Diagram Super Admin</h5>
+<h6 id="36121-super-admin-login">3.6.1.2.1 Super Admin Login</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/activity-diagram-login-super-admin.png"><img src="../images/yankes/desain-dan-perancangan/activity-diagram-login-super-admin.png" alt="activity diagram" /></a></p>
+
+<h5 id="3613-sequence-diagram-super-admin">3.6.1.3 Sequence Diagram Super Admin</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/sequence-diagram-super-admin.png"><img src="../images/yankes/desain-dan-perancangan/sequence-diagram-super-admin.png" alt="sequence diagram" /></a></p>
+
+<h5 id="3614-state-chart-diagram-super-admin">3.6.1.4 State Chart Diagram Super Admin</h5>
+<h6 id="36141-super-admin-login">3.6.1.4.1 Super Admin Login</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/state-chart-diagram-super-admin-login.png"><img src="../images/yankes/desain-dan-perancangan/state-chart-diagram-super-admin-login.png" alt="state chart diagram" /></a></p>
+
+<h6 id="36142-super-admin-input-admin-rs">3.6.1.4.2 Super Admin Input Admin RS</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/state-chart-diagram-super-admin-input-admin.png"><img src="../images/yankes/desain-dan-perancangan/state-chart-diagram-super-admin-input-admin.png" alt="state chart diagram" /></a></p>
+
+<h4 id="362-pasien">3.6.2 Pasien</h4>
+<h5 id="3621-case-diagram-pasien">3.6.2.1 Case Diagram Pasien</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/use-case-pasien.png"><img src="../images/yankes/desain-dan-perancangan/use-case-pasien.png" alt="case diagram" /></a></p>
+
+<h5 id="3622-activity-diagram-pasien">3.6.2.2 Activity Diagram Pasien</h5>
+<h6 id="36221-pasien-registrasi">3.6.2.2.1 Pasien Registrasi</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-registrasi.png"><img src="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-registrasi.png" alt="activity diagram" /></a></p>
+
+<h6 id="36222-pasien-login">3.6.2.2.2 Pasien Login</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-login.png"><img src="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-login.png" alt="activity diagram" /></a></p>
+
+<h6 id="36223-pasien-lihat-rumah-sakit">3.6.2.2.3 Pasien Lihat Rumah Sakit</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-view-rumah-sakit.png"><img src="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-view-rumah-sakit.png" alt="activity diagram" /></a></p>
+
+<h6 id="36224-pasien-lihat-dokter">3.6.2.2.4 Pasien Lihat Dokter</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-view-profile-dokter.png"><img src="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-view-profile-dokter.png" alt="activity diagram" /></a></p>
+
+<h6 id="36225-pasien-lihat-kamar-inap">3.6.2.2.5 Pasien Lihat Kamar Inap</h6>
+
+<p><a href="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-view-ruang-rawat.png"><img src="../images/yankes/desain-dan-perancangan/activity-diagram-pasien-view-ruang-rawat.png" alt="activity diagram" /></a></p>
+
+<h4 id="363-tampilan-dalam-aplikasi-mobile-android">3.6.3 Tampilan dalam Aplikasi Mobile (Android)</h4>
+<h5 id="3631-layout-tampilan-dashboard">3.6.3.1 Layout Tampilan Dashboard</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/dashboard-yankes-mobile.png"><img src="../images/yankes/desain-dan-perancangan/dashboard-yankes-mobile.png" alt="dashboard mobile" /></a></p>
+
+<p>Dalam layout ini hanya ada tombol menu yang berada di bawah terdapat beberapa menu. Dalam layout ini juga terdapat image slider yang berfungsi untuk menampilkan banner yang akan berganti setiap 3 detik. Ada juga pilihan kategori laporan yang berbentuk grid atau baris, jumlah item dalam grid ini tergantung pada jumlah kategori yang ada dalam database.</p>
+
+<h5 id="3632-layout-tampilan-menu-rumah-sakit">3.6.3.2 Layout Tampilan Menu Rumah Sakit</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/menu-rumah-sakit.png"><img src="../images/yankes/desain-dan-perancangan/menu-rumah-sakit.png" alt="rumah sakit" /></a></p>
+
+<p>Layout tampilan menu rumah sakit hanya terdiri dari Gambar dan nama setiap Rumah Sakit yang berada di Provinsi Banten yang terdapat di Aplikasi Yankes, dan Detail dari setiap rumah sakit yang ada.</p>
+
+<h5 id="3633-layout-tampilan-profile-rumah-sakit">3.6.3.3 Layout Tampilan Profile Rumah Sakit</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/detail-rumah-sakit.png"><img src="../images/yankes/desain-dan-perancangan/detail-rumah-sakit.png" alt="profile rumah sakit" /></a></p>
+
+<p>Dalam layout tampilan ini terdapat tombol kembali yang berbeda di pojok kiri atas foto profile rumah sakit, nama dari rumah sakit, alamat dari rumah sakit, email, no telpon, website serta informasi dari rumah sakit tersebut.</p>
+
+<h5 id="3634-layout-tampilan-menu-dokter">3.6.3.4 Layout Tampilan Menu Dokter</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/menu-dokter.png"><img src="../images/yankes/desain-dan-perancangan/menu-dokter.png" alt="dokter" /></a></p>
+
+<p>Dalam layout ini hanya terdapat tombol menu di pojok kiri atas, dan Nama Dokter Spesialis diatas menunjukan bahwa anda masuk ke dalam tampilan menu dokter. Dalam tampilan ini juga terdarap setiap Layout yang menunjukan setiap nama-nama dari dokter serta spesialisnya.</p>
+
+<h5 id="3635-layout-tampilan-profile-dokter">3.6.3.5 Layout Tampilan Profile Dokter</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/detail-dokter.png"><img src="../images/yankes/desain-dan-perancangan/detail-dokter.png" alt="profile dokter" /></a></p>
+
+<p>Layout ini tidak jauh beda dengan layout Profile Rumah Sakit, yang membedakannya hanya tampilan dan nama serta keterangan yang tersedia, seperti gambar diatas.</p>
+
+<h5 id="3636-layout-tampilan-rawat-inap">3.6.3.6 Layout Tampilan Rawat Inap</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/menu-rawat-inap.png"><img src="../images/yankes/desain-dan-perancangan/menu-rawat-inap.png" alt="rawat inap" /></a></p>
+
+<p>Dalam tampilan ini, terdiri dari tombol kembali yang ada di pojok kiri atas, dan beberapa keterangan lain nya mengenai yang berhubungan dengan tersedia nya ruang rawat inap dari setiap rumah sakit yang ada.</p>
+
+<h5 id="3637-layout-tampilan-detail-rawat-inap">3.6.3.7 Layout Tampilan Detail Rawat Inap</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/detail-rawat-inap.png"><img src="../images/yankes/desain-dan-perancangan/detail-rawat-inap.png" alt="detail rawat inap" /></a></p>
+
+<p>Tampilan ini hanya terdiri dari list kategori rawat inap yang tersedia di rumah sakit.</p>
+
+<h5 id="3638-layout-tampilan-ambulance">3.6.3.8 Layout Tampilan Ambulance</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/menu-ambulance.png"><img src="../images/yankes/desain-dan-perancangan/menu-ambulance.png" alt="ambulance" /></a></p>
+
+<p>Pada layout ini,terdiri dari nama rumah sakit dan ada berapa jumlah mobil Ambulance yang tersedia dari rumah sakit tersebut.</p>
+
+<h5 id="3639-layout-tampilan-berita">3.6.3.9 Layout Tampilan Berita</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/menu-berita.png"><img src="../images/yankes/desain-dan-perancangan/menu-berita.png" alt="berita" /></a></p>
+
+<p>Dalam tampilan ini berisi tentang berita atau blog-blog yang mengenai tentang kesehatan</p>
+
+<h5 id="36310--layout-tampilan-artikel">3.6.3.10  Layout Tampilan Artikel</h5>
+
+<p><a href="../images/yankes/desain-dan-perancangan/menu-artikel.png"><img src="../images/yankes/desain-dan-perancangan/menu-artikel.png" alt="artikel" /></a></p>
+
+<p>Pada tampilan ini hampir sama dengan tampilan pada menu berita mengenai tentang artikel-artikel tentang kesehatan dan rumah sakit.</p>
+
+<h2 id="4-penutup">4. PENUTUP</h2>
+<p>Dengan adanya pengembangan dari sistem informasi manajemen pelayanan kesehatan ini untuk meningkatkan kinerja sistem yang telah ada dan berjalan sebelumnya menjadi lebih rapih dan tertata sehingga dapat mempermudah dalam pengumpulan informasi dan pengaturan manejemen rumah sakit serta mempermudah masyarakat dalam mencari informasi. Aplikasi ini mempunyai kelebihan untuk memperoleh data yang cepat, tepat dan akurat mengenai info rumah sakit yang terdapat di Pemprov Banten. Sistem ini memberikan kemudahan dalam beberapa hal seperti : pencatatan data rumah sakit, pencatatan data dokter dan kemudahan dalam mencari informasi tentang pelayanan kesehatan.</p>
 
             </div>
             
@@ -231,9 +518,7 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
  
 <!--
 -->
-<div class="text-center">
-     <p class="copyright">&copy;2018 DMS Jawara eGov.  </p>
-</div>
+
 
 
 

@@ -125,8 +125,8 @@
                         </ul>
                     </li> 
                     <li>
-                        <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
-                        <ul class="collapse list-unstyled" id="ssoSubmenu">
+                        <a href="#simbadaSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
+                        <ul class="collapse list-unstyled" id="simbadaSubmenu">
                             
                               <li><a href="/simbada/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
@@ -142,13 +142,13 @@
                         <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">SSO</a>
                         <ul class="collapse list-unstyled" id="ssoSubmenu">
                             
-                              <li><a href="/sop_online/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
+                              <li><a href="/sso/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
-                              <li><a href="/sop_online/implementasi.html">Implementasi</a></li>
+                              <li><a href="/sso/implementasi.html">Implementasi</a></li>
                              
-                              <li><a href="/sop_online/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
+                              <li><a href="/sso/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
                              
-                              <li><a href="/sop_online/pengembangan.html">Pengembangan</a></li>
+                              <li><a href="/sso/pengembangan.html">Pengembangan</a></li>
                             
                         </ul>
                     </li>
@@ -221,13 +221,993 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
             <div class="well">
                 <h3>
 
-                    <a href="/sop_online/integrasi-dan-pengujian.html"> - Integrasi dan Pengujian</a>
+                    <a href="/sop_online/integrasi-dan-pengujian.html">Sop Online - Integrasi dan Pengujian</a>
                 </h3>
             
                 
             
             <div class="post-content">
-            <p>Integras dan Pengujian.md</p>
+            <h2 id="daftar-isi">Daftar Isi</h2>
+<ul id="markdown-toc">
+  <li><a href="#daftar-isi" id="markdown-toc-daftar-isi">Daftar Isi</a>    <ul>
+      <li><a href="#integrasi-dan-pengujian-sop-online" id="markdown-toc-integrasi-dan-pengujian-sop-online">Integrasi dan Pengujian SOP Online</a></li>
+      <li><a href="#integrasi-sop-online" id="markdown-toc-integrasi-sop-online">Integrasi SOP Online</a>        <ul>
+          <li><a href="#tampilan-permission" id="markdown-toc-tampilan-permission">Tampilan Permission</a></li>
+          <li><a href="#tampilan-role" id="markdown-toc-tampilan-role">Tampilan Role</a></li>
+          <li><a href="#pengujian-sop-online" id="markdown-toc-pengujian-sop-online">Pengujian SOP Online</a>            <ul>
+              <li><a href="#tampilan-login" id="markdown-toc-tampilan-login">Tampilan Login</a></li>
+              <li><a href="#tampilan-dashboard" id="markdown-toc-tampilan-dashboard">Tampilan Dashboard</a></li>
+              <li><a href="#tampilan-opd" id="markdown-toc-tampilan-opd">Tampilan Opd</a></li>
+              <li><a href="#tampilan-add-new-opd" id="markdown-toc-tampilan-add-new-opd">Tampilan Add New Opd</a></li>
+              <li><a href="#tampilan-add-new-child" id="markdown-toc-tampilan-add-new-child">Tampilan Add New Child</a></li>
+              <li><a href="#tampilan-sop-online" id="markdown-toc-tampilan-sop-online">Tampilan Sop Online</a></li>
+              <li><a href="#tampilan-add-sop-online" id="markdown-toc-tampilan-add-sop-online">Tampilan Add Sop Online</a></li>
+              <li><a href="#tampilan-view-sop-online" id="markdown-toc-tampilan-view-sop-online">Tampilan View Sop Online</a></li>
+              <li><a href="#tampilan-edit-sop-online" id="markdown-toc-tampilan-edit-sop-online">Tampilan Edit Sop Online</a></li>
+              <li><a href="#tampilan-workflows" id="markdown-toc-tampilan-workflows">Tampilan Workflows</a></li>
+              <li><a href="#tampilan-add-new-workflows" id="markdown-toc-tampilan-add-new-workflows">Tampilan Add New Workflows</a></li>
+              <li><a href="#tampilan-edit-workflow" id="markdown-toc-tampilan-edit-workflow">Tampilan Edit Workflow</a></li>
+              <li><a href="#tampilan-state-list" id="markdown-toc-tampilan-state-list">Tampilan State List</a></li>
+              <li><a href="#tampilan-add-new-state" id="markdown-toc-tampilan-add-new-state">Tampilan Add new State</a></li>
+              <li><a href="#tampilan-edit-state" id="markdown-toc-tampilan-edit-state">Tampilan Edit State</a></li>
+              <li><a href="#tampilan-transition-list" id="markdown-toc-tampilan-transition-list">Tampilan Transition List</a></li>
+              <li><a href="#tampilan-add-new-transition" id="markdown-toc-tampilan-add-new-transition">Tampilan Add New Transition</a></li>
+              <li><a href="#tampilan-edit-transition" id="markdown-toc-tampilan-edit-transition">Tampilan Edit Transition</a></li>
+              <li><a href="#tampilan-workflow-guard" id="markdown-toc-tampilan-workflow-guard">Tampilan Workflow Guard</a></li>
+              <li><a href="#tampilan-add-new-guard" id="markdown-toc-tampilan-add-new-guard">Tampilan Add New Guard</a></li>
+              <li><a href="#tampilan-edit-guard" id="markdown-toc-tampilan-edit-guard">Tampilan Edit Guard</a></li>
+              <li><a href="#tampilan-workflow-attachment" id="markdown-toc-tampilan-workflow-attachment">Tampilan Workflow Attachment</a></li>
+              <li><a href="#tampilan-add-new-attachment" id="markdown-toc-tampilan-add-new-attachment">Tampilan Add New Attachment</a></li>
+              <li><a href="#tampilan-edit-attachment" id="markdown-toc-tampilan-edit-attachment">Tampilan Edit Attachment</a></li>
+              <li><a href="#tampilan-workflow-content" id="markdown-toc-tampilan-workflow-content">Tampilan Workflow Content</a></li>
+              <li><a href="#tampilan-add-new-content" id="markdown-toc-tampilan-add-new-content">Tampilan Add New Content</a></li>
+              <li><a href="#konten-transition-list" id="markdown-toc-konten-transition-list">Konten Transition List</a></li>
+              <li><a href="#tampilan-workflow-history" id="markdown-toc-tampilan-workflow-history">Tampilan Workflow History</a></li>
+              <li><a href="#tampilan-user" id="markdown-toc-tampilan-user">Tampilan User</a></li>
+              <li><a href="#tampilan-add-user" id="markdown-toc-tampilan-add-user">Tampilan Add User</a></li>
+              <li><a href="#tampilan-edit-user" id="markdown-toc-tampilan-edit-user">Tampilan Edit User</a></li>
+              <li><a href="#tampilan-permission-1" id="markdown-toc-tampilan-permission-1">Tampilan Permission</a></li>
+              <li><a href="#tampilan-add-new-permission" id="markdown-toc-tampilan-add-new-permission">Tampilan Add New Permission</a></li>
+              <li><a href="#tampilan-view-permission" id="markdown-toc-tampilan-view-permission">Tampilan View Permission</a></li>
+              <li><a href="#tampilan-edit-permission" id="markdown-toc-tampilan-edit-permission">Tampilan Edit Permission</a></li>
+              <li><a href="#tampilan-role-1" id="markdown-toc-tampilan-role-1">Tampilan Role</a></li>
+              <li><a href="#tampilan-new-role" id="markdown-toc-tampilan-new-role">Tampilan New Role</a></li>
+              <li><a href="#tampilan-view-role" id="markdown-toc-tampilan-view-role">Tampilan View Role</a></li>
+              <li><a href="#tampilan-edit-role" id="markdown-toc-tampilan-edit-role">Tampilan Edit Role</a></li>
+              <li><a href="#tampilan-laporan-workflow" id="markdown-toc-tampilan-laporan-workflow">Tampilan Laporan Workflow</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="integrasi-dan-pengujian-sop-online">Integrasi dan Pengujian SOP Online</h3>
+<p>Pada laporan ini akan membahas tentang Integrasi dan Pengujian SOP Online, untuk pengujiannya menggunakan User Acceptance Test.</p>
+
+<h3 id="integrasi-sop-online">Integrasi SOP Online</h3>
+
+<p>Salah satu sasaran Dinas Komunikasi, Informasi, Statistika dan Persandian adalah membuat sebuah sistem yang terkelola rapi dalam segala hal, baik dalam bidang IT maupun bidang yang lainnya agar mampu menyelenggarakan seluruh kegiatannya secara mandiri dan sesuai dengan ketentuan yang berlaku.</p>
+
+<p>Untuk mencapai hal tersebut, diperlukan suatu prosedur operasional yang jelas dan standar bagi semua pihak yang terlibat dalam mencapai sasaran tersebut. Praktik-praktik baik yang telah berlangsung di KOMINFO Banten perlu distandarisasi dan didokumentasikan agar menjadi acuan bagi manejemen dalam menjalankan tugas dan fungsinya serta menjamin keberlangsungan implementasi praktik-praktik tersebut.</p>
+
+<p>Terkait dengan sasaran tersebut kami bertujuan akan membangun standarisasi sistem pengembangan apliaksi yang dapat meningkatkan efisiensi dan efektifitas kinerja dinas terkait serta mampu mebagikan informasi yang dibutuhkan oleh berbagai pihak untuk kepentingan proses pengambilan keputusan. Untuk menuju kepada standarisasi dalam pengembangan aplikasi perlu diciptakan terlebih dahulu sistem manual  terstandar atau semacam <em>Standar Operating Procedur</em> (SOP) untuk seluruh pengembangan aplikasi yang ada sehingga dapat dipahami oleh semua pihak yang terlibat.</p>
+
+<p>Integrasi aplikasi dilakukan dengan:</p>
+
+<ol>
+  <li>melalui antar muka aplikasi atau melalui method</li>
+  <li>focus method level</li>
+  <li>method dishare dengan meletakannnya pada sebuah server pusat / dengan mengakses method pada aplikasi.</li>
+</ol>
+
+<p>Application Programming Interface mekanisme terdefinisi dibuat untuk berhubungan dengan sumber daya seperti server aplikasi, middleware, dan basis data.
+Dibawah ini adalah contoh method, parameter dan response yang terdapat didalam SOP Online:</p>
+
+<h4 id="tampilan-permission">Tampilan Permission</h4>
+
+<p><a href="../images/sop-online/integrasi-dan-pengujian/sop-permission.png"><img src="../images/sop-online/integrasi-dan-pengujian/sop-permission.png" alt="Tampilan Get Permission" /></a></p>
+
+<p>Pada page ini terdapat method yang berupa tombol <strong>GET</strong> dan link url untuk konten get permission, method ini digunakan untuk menambahkan data baru aplikasi ke server. Parameter yang terdapat didalam konten ini berisi field, type dan description. Terdapat 2 response didalam page ini yaitu:</p>
+
+<ol>
+  <li><em>Success Response</em> yang ditampilkan dalam “Success 200” dan hasilnya ditampilkan dalam bentuk Json.</li>
+  <li><em>Error Response</em> yang ditampilkan dalam “Error 4xx” dan hasilnya akan ditampilkan dalam bentuk Json</li>
+</ol>
+
+<h4 id="tampilan-role">Tampilan Role</h4>
+
+<p><a href="../images/sop-online/integrasi-dan-pengujian/sop-role.png"><img src="../images/sop-online/integrasi-dan-pengujian/sop-role.png" alt="Tampilan Get Role" /></a></p>
+
+<p>Pada page ini terdapat method yang berupa tombol <strong>GET</strong> dan link url untuk konten get role, method ini digunakan untuk menambahkan data baru aplikasi ke server. Parameter yang terdapat didalam konten ini berisi field, type dan description. Terdapat 2 response didalam page ini yaitu:</p>
+
+<ol>
+  <li><em>Success Response</em> yang ditampilkan dalam “Success 200” dan hasilnya ditampilkan dalam bentuk Json.</li>
+  <li><em>Error Response</em> yang ditampilkan dalam “Error 4xx” dan hasilnya akan ditampilkan dalam bentuk Json</li>
+</ol>
+
+<h4 id="pengujian-sop-online">Pengujian SOP Online</h4>
+<p>Sistem informasi saat ini semakin berkembang pesat membuat semua pekerjaan dikehidupan ini banyak yang sudah beralih dibantu oleh teknologi informasi. Teknologi yang dapat membantu lebih mudah, cepat, aman dan efektif jelas sangatlah membantu siapa saja yang memanfaatkannya, document dibuat untuk memberikan panduan penggunaan aplikasi SOP Online.</p>
+
+<p>Untuk memulai akses aplikasi SOP Online. Buka web browser (IE, Mozila Firefox atau yang lainnya) dengan menulis alamat url http://http://sop.bantenprov.go.id/ kemudian tekan Enter pada tombol keyboard atau klik tombol Go pada browser.</p>
+
+<h5 id="tampilan-login">Tampilan Login</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Login</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/01-tampilan-login.png"><img src="../images/sop-online/integrasi-dan-pengujian/01-tampilan-login.png" alt="tampilan login" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan login sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-dashboard">Tampilan Dashboard</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dashboard</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/02-tampilan-dashboard.png"><img src="../images/sop-online/integrasi-dan-pengujian/02-tampilan-dashboard.png" alt="Tampilan Dashboard" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan dashboard sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-opd">Tampilan Opd</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Opd</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/03-tampilan-opd.png"><img src="../images/sop-online/integrasi-dan-pengujian/03-tampilan-opd.png" alt="Tampilan Opd" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan opd sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-opd">Tampilan Add New Opd</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Opd</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/16-tampilan-tambah-opd.png"><img src="../images/sop-online/integrasi-dan-pengujian/16-tampilan-tambah-opd.png" alt="Tampilan Add New Opd" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new opd sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-child">Tampilan Add New Child</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Child</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/17-tampilan-tambah-child.png"><img src="../images/sop-online/integrasi-dan-pengujian/17-tampilan-tambah-child.png" alt="Tampilan Add New Child" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new child sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-sop-online">Tampilan Sop Online</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Konten</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sop Online</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/04-tampilan-sop-online.png"><img src="../images/sop-online/integrasi-dan-pengujian/04-tampilan-sop-online.png" alt="Tampilan Sop Online" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan sop online sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-sop-online">Tampilan Add Sop Online</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add Sop Online</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/18-tampilan-add-sop-online.png"><img src="../images/sop-online/integrasi-dan-pengujian/18-tampilan-add-sop-online.png" alt="Tampilan Add Sop Online" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add sop online sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-view-sop-online">Tampilan View Sop Online</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subkonten</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>View Sop Online</td>
+      <td>[<img src="../images/sop-online/integrasi-dan-pengujian/19-tampilan-view-sop-online.png" alt="Tampilan View Sop Online" />]((../images/sop-online/integrasi-dan-pengujian/19-tampilan-view-sop-online.png)</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan view sop online sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-sop-online">Tampilan Edit Sop Online</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Sop Online</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/20-tampilan-edit-sop-online.png"><img src="../images/sop-online/integrasi-dan-pengujian/20-tampilan-edit-sop-online.png" alt="Tampilan Edit Sop Online" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit sop online sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-workflows">Tampilan Workflows</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subkonten</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Workflows</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/05-tampilan-workflows.png"><img src="../images/sop-online/integrasi-dan-pengujian/05-tampilan-workflows.png" alt="Tampilan Workflows" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan workflows sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-workflows">Tampilan Add New Workflows</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Workflow</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/21-tampilan-add-workflows.png"><img src="../images/sop-online/integrasi-dan-pengujian/21-tampilan-add-workflows.png" alt="Tampilan Add New Workflow" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new workflow sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-workflow">Tampilan Edit Workflow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Workflow</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/23-tampilan-edit-workflows.png"><img src="../images/sop-online/integrasi-dan-pengujian/23-tampilan-edit-workflows.png" alt="Tampilan Edit Workflow" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit workflow sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-state-list">Tampilan State List</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>State List</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/06-tampilan-statelist.png"><img src="../images/sop-online/integrasi-dan-pengujian/06-tampilan-statelist.png" alt="Tampilan State List" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan state list sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-state">Tampilan Add new State</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New State</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/24-tampilan-add-state.png"><img src="../images/sop-online/integrasi-dan-pengujian/24-tampilan-add-state.png" alt="Tampilan Add New State" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new state sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-state">Tampilan Edit State</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit State</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/25-tampilan-edit-state.png"><img src="../images/sop-online/integrasi-dan-pengujian/25-tampilan-edit-state.png" alt="Tampilan Edit State" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit state sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-transition-list">Tampilan Transition List</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transition List</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/07-tampilan-transition.png"><img src="../images/sop-online/integrasi-dan-pengujian/07-tampilan-transition.png" alt="Tampilan Transition List" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan transition sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-transition">Tampilan Add New Transition</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Transition</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/26-tampilan-add-transition.png"><img src="../images/sop-online/integrasi-dan-pengujian/26-tampilan-add-transition.png" alt="Tampilan Add New Transition" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new transition sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-transition">Tampilan Edit Transition</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Transition</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/27-tampilan-edit-transition.png"><img src="../images/sop-online/integrasi-dan-pengujian/27-tampilan-edit-transition.png" alt="Tampilan Edit Transition" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit transition sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-workflow-guard">Tampilan Workflow Guard</h5>
+<h5 id="tampilan-add-new-guard">Tampilan Add New Guard</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Guard</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/28-tampilan-add-guard.png"><img src="../images/sop-online/integrasi-dan-pengujian/28-tampilan-add-guard.png" alt="Tampilan Add New Guard" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new guard sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-guard">Tampilan Edit Guard</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Konten</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Guard</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/29-tampilan-edit-guard.png"><img src="../images/sop-online/integrasi-dan-pengujian/29-tampilan-edit-guard.png" alt="Tampilan Edit Guard" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit guard sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-workflow-attachment">Tampilan Workflow Attachment</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Workflow Attachment</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/09-tampilan-workflow-attachment.png"><img src="../images/sop-online/integrasi-dan-pengujian/09-tampilan-workflow-attachment.png" alt="Tampilan Workflow Attachment" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan workflow attachment sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-attachment">Tampilan Add New Attachment</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Attachment</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/30-tampilan-add-attachment.png"><img src="../images/sop-online/integrasi-dan-pengujian/30-tampilan-add-attachment.png" alt="Tampilan Add New Attachment" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new attachment sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-attachment">Tampilan Edit Attachment</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subkonten</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Attachment</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/31-tampilan-edit-attachment.png"><img src="../images/sop-online/integrasi-dan-pengujian/31-tampilan-edit-attachment.png" alt="Tampilan Edit Attachment" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan Edit attachment sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-workflow-content">Tampilan Workflow Content</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Workflow Content</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/10-tampilan-workflow-content.png"><img src="../images/sop-online/integrasi-dan-pengujian/10-tampilan-workflow-content.png" alt="Tampilan Workflow Content" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan workflow content sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-content">Tampilan Add New Content</h5>
+
+<h5 id="konten-transition-list">Konten Transition List</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Konten</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Content</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/32-tampilan-add-content.png"><img src="../images/sop-online/integrasi-dan-pengujian/32-tampilan-add-content.png" alt="Tampilan Add New Content" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new content sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-workflow-history">Tampilan Workflow History</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Workflow History</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/11-tampilan-workflow-history.png"><img src="../images/sop-online/integrasi-dan-pengujian/11-tampilan-workflow-history.png" alt="Tampilan Workflow History" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan workflow history sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-user">Tampilan User</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>User</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/12-tampilan-user.png"><img src="../images/sop-online/integrasi-dan-pengujian/12-tampilan-user.png" alt="Tampilan User" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan user sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-user">Tampilan Add User</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add User</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/34-tampilan-add-user.png"><img src="../images/sop-online/integrasi-dan-pengujian/34-tampilan-add-user.png" alt="Tampilan Add User" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add user sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-user">Tampilan Edit User</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit User</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/35-tampilan-edit-user.png"><img src="../images/sop-online/integrasi-dan-pengujian/35-tampilan-edit-user.png" alt="Tampilan Edit User" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit user sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-permission-1">Tampilan Permission</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Permission</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/13-tampilan-permission.png"><img src="../images/sop-online/integrasi-dan-pengujian/13-tampilan-permission.png" alt="Tampilan Permission" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan permission sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-add-new-permission">Tampilan Add New Permission</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add New Permission</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/36-tampilan-add-permission.png"><img src="../images/sop-online/integrasi-dan-pengujian/36-tampilan-add-permission.png" alt="Tampilan Add New Permission" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan add new permission sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-view-permission">Tampilan View Permission</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>View Permission</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/37-tampilan-view-permission.png"><img src="../images/sop-online/integrasi-dan-pengujian/37-tampilan-view-permission.png" alt="Tampilan View Permission" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan view permission sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-permission">Tampilan Edit Permission</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Permission</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/38-tampilan-edit-permission.png"><img src="../images/sop-online/integrasi-dan-pengujian/38-tampilan-edit-permission.png" alt="Tampilan Edit Permission" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit permission sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-role-1">Tampilan Role</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Role</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/14-tampilan-role.png"><img src="../images/sop-online/integrasi-dan-pengujian/14-tampilan-role.png" alt="Tampilan Role" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan role sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-new-role">Tampilan New Role</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>New Role</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/39-tampilan-new-role.png"><img src="../images/sop-online/integrasi-dan-pengujian/39-tampilan-new-role.png" alt="Tampilan New Role" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan new role sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-view-role">Tampilan View Role</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>View Role</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/40-tampilan-view-role.png"><img src="../images/sop-online/integrasi-dan-pengujian/40-tampilan-view-role.png" alt="Tampilan View Role" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan view role sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-edit-role">Tampilan Edit Role</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Role</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/41-tampilan-edit-role.png"><img src="../images/sop-online/integrasi-dan-pengujian/41-tampilan-edit-role.png" alt="Tampilan Edit Role" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan edit role sudah dapat diakses oleh <em>user</em> atau tidak. Jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
+
+<h5 id="tampilan-laporan-workflow">Tampilan Laporan Workflow</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Laporan Workflow</td>
+      <td><a href="../images/sop-online/integrasi-dan-pengujian/15-tampilan-laporan.png"><img src="../images/sop-online/integrasi-dan-pengujian/15-tampilan-laporan.png" alt="Tampilan Laporan" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test kepada aplikasi apakah tampilan laporan workflow sudah dapat diakses oleh <em>user</em> atau tidak. jika sudah dapat diakses <em>user</em> dapat meceklis pada kolom “Ada” sedangkan jika belum dapat diakses maka <em>user</em> dapat menceklis pada kolom “tidak”.</p>
 
             </div>
             

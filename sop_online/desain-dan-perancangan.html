@@ -125,8 +125,8 @@
                         </ul>
                     </li> 
                     <li>
-                        <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
-                        <ul class="collapse list-unstyled" id="ssoSubmenu">
+                        <a href="#simbadaSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
+                        <ul class="collapse list-unstyled" id="simbadaSubmenu">
                             
                               <li><a href="/simbada/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
@@ -142,13 +142,13 @@
                         <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">SSO</a>
                         <ul class="collapse list-unstyled" id="ssoSubmenu">
                             
-                              <li><a href="/sop_online/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
+                              <li><a href="/sso/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
-                              <li><a href="/sop_online/implementasi.html">Implementasi</a></li>
+                              <li><a href="/sso/implementasi.html">Implementasi</a></li>
                              
-                              <li><a href="/sop_online/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
+                              <li><a href="/sso/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
                              
-                              <li><a href="/sop_online/pengembangan.html">Pengembangan</a></li>
+                              <li><a href="/sso/pengembangan.html">Pengembangan</a></li>
                             
                         </ul>
                     </li>
@@ -221,13 +221,439 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
             <div class="well">
                 <h3>
 
-                    <a href="/sop_online/desain-dan-perancangan.html"> - Desain dan Perancangan</a>
+                    <a href="/sop_online/desain-dan-perancangan.html">Sop Online - Desain dan Perancangan</a>
                 </h3>
             
                 
             
             <div class="post-content">
-            <p>Desain dan Perancangan.md</p>
+            <h2 id="abstrak">ABSTRAK</h2>
+
+<p>Pengembangan aplikasi, atau bisa disebut sebagai pengembangan <em>software</em> atau desain <em>software</em>, kerap kali disalahartikan sebagai kegiatan dimana seorang <em>programmer</em> melakukan <em>coding</em>, tetapi sebenarnya yang dimaksud pengembangan aplikasi merupakan serangkaian proses yang dilakukan dari saat pembuatan kosep aplikasi hingga aplikasi tersebut selesai dan siap digunakan.</p>
+
+<p>SOP Online adalah prosedur yang dilakukan secara kronologis untuk menyelesaikan suatu pekerjaan yang bertujuan untuk memperoleh hasil kerja yang paling efektif dari para pekerja dengan biaya yang serendah-rendahnya.</p>
+
+<h2 id="daftar-isi">DAFTAR ISI</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#abstrak" id="markdown-toc-abstrak">ABSTRAK</a></li>
+  <li><a href="#daftar-isi" id="markdown-toc-daftar-isi">DAFTAR ISI</a></li>
+  <li><a href="#1--pendahuluan" id="markdown-toc-1--pendahuluan">1.  PENDAHULUAN</a>    <ul>
+      <li><a href="#11-latar-belakang" id="markdown-toc-11-latar-belakang">1.1 Latar Belakang</a></li>
+      <li><a href="#12-tujuan" id="markdown-toc-12-tujuan">1.2 Tujuan</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-deskripsi-dan-ruang-lingkup" id="markdown-toc-2-deskripsi-dan-ruang-lingkup">2. DESKRIPSI DAN RUANG LINGKUP</a>    <ul>
+      <li><a href="#31-kebutuhan-software-dan-hardware" id="markdown-toc-31-kebutuhan-software-dan-hardware">3.1 Kebutuhan Software dan Hardware</a>        <ul>
+          <li><a href="#311-software" id="markdown-toc-311-software">3.1.1 <em>Software</em></a></li>
+          <li><a href="#312-hardware" id="markdown-toc-312-hardware">3.1.2 <em>Hardware</em></a></li>
+        </ul>
+      </li>
+      <li><a href="#32-analisis-permasalahan" id="markdown-toc-32-analisis-permasalahan">3.2 Analisis Permasalahan</a></li>
+      <li><a href="#33-solusi" id="markdown-toc-33-solusi">3.3 Solusi</a></li>
+      <li><a href="#34-perancangan-database" id="markdown-toc-34-perancangan-database">3.4 Perancangan Database</a>        <ul>
+          <li><a href="#341-tujuan-perancangan-database" id="markdown-toc-341-tujuan-perancangan-database">3.4.1 Tujuan perancangan database:</a></li>
+          <li><a href="#342-proses-perancangan-database" id="markdown-toc-342-proses-perancangan-database">3.4.2 Proses Perancangan Database</a></li>
+        </ul>
+      </li>
+      <li><a href="#35-perancangan-sistem" id="markdown-toc-35-perancangan-sistem">3.5 Perancangan Sistem</a>        <ul>
+          <li><a href="#351-workflow" id="markdown-toc-351-workflow">3.5.1. Workflow</a>            <ul>
+              <li><a href="#351-workflow-pengajuan-aplikasi" id="markdown-toc-351-workflow-pengajuan-aplikasi">3.5.1. Workflow Pengajuan Aplikasi</a>                <ul>
+                  <li><a href="#3511-workflow-state" id="markdown-toc-3511-workflow-state">3.5.1.1. Workflow State</a></li>
+                  <li><a href="#3512-workflow-transition" id="markdown-toc-3512-workflow-transition">3.5.1.2. Workflow Transition</a></li>
+                  <li><a href="#3513-workflow-guard" id="markdown-toc-3513-workflow-guard">3.5.1.3. Workflow Guard</a></li>
+                  <li><a href="#3514-workflow-notification" id="markdown-toc-3514-workflow-notification">3.5.1.4. Workflow Notification</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#352-proses-pengajuan" id="markdown-toc-352-proses-pengajuan">3.5.2 Proses Pengajuan</a>            <ul>
+              <li><a href="#3521-use-case-diagram" id="markdown-toc-3521-use-case-diagram">3.5.2.1. <em>Use Case Diagram</em></a></li>
+              <li><a href="#3522-activity-diagram" id="markdown-toc-3522-activity-diagram">3.5.2.2 <em>Activity Diagram</em></a></li>
+              <li><a href="#3523-sequence-diagram" id="markdown-toc-3523-sequence-diagram">3.5.2.3 <em>Sequence Diagram</em></a></li>
+              <li><a href="#3524-state-chart-diagram" id="markdown-toc-3524-state-chart-diagram">3.5.2.4 <em>State Chart Diagram</em></a></li>
+            </ul>
+          </li>
+          <li><a href="#352-proses-penganggaran" id="markdown-toc-352-proses-penganggaran">3.5.2 Proses Penganggaran</a>            <ul>
+              <li><a href="#3521-use-case-diagram-1" id="markdown-toc-3521-use-case-diagram-1">3.5.2.1 <em>Use Case Diagram</em></a></li>
+              <li><a href="#3522-activity-diagram-1" id="markdown-toc-3522-activity-diagram-1">3.5.2.2 <em>Activity Diagram</em></a></li>
+              <li><a href="#3523-sequence-diagaram" id="markdown-toc-3523-sequence-diagaram">3.5.2.3 Sequence Diagaram</a></li>
+              <li><a href="#3524-state-chart-diagram-1" id="markdown-toc-3524-state-chart-diagram-1">3.5.2.4 <em>State Chart Diagram</em></a></li>
+            </ul>
+          </li>
+          <li><a href="#353-proses-pembuatan-aplikasi-oleh-tim-internal" id="markdown-toc-353-proses-pembuatan-aplikasi-oleh-tim-internal">3.5.3 Proses Pembuatan Aplikasi oleh Tim Internal</a>            <ul>
+              <li><a href="#3531-use-case-diagram" id="markdown-toc-3531-use-case-diagram">3.5.3.1 <em>Use Case Diagram</em></a></li>
+              <li><a href="#3532-activity-diagram" id="markdown-toc-3532-activity-diagram">3.5.3.2 <em>Activity Diagram</em></a></li>
+              <li><a href="#3533-sequence-diagram" id="markdown-toc-3533-sequence-diagram">3.5.3.3 <em>Sequence Diagram</em></a></li>
+              <li><a href="#3534-state-chart-diagram" id="markdown-toc-3534-state-chart-diagram">3.5.3.4 <em>State Chart Diagram</em></a></li>
+            </ul>
+          </li>
+          <li><a href="#354-proses-pembuatan-aplikasi-oleh-pihak-ke-3" id="markdown-toc-354-proses-pembuatan-aplikasi-oleh-pihak-ke-3">3.5.4 Proses Pembuatan Aplikasi oleh Pihak Ke-3</a>            <ul>
+              <li><a href="#3541-use-case-diagram" id="markdown-toc-3541-use-case-diagram">3.5.4.1 <em>Use Case Diagram</em></a></li>
+              <li><a href="#3542-activity-diagram" id="markdown-toc-3542-activity-diagram">3.5.4.2 <em>Activity Diagram</em></a></li>
+              <li><a href="#3543-sequence-diagram" id="markdown-toc-3543-sequence-diagram">3.5.4.3 <em>Sequence Diagram</em></a></li>
+              <li><a href="#3544-state-chart-diagram" id="markdown-toc-3544-state-chart-diagram">3.5.4.4 <em>State Chart Diagram</em></a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="1--pendahuluan">1.  PENDAHULUAN</h2>
+
+<h3 id="11-latar-belakang">1.1 Latar Belakang</h3>
+
+<p>Salah satu sasaran Dinas Komunikasi, Informasi, Statistika dan Persandian adalah membuat sebuah sistem yang terkelola rapi dalam segala hal, baik dalam bidang IT maupun bidang yang lainnya agar mampu menyelenggarakan seluruh kegiatannya secara mandiri dan sesuai dengan ketentuan yang berlaku.</p>
+
+<p>Untuk mencapai hal tersebut, diperlukan suatu prosedur operasional yang jelas dan standar bagi semua pihak yang terlibat dalam mencapai sasaran tersebut. Praktik-praktik baik yang telah berlangsung di KOMINFO Banten perlu distandarisasi dan didokumentasikan agar menjadi acuan bagi manejemen dalam menjalankan tugas dan fungsinya serta menjamin keberlangsungan implementasi praktik-praktik tersebut.</p>
+
+<p>Terkait dengan sasaran tersebut kami bertujuan akan membangun standarisasi sistem pengembangan apliaksi yang dapat meningkatkan efisiensi dan efektifitas kinerja dinas terkait serta mampu mebagikan informasi yang dibutuhkan oleh berbagai pihak untuk kepentingan proses pengambilan keputusan. Untuk menuju kepada standarisasi dalam pengembangan aplikasi perlu diciptakan terlebih dahulu sistem manual  terstandar atau semacam <em>Standar Operating Procedur</em> (SOP) untuk seluruh pengembangan aplikasi yang ada sehingga dapat dipahami oleh semua pihak yang terlibat.</p>
+
+<h3 id="12-tujuan">1.2 Tujuan</h3>
+
+<p><em>Standard Operating Prosedur (SOP)</em> pada dasarnya adalah pedoman yang berisi prosedur-prosedur operasioanl standar yang ada dalam suatu instansi yang digunakan untuk memastikan bahwa semua keputusan  dan tindakan, sertapenggunaan fasilitas-fasilitas proses yang dilakukan oleh orang-orang dalam instansi  berjalan dengan efisien dan efektif , konsisten, standar dan sistematis. Dengan adanya sistem manual standar atau (SOP) diharapkan dapat meningkatkan efisiensi dan efektifitas kinerja dalam pengembangan aplikasi yang diberikan oleh KOMINFO. Dengan adanya instruksi kerja yang terstandarisasi  maka semua kegiatan pengembangan aplikasi dapat dilakukan secara konsisten oleh siapapun yang sedang mengajukan pengembangan aplikasi. Hal ini dapat meningkatkan efisien dan efektifitas kerja serta meminimalisir prosedur operasi yang tidak jelas. Dengan demikian dapat dipastikan melalui SOP ini akan dapat meningkatkan efisiensi dan efektifitas kerja pihak-pihak yang terkait.</p>
+
+<h2 id="2-deskripsi-dan-ruang-lingkup">2. DESKRIPSI DAN RUANG LINGKUP</h2>
+
+<p>Pengembangan aplikasi ini dapat dipisah menjadi 4 proses yang dimulai dari proses pengajuan, proses penganggaran, proses pembuatan aplikasi dari tim internal dan proses pembuatan aplikasi oleh pihak ke-3. SOP yang dihasilkan adalah SOP pengajuan pengembangan aplikasi, SOP penganggaran pengembangan aplikasi, SOP pembuatan aplikasi dari tim internal dan SOP pembuatan aplikasi oleh pihak ke-3.</p>
+
+<p>Dalam jurnal ini akan mengembangkan standarisasi pengembangan aplikasi dari mulai proses pengajuan pengembangan aplikasi hingga proses pembuatan aplikasi menggunakan alur prototyping.</p>
+
+<p><em>Ilustrasi Alur Prototyping</em></p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_alur-prototype.png"><img src="../images/sop-online/desain-dan-perancangan/20171018_alur-prototype.png" alt="Ilustrasi Alur Prototyping" /></a></p>
+
+<h3 id="31-kebutuhan-software-dan-hardware">3.1 Kebutuhan Software dan Hardware</h3>
+
+<p>Adapun alat bantu <em>software</em> dan <em>hardware</em> dalam melakukan analisis dan desain perancanangan ini adalah sebagai berikut:</p>
+
+<h4 id="311-software">3.1.1 <em>Software</em></h4>
+
+<ul>
+  <li>Ubuntu 17.04</li>
+  <li>Typora (markdown)</li>
+  <li>Gliffy Diagram</li>
+</ul>
+
+<h4 id="312-hardware">3.1.2 <em>Hardware</em></h4>
+
+<p>Laptop dengan spesifikasi sebagai berikut:</p>
+
+<ul>
+  <li>Intel Celeron N2830 <em>Speed</em> 2.16 Ghz <em>Turbo Boost</em> 2.41 Ghz</li>
+  <li>Memori DDR3 2Gb</li>
+  <li>Hard disk 500 Gb</li>
+</ul>
+
+<h3 id="32-analisis-permasalahan">3.2 Analisis Permasalahan</h3>
+
+<p>Permasalahan yang terjadi saat ini adalah sebagai berikut:</p>
+
+<ol>
+  <li>Belum adanya standarisasi dalam perancangan pengembangan aplikasi</li>
+  <li>Belum tertatanya proses dalam pengembangan aplikasi</li>
+</ol>
+
+<h3 id="33-solusi">3.3 Solusi</h3>
+
+<p>Solusi yang kami tawarkan adalah pembuatan desain perancangan sistem informasi SOP pengembangan aplikasi adalah:</p>
+
+<ol>
+  <li>Menstandarisasi perancangan pengembangan aplikasi</li>
+  <li>Menata proses pengembangan aplikasi mulai proses pengajuan sampai proses pembuatan aplikasi</li>
+</ol>
+
+<h3 id="34-perancangan-database">3.4 Perancangan Database</h3>
+
+<p>pada database yang digunakan oleh single user atau hanya beberapa user saja, perancangan database tidak sulit. tetapi jika ukuran database yang sedang atau besar ( 25 - ratusan user yang berisikan jutaan bytes informasi dan melibatkan ratusan query dan program program aplikasi) perancangan database menjadi sangat komplek. Oleh karena itu para pemakai mengharapkan penggunaan database yang sedemikian rupa sehingga sistem harus dapat memenuhi kebutuhan-kebutuhan seluruh user tersebut.</p>
+
+<h4 id="341-tujuan-perancangan-database">3.4.1 Tujuan perancangan database:</h4>
+
+<ul>
+  <li>Untuk memenuhi informasi yang diberisikan kebutuhan-kebutuhan user secara khusus dan aplikasi-aplikasinya.</li>
+  <li>Memudahkan pengertian struktur informasi</li>
+  <li>Mendukung kebutuhan-kebutuhan pemrosesan dan beberapa obyek penampilan (<em>response time, processing time dan storage space</em>)</li>
+</ul>
+
+<h4 id="342-proses-perancangan-database">3.4.2 Proses Perancangan Database</h4>
+
+<p>proses perancangan database terdiri dari 6 tahap:</p>
+
+<ul>
+  <li>Tahap 1, Pengumpulan data dan analisis</li>
+  <li>Tahap 2, Perancangan database secara konseptual</li>
+  <li>tahap 3, Pemilihan DBMS</li>
+  <li>Tahap 4, Perancangan Database secara logika (<em>data model mapping</em>)</li>
+  <li>Tahap 5, Perancangan database secara fisik</li>
+  <li>Tahap 6, Implementasi sistem database</li>
+</ul>
+
+<h3 id="35-perancangan-sistem">3.5 Perancangan Sistem</h3>
+
+<p>Permodelan rancangan sistem yang digunakan adalah UML (<em>Unified Modeling Language</em>). Menurut Whitten dan Bentley , <em>Unified Modeling Language</em> adalah kumpulan rancangan diagram untuk membangun sebuah sistem atau aplikasi yang dimana setiap diagram menyediakan sistem informasi kepada tim pengembang dengan berbagai sudut pandang yang berbeda-beda. UML yang digunakan terdiri dari <em>Use Case Diagram</em>, <em>Activity Diagram</em>, <em>Sequence Diagram** dan *State Chart Diagram</em>.</p>
+
+<h4 id="351-workflow">3.5.1. Workflow</h4>
+
+<h5 id="351-workflow-pengajuan-aplikasi">3.5.1. Workflow Pengajuan Aplikasi</h5>
+
+<h6 id="3511-workflow-state">3.5.1.1. Workflow State</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>label</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>propose</td>
+      <td>Propose</td>
+      <td>Usulan pembuatan aplikasi</td>
+    </tr>
+    <tr>
+      <td>internal_review</td>
+      <td>Internal Review</td>
+      <td>Menerima dan Mempelajari usulan pembuatan aplikasi</td>
+    </tr>
+    <tr>
+      <td>forward_1</td>
+      <td>Forward</td>
+      <td>Meneruskan usulan pembuatan aplikasi ke Kepala Dinas Pemakai</td>
+    </tr>
+    <tr>
+      <td>forward_2</td>
+      <td>Forward to DKISP</td>
+      <td>Meneruskan usulan pembuatan aplikasi ke Kepala Dinas KISP</td>
+    </tr>
+    <tr>
+      <td>review</td>
+      <td>Review</td>
+      <td>Menerima dan Mempelajari usulan pembuatan aplikasi</td>
+    </tr>
+    <tr>
+      <td>recommendation</td>
+      <td>Recommendation</td>
+      <td>Rekomendasi atas usulan pembuatan aplikasi</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="3512-workflow-transition">3.5.1.2. Workflow Transition</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>label</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>propose-to-propose</td>
+      <td>Proposed</td>
+      <td>Usulan pembuatan aplikasi telah dibuat</td>
+    </tr>
+    <tr>
+      <td>propose-to-internal-review</td>
+      <td>Internal Reviewed</td>
+      <td>Usulan pembuatan aplikasi akan dimintakan review</td>
+    </tr>
+    <tr>
+      <td>internal-review-to-forward-1</td>
+      <td>Forward</td>
+      <td>Usulan pembuatan aplikasi selesai direview dan akan diteruskena ke Pimpinan OPD</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="3513-workflow-guard">3.5.1.3. Workflow Guard</h6>
+
+<h6 id="3514-workflow-notification">3.5.1.4. Workflow Notification</h6>
+
+<h4 id="352-proses-pengajuan">3.5.2 Proses Pengajuan</h4>
+
+<h5 id="3521-use-case-diagram">3.5.2.1. <em>Use Case Diagram</em></h5>
+
+<p><em>Use Case Diagram</em> Proses Pengajuan</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-proses-pengajuan.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-proses-pengajuan.jpg" alt="*Use Case Diagram* proses Pengajuan" /></a></p>
+
+<p><em>Use Case Diagram</em> Staff OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171009-use-case-diagram-staff-opd.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171009-use-case-diagram-staff-opd.jpg" alt="*Use Case Diagram* Staff OPD" /></a></p>
+
+<p><em>Use Case Diagram</em> Kepala Seksi OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-seksi-opd.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-seksi-opd.jpg" alt="*Use Case Diagram* Kepala Seksi OPD" /></a></p>
+
+<p><em>Use Case Diagram</em> Kepala Dinas OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-dinas-opd.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-dinas-opd.jpg" alt="*Use Case Diagram* Kepala Dinas OPD" /></a></p>
+
+<p><em>Use Case Diagram</em> Kepala Dinas KISP</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-dinas-kisp.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-dinas-kisp.jpg" alt="*Use Case Diagram* Kepala Dinas KISP" /></a></p>
+
+<p><em>Use Case Diagram</em> Kepala Seksi Pengembangan Aplikasi Dinas KISP</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-seksi-pengembangan-aplikasi-dinas-kisp.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-use-case-diagram-kepala-seksi-pengembangan-aplikasi-dinas-kisp.jpg" alt="*Use Case Diagram* Kepala Seksi Pengembangan Aplikasi Dinas KISP" /></a></p>
+
+<h5 id="3522-activity-diagram">3.5.2.2 <em>Activity Diagram</em></h5>
+
+<p><em>Activity Diagram</em> Proses Pengajuan</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-activity-diagram-proses-pengajuan.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-activity-diagram-proses-pengajuan.jpg" alt="*Activity Diagram* Proses Pengajuan" /></a></p>
+
+<h5 id="3523-sequence-diagram">3.5.2.3 <em>Sequence Diagram</em></h5>
+
+<p><em>Sequence Diagram</em> Proses Pengajuan</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171009-sequence-diagram-proses-pengajuan.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171009-sequence-diagram-proses-pengajuan.jpg" alt="*Sequence Diagram* Proses Pengajuan" /></a></p>
+
+<h5 id="3524-state-chart-diagram">3.5.2.4 <em>State Chart Diagram</em></h5>
+
+<p><em>State Chart Diagram</em> Staff OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-staff-opd.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-staff-opd.jpg" alt="*State Chart Diagram* Staff OPD" /></a></p>
+
+<p><em>State Chart Diagram</em> Kepala Seksi OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-seksi-opd.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-seksi-opd.jpg" alt="*State Chart Diagram* Kepala Seksi OPD" /></a></p>
+
+<p><em>State Chart Diagram</em> Kepala Dinas OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-dinas-opd.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-dinas-opd.jpg" alt="*State Chart Diagram* Kepala Dinas OPD" /></a></p>
+
+<p><em>State Chart Diagram</em> Kepala Dinas KISP</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-dinas-kisp.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-dinas-kisp.jpg" alt="*State Chart Diagram* Kepala Dinas KISP" /></a></p>
+
+<p><em>State Chart Diagram</em> Kepala Seksi Pengembangan Aplikasi Dinas KISP</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-seksi-pengembangan-aplikasi-dinas-kisp.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-state-chart-diagram-kepala-seksi-pengembangan-aplikasi-dinas-kisp.jpg" alt="*State Chart Diagram* Kepala Seksi Pengembangan Aplikasi Dinas KISP" /></a></p>
+
+<h4 id="352-proses-penganggaran">3.5.2 Proses Penganggaran</h4>
+
+<h5 id="3521-use-case-diagram-1">3.5.2.1 <em>Use Case Diagram</em></h5>
+
+<p><em>Use Case Diagram</em> Seksi pengembangan Aplikasi Dinas KISP / OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/use-case.jpg"><img src="../images/sop-online/desain-dan-perancangan/use-case.jpg" alt="*Use Case Diagram* Seksi pengembangan Aplikasi Dinas KISP / OPD" /></a></p>
+
+<p><em>Use Case Diagram</em> Bappeda</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171016_use-case-diagram-bappeda.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171016_use-case-diagram-bappeda.jpg" alt="*Use Case Diagram* Bappeda" /></a></p>
+
+<p><em>Use Case Diagram</em> BPKAD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171016_use-case-diagram-bpkad.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171016_use-case-diagram-bpkad.jpg" alt="*Use Case Diagram* BPKAD" /></a></p>
+
+<p><em>Use Case Diagram</em> Adpem</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171016_use-case-diagram-adpem.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171016_use-case-diagram-adpem.jpg" alt="*Use Case Diagram* Adpem" /></a></p>
+
+<h5 id="3522-activity-diagram-1">3.5.2.2 <em>Activity Diagram</em></h5>
+
+<p><em>Activity Diagram</em> Proses Penganggaran</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171016_activity-diagram-proses-pengajuan.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171016_activity-diagram-proses-pengajuan.jpg" alt="*Activity Diagram* Proses Penganggaran" /></a></p>
+
+<h5 id="3523-sequence-diagaram">3.5.2.3 Sequence Diagaram</h5>
+
+<p><em>Sequence Diagram</em> Proses Penganggaran</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_sequence-diagram-proses-penganggaran.png"><img src="../images/sop-online/desain-dan-perancangan/20171018_sequence-diagram-proses-penganggaran.png" alt="*Sequence Diagram* Proses Penganggaran" /></a></p>
+
+<h5 id="3524-state-chart-diagram-1">3.5.2.4 <em>State Chart Diagram</em></h5>
+
+<p><em>State Chart Diagram</em> Seksi Pengembangan Aplikasi Dinas KISP / OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-seksi-dinas-kisp-opd.png"><img src="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-seksi-dinas-kisp-opd.png" alt="*State Chart Diagram* Seksi Pengembangan Aplikasi Dinas KISP / OPD" /></a></p>
+
+<p><em>State Chart Diagram</em> Bappeda</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-dinas-bappeda.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-dinas-bappeda.jpg" alt="*State Chart Diagram* Bappeda" /></a></p>
+
+<p><em>State Chart Diagram</em> BPKAD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-dinas-bpkad.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-dinas-bpkad.jpg" alt="*State Chart Diagram* BPKAD" /></a></p>
+
+<p><em>State Chart Diagram</em> Adpem</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-dinas-adpem.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-dinas-adpem.jpg" alt="*State Chart Diagram* Adpem" /></a></p>
+
+<h4 id="353-proses-pembuatan-aplikasi-oleh-tim-internal">3.5.3 Proses Pembuatan Aplikasi oleh Tim Internal</h4>
+
+<h5 id="3531-use-case-diagram">3.5.3.1 <em>Use Case Diagram</em></h5>
+
+<ul>
+  <li><em>Use Case Diagram</em> Proses Pembuatan Aplikasi oleh Tim Internal</li>
+</ul>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-use-case-proses-pembuatan-aplikasi-oleh-tim-internal.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-use-case-proses-pembuatan-aplikasi-oleh-tim-internal.jpg" alt="*Use Case Diagram* Proses Pembuatan Aplikasi oleh Tim Internal" /></a></p>
+
+<h5 id="3532-activity-diagram">3.5.3.2 <em>Activity Diagram</em></h5>
+
+<p><em>Activity Diagram</em> Proses Pembuatan Aplikasi oleh Tim Internal</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-activity-diagram-proses-pengerjaan-pihak-internal.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-activity-diagram-proses-pengerjaan-pihak-internal.jpg" alt="*Activity Diagram* Proses Pembuatan Aplikasi oleh Tim Internal" /></a></p>
+
+<h5 id="3533-sequence-diagram">3.5.3.3 <em>Sequence Diagram</em></h5>
+
+<p><em>Sequence Diagram</em> Proses Pembuatan Aplikasi oleh Tim Internal</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171010-sequence-diagram-proses-pembuatan-aplikasi-oleh-pihak-internal.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171010-sequence-diagram-proses-pembuatan-aplikasi-oleh-pihak-internal.jpg" alt="*Sequence Diagram* Proses Pembuatan Aplikasi oleh Tim Internal" /></a></p>
+
+<h5 id="3534-state-chart-diagram">3.5.3.4 <em>State Chart Diagram</em></h5>
+
+<p><em>State Chart Diagram</em> Seksi Pengembangan Aplikasi Dinas KISP</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171011-state-chart-diagram-seksi-pengembangan-aplikasi-dinas-kisp.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171011-state-chart-diagram-seksi-pengembangan-aplikasi-dinas-kisp.jpg" alt="*State Chart Diagram* Seksi Pengembangan Aplikasi Dinas KISP" /></a></p>
+
+<p><em>State Chart Diagram</em> OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171011-state-chart-diagram-opd.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171011-state-chart-diagram-opd.jpg" alt="*State Chart Diagram* OPD" /></a></p>
+
+<h4 id="354-proses-pembuatan-aplikasi-oleh-pihak-ke-3">3.5.4 Proses Pembuatan Aplikasi oleh Pihak Ke-3</h4>
+
+<h5 id="3541-use-case-diagram">3.5.4.1 <em>Use Case Diagram</em></h5>
+
+<ul>
+  <li><em>Use Case Diagram</em> Proses Pembuatan Aplikasi oleh Pihak Ke-3</li>
+</ul>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_proses-pembuatan-aplikasi-oleh-pihak-ke-3.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171018_proses-pembuatan-aplikasi-oleh-pihak-ke-3.jpg" alt="*Use Case Diagram* Proses Pembuatan Aplikasi oleh Pihak Ke-3" /></a></p>
+
+<h5 id="3542-activity-diagram">3.5.4.2 <em>Activity Diagram</em></h5>
+
+<p><em>Activity Diagram</em> Proses Pembuatan Aplikasi oleh Pihak Ke-3</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171016_activity-diagram.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171016_activity-diagram.jpg" alt="*Activity Diagram* Proses Pembuatan Aplikasi oleh Pihak Ke-3" /></a></p>
+
+<h5 id="3543-sequence-diagram">3.5.4.3 <em>Sequence Diagram</em></h5>
+
+<p><em>Sequence Diagram</em> Proses Pembuatan Aplikasi oleh Pihak Ke-3</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171019_sequence-diagram-pembuatan-aplikasi-oleh-pihak-ke-3.png"><img src="../images/sop-online/desain-dan-perancangan/20171019_sequence-diagram-pembuatan-aplikasi-oleh-pihak-ke-3.png" alt="*Sequence Diagram* Proses Pembuatan Aplikasi oleh Pihak Ke-3" /></a></p>
+
+<h5 id="3544-state-chart-diagram">3.5.4.4 <em>State Chart Diagram</em></h5>
+
+<p><em>State Chart Diagram</em> Seksi Pengembangan Aplikasi Dinas KISP</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171016_state-chart-pengembangan-aplikasi-dinas-kisp.jpg"><img src="../images/sop-online/desain-dan-perancangan/20171016_state-chart-pengembangan-aplikasi-dinas-kisp.jpg" alt="*State Chart Diagram* Seksi Pengembangan Aplikasi Dinas KISP" /></a></p>
+
+<p><em>State Chart Diagram</em> Pihak Ke-3</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-pihak-ke-3.png"><img src="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-pihak-ke-3.png" alt="*State Chart Diagram* Pihak Ke-3" /></a></p>
+
+<p><em>State Chart Diagram</em> OPD</p>
+
+<p><a href="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-opd.png"><img src="../images/sop-online/desain-dan-perancangan/20171018_state-chart-diagram-opd.png" alt="*State Chart Diagram* OPD" /></a></p>
 
             </div>
             

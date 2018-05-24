@@ -125,8 +125,8 @@
                         </ul>
                     </li> 
                     <li>
-                        <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
-                        <ul class="collapse list-unstyled" id="ssoSubmenu">
+                        <a href="#simbadaSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
+                        <ul class="collapse list-unstyled" id="simbadaSubmenu">
                             
                               <li><a href="/simbada/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
@@ -142,13 +142,13 @@
                         <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">SSO</a>
                         <ul class="collapse list-unstyled" id="ssoSubmenu">
                             
-                              <li><a href="/sop_online/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
+                              <li><a href="/sso/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
-                              <li><a href="/sop_online/implementasi.html">Implementasi</a></li>
+                              <li><a href="/sso/implementasi.html">Implementasi</a></li>
                              
-                              <li><a href="/sop_online/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
+                              <li><a href="/sso/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
                              
-                              <li><a href="/sop_online/pengembangan.html">Pengembangan</a></li>
+                              <li><a href="/sso/pengembangan.html">Pengembangan</a></li>
                             
                         </ul>
                     </li>
@@ -221,13 +221,279 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
             <div class="well">
                 <h3>
 
-                    <a href="/jawara_egov/pengembangan.html"> - Pengembangan</a>
+                    <a href="/jawara_egov/pengembangan.html">Jawara E-Gov - Pengembangan</a>
                 </h3>
             
                 
             
             <div class="post-content">
-            <p>Pengembangan.md</p>
+            <h2 id="daftar-isi">DAFTAR ISI</h2>
+<ul id="markdown-toc">
+  <li><a href="#daftar-isi" id="markdown-toc-daftar-isi">DAFTAR ISI</a></li>
+  <li><a href="#jawara-e-gov" id="markdown-toc-jawara-e-gov">JAWARA e-Gov</a></li>
+  <li><a href="#1-tampilan-website" id="markdown-toc-1-tampilan-website">1. Tampilan Website</a>    <ul>
+      <li><a href="#11-tampilan-superadmin" id="markdown-toc-11-tampilan-superadmin">1.1 Tampilan Superadmin</a>        <ul>
+          <li><a href="#111-tampilan-login-superadmin" id="markdown-toc-111-tampilan-login-superadmin">1.1.1 Tampilan Login Superadmin</a></li>
+          <li><a href="#112-tampilan-dashboard-superadmin" id="markdown-toc-112-tampilan-dashboard-superadmin">1.1.2 Tampilan Dashboard Superadmin</a></li>
+          <li><a href="#113-tampilan-menu-general" id="markdown-toc-113-tampilan-menu-general">1.1.3 Tampilan Menu General</a></li>
+          <li><a href="#1131-tampilan-submenu-banners" id="markdown-toc-1131-tampilan-submenu-banners">1.1.3.1 Tampilan Submenu Banners</a>            <ul>
+              <li><a href="#11311-create-banner" id="markdown-toc-11311-create-banner">1.1.3.1.1 Create Banner</a></li>
+              <li><a href="#11312-banner-order" id="markdown-toc-11312-banner-order">1.1.3.1.2 Banner Order</a></li>
+            </ul>
+          </li>
+          <li><a href="#114-tampilan-menu-pages" id="markdown-toc-114-tampilan-menu-pages">1.1.4 Tampilan Menu Pages</a>            <ul>
+              <li><a href="#1141-create-pages" id="markdown-toc-1141-create-pages">1.1.4.1 Create Pages</a></li>
+              <li><a href="#1142-general-order" id="markdown-toc-1142-general-order">1.1.4.2 General Order</a></li>
+            </ul>
+          </li>
+          <li><a href="#115-tampilan-menu-gallery" id="markdown-toc-115-tampilan-menu-gallery">1.1.5 Tampilan Menu Gallery</a></li>
+          <li><a href="#1151-tampilan-submenu-albums" id="markdown-toc-1151-tampilan-submenu-albums">1.1.5.1 Tampilan Submenu Albums</a>            <ul>
+              <li><a href="#11511-create-album" id="markdown-toc-11511-create-album">1.1.5.1.1 Create Album</a></li>
+            </ul>
+          </li>
+          <li><a href="#116-tampilan-menu-links" id="markdown-toc-116-tampilan-menu-links">1.1.6 Tampilan Menu Links</a></li>
+          <li><a href="#1161-tampilan-submenu-category" id="markdown-toc-1161-tampilan-submenu-category">1.1.6.1 Tampilan Submenu Category</a>            <ul>
+              <li><a href="#11611-create-category" id="markdown-toc-11611-create-category">1.1.6.1.1 Create Category</a></li>
+            </ul>
+          </li>
+          <li><a href="#1162-tampilan-submenu-link" id="markdown-toc-1162-tampilan-submenu-link">1.1.6.2 Tampilan Submenu Link</a>            <ul>
+              <li><a href="#11621-create-link" id="markdown-toc-11621-create-link">1.1.6.2.1 Create Link</a></li>
+              <li><a href="#11622-link-header-order" id="markdown-toc-11622-link-header-order">1.1.6.2.2 Link Header Order</a></li>
+            </ul>
+          </li>
+          <li><a href="#117-tampilan-menu-news-and-events" id="markdown-toc-117-tampilan-menu-news-and-events">1.1.7 Tampilan Menu News and Events</a></li>
+          <li><a href="#1171-tampilan-submenu-category" id="markdown-toc-1171-tampilan-submenu-category">1.1.7.1 Tampilan Submenu Category</a>            <ul>
+              <li><a href="#11711-create-category" id="markdown-toc-11711-create-category">1.1.7.1.1 Create Category</a></li>
+            </ul>
+          </li>
+          <li><a href="#1172-tampilan-submenu-news-and-events" id="markdown-toc-1172-tampilan-submenu-news-and-events">1.1.7.2 Tampilan Submenu News and Events</a>            <ul>
+              <li><a href="#11721-create-news-and-event" id="markdown-toc-11721-create-news-and-event">1.1.7.2.1 Create News and Event</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#12-tampilan-user" id="markdown-toc-12-tampilan-user">1.2 Tampilan User</a>        <ul>
+          <li><a href="#121-tampilan-halaman-awal" id="markdown-toc-121-tampilan-halaman-awal">1.2.1 Tampilan Halaman Awal</a></li>
+          <li><a href="#122-tampilan-profil-provinsi" id="markdown-toc-122-tampilan-profil-provinsi">1.2.2 Tampilan Profil Provinsi</a></li>
+          <li><a href="#123-tampilan-profil-pemerintah" id="markdown-toc-123-tampilan-profil-pemerintah">1.2.3 Tampilan Profil Pemerintah</a></li>
+          <li><a href="#124-tampilan-layanan-informasi" id="markdown-toc-124-tampilan-layanan-informasi">1.2.4 Tampilan Layanan Informasi</a></li>
+          <li><a href="#125-tampilan-informasi-pembangunan-daerah" id="markdown-toc-125-tampilan-informasi-pembangunan-daerah">1.2.5 Tampilan Informasi Pembangunan Daerah</a></li>
+          <li><a href="#126-tampilan-press-release" id="markdown-toc-126-tampilan-press-release">1.2.6 Tampilan Press Release</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#2-tampilan-android" id="markdown-toc-2-tampilan-android">2. Tampilan Android</a>    <ul>
+      <li><a href="#21-tampilan-loading-jawara-e-gov" id="markdown-toc-21-tampilan-loading-jawara-e-gov">2.1 Tampilan Loading JAWARA e-Gov</a></li>
+      <li><a href="#21-tampilan-dashboard-jawara-e-gov" id="markdown-toc-21-tampilan-dashboard-jawara-e-gov">2.1 Tampilan Dashboard JAWARA e-Gov</a></li>
+      <li><a href="#22-tampilan-apliaksi-pemerintah" id="markdown-toc-22-tampilan-apliaksi-pemerintah">2.2 Tampilan Apliaksi Pemerintah</a></li>
+      <li><a href="#23-tampilan-apliaksi-publik" id="markdown-toc-23-tampilan-apliaksi-publik">2.3 Tampilan Apliaksi Publik</a></li>
+      <li><a href="#24-tampilan-jelajah-banten" id="markdown-toc-24-tampilan-jelajah-banten">2.4 Tampilan Jelajah Banten</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="jawara-e-gov">JAWARA e-Gov</h2>
+
+<p>JAWARA e-Gov adalah sebuah aplikasi sistem informasi portal pemerintahan Provinsi Banten yang berbasis website dan android yang dikeluarkan oleh pemerintah Provinsi Banten untuk memudahkan bagi masyarakat dalam melakukan pencarian informasi serta menjadi satu pintu bagi semua aplikasi Pemerintahan Provinsi Banten.</p>
+
+<p>Berikut ini adalah tampilan-tampilan yang terdapat di aplikasi JAWARA e-Gov:</p>
+
+<h2 id="1-tampilan-website">1. Tampilan Website</h2>
+
+<h3 id="11-tampilan-superadmin">1.1 Tampilan Superadmin</h3>
+
+<p>Untuk memulai akses kedalah JAWARA e-Gov superadmin dapat mengklik link url berikut ini http://dev2018.bantenprov.go.id/admin sehingga akan menampilkan tampilan login.</p>
+
+<h4 id="111-tampilan-login-superadmin">1.1.1 Tampilan Login Superadmin</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/login-superadmin.png"><img src="../images/jawara-egov/pengembangan/login-superadmin.png" alt="lihat Login Superadmin" /></a></p>
+
+<p>Setelah membuka link url diatas maka akan timbul <em>Page Sign In</em>. Terdapat 2 <em>field</em> yang harus diisi yaitu email dan passwor untuk melakukan <em>sign In</em> kedalam aplikasi JAWARA e-Gov.</p>
+
+<h4 id="112-tampilan-dashboard-superadmin">1.1.2 Tampilan Dashboard Superadmin</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/dashboard-superadmin.png"><img src="../images/jawara-egov/pengembangan/dashboard-superadmin.png" alt="lihat Dashboard Superadmin" /></a></p>
+
+<p>Di page Dashboard Superadmin ini, superadmin dapat mengakses beberapa menu.</p>
+
+<h4 id="113-tampilan-menu-general">1.1.3 Tampilan Menu General</h4>
+
+<h4 id="1131-tampilan-submenu-banners">1.1.3.1 Tampilan Submenu Banners</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/banners.png"><img src="../images/jawara-egov/pengembangan/banners.png" alt="lihat Submenu Banners" /></a></p>
+
+<p><em>Page</em> Banners ini dapat diakses dengan mengklik General pada kolom menu lalu klik Banners. Pada <em>page</em> ini superadmin dapat mengedit, menambahkan, menghapus serta mengatur letak dan posisi gambar maupun images slider pada <em>frontend</em> aplikasi JAWARA e-Gov.</p>
+
+<h5 id="11311-create-banner">1.1.3.1.1 Create Banner</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/banners-create.png"><img src="../images/jawara-egov/pengembangan/banners-create.png" alt="lihat Create Banner" /></a></p>
+
+<p><em>Page</em> Create Banner ini menampilkan formulir untuk menambahkan images/banners kedalam database aplikasi JAWARA e-Gov.</p>
+
+<h5 id="11312-banner-order">1.1.3.1.2 Banner Order</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/banners-order.png"><img src="../images/jawara-egov/pengembangan/banners-order.png" alt="lihat Banner Order" /></a></p>
+
+<p><em>Page</em> Banner Order ini untuk mengatur tata letak images/banner pada <em>frontend</em> aplikasi JAWARA e-Gov</p>
+
+<h4 id="114-tampilan-menu-pages">1.1.4 Tampilan Menu Pages</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/pages.png"><img src="../images/jawara-egov/pengembangan/pages.png" alt="lihat Pages" /></a></p>
+
+<p>Tampilan Pages ini dapat diakses dengan cara mengklik Pages pada kolom menu. Pada halaman Pages ini superadmin dapat menambahkan dan mengatur tampilan menu yang terdapat di <em>frontend</em> aplikasi JAWARA e-Gov.</p>
+
+<h5 id="1141-create-pages">1.1.4.1 Create Pages</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/pages-create.png"><img src="../images/jawara-egov/pengembangan/pages-create.png" alt="lihat Create Pages" /></a></p>
+
+<p><em>Page</em> Create Pages ini menampilkan formulir untuk menambahkan pages kedalam database aplikasi JAWARA e-Gov.</p>
+
+<h5 id="1142-general-order">1.1.4.2 General Order</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/pages-order.png"><img src="../images/jawara-egov/pengembangan/pages-order.png" alt="lihat General Order" /></a></p>
+
+<p><em>Page</em> General Order ini mengatur menu yang terdapat didalam aplikasi JAWARA e-Gov.</p>
+
+<h4 id="115-tampilan-menu-gallery">1.1.5 Tampilan Menu Gallery</h4>
+
+<h4 id="1151-tampilan-submenu-albums">1.1.5.1 Tampilan Submenu Albums</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/albums.png"><img src="../images/jawara-egov/pengembangan/albums.png" alt="lihat Albums" /></a></p>
+
+<p><em>Page</em> Albums ini dapat diakses dengan cara mengklik Gallery pada kolom menu lalu mengklik Albums. Pada page ini superadmin dapat membuat, mengedit album pada aplikasi JAWARA e-Gov.</p>
+
+<h5 id="11511-create-album">1.1.5.1.1 Create Album</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/albums-create.png"><img src="../images/jawara-egov/pengembangan/albums-create.png" alt="lihat Albums" /></a></p>
+
+<p><em>Page</em> Create Album ini menampilkan form untuk menambahkan album ke dalam database aplikasi JAWARA e-Gov.</p>
+
+<h4 id="116-tampilan-menu-links">1.1.6 Tampilan Menu Links</h4>
+
+<h4 id="1161-tampilan-submenu-category">1.1.6.1 Tampilan Submenu Category</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/link-category.png"><img src="../images/jawara-egov/pengembangan/link-category.png" alt="lihat Category" /></a></p>
+
+<p><em>Page</em> Category ini dapat diakses dengan cara mengklik Links pada kolom menu lalu klik Category. Pada <em>page</em> ini superadmin dapat membuat kategori-kategori link aplikasi pemerintahan di Provinsi Banten.</p>
+
+<h5 id="11611-create-category">1.1.6.1.1 Create Category</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/link-category-create.png"><img src="../images/jawara-egov/pengembangan/link-category-create.png" alt="lihat Category" /></a></p>
+
+<p><em>page</em> ini akan menampilkan formulir untuk menambahkan kategori links kedalam database aplikasi JAWARA e-Gov.</p>
+
+<h4 id="1162-tampilan-submenu-link">1.1.6.2 Tampilan Submenu Link</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/links-links.png"><img src="../images/jawara-egov/pengembangan/links-links.png" alt="lihat Link" /></a></p>
+
+<p><em>Page</em> Links ini dapat diakses dengan cara mengklik Links pada kolom menu lalu klik Links. Pada halaman ini superadmin dapat menambah, mengedit, menghapus dan mengatur link apliaksi-aplikasi OPD pada <em>frontend</em> apliksai JAWARA e-Gov.</p>
+
+<h5 id="11621-create-link">1.1.6.2.1 Create Link</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/links-links-create.png"><img src="../images/jawara-egov/pengembangan/links-links-create.png" alt="lihat Link" /></a></p>
+
+<p>Pada <em>page</em> Create Links akan menampilkan formulir untuk menambahkan Links kedalam database aplikasi JAWARA e-Gov.</p>
+
+<h5 id="11622-link-header-order">1.1.6.2.2 Link Header Order</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/links-links-order.png"><img src="../images/jawara-egov/pengembangan/links-links-order.png" alt="lihat Link" /></a></p>
+
+<p>Pada <em>page</em> ini superadmin dapat mengatur tata letak aplikasi-aplikasi yang akan ditampilkan ke <em>frontend</em> aplikasi JAWARA e-Gov.</p>
+
+<h4 id="117-tampilan-menu-news-and-events">1.1.7 Tampilan Menu News and Events</h4>
+
+<h4 id="1171-tampilan-submenu-category">1.1.7.1 Tampilan Submenu Category</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/news-category.png"><img src="../images/jawara-egov/pengembangan/news-category.png" alt="lihat Category" /></a></p>
+
+<p><em>Page</em> Category ini dapat diakses dengan cara mengklik News and Events pada kolom menu lalu klik Category. Pada <em>page</em> ini superadmin dapat membuat kategori-kategori Berita aplikasi pemerintahan di Provinsi Banten.</p>
+
+<h5 id="11711-create-category">1.1.7.1.1 Create Category</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/news-category-create.png"><img src="../images/jawara-egov/pengembangan/news-category-create.png" alt="lihat Category" /></a></p>
+
+<p><em>Page</em> ini akan menampilkan formulir untuk menambahkan kategori berita kedalam database aplikasi JAWARA e-Gov.</p>
+
+<h4 id="1172-tampilan-submenu-news-and-events">1.1.7.2 Tampilan Submenu News and Events</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/news-and-events.png"><img src="../images/jawara-egov/pengembangan/news-and-events.png" alt="lihat Category" /></a></p>
+
+<p><em>Page</em> News and Events ini bisa diakses dengan cara mengklik News and Events pada kolom menu lalu mengklik News and Event pada kolom submenu. pada <em>page</em> ini superadmin dapat menampilkan berita-berita yang akan ditampilkan kedalam <em>frontend</em> JAWARA e-Gov.</p>
+
+<h5 id="11721-create-news-and-event">1.1.7.2.1 Create News and Event</h5>
+
+<p><a href="../images/jawara-egov/pengembangan/news-and-events-create.png"><img src="../images/jawara-egov/pengembangan/news-and-events-create.png" alt="lihat Category" /></a></p>
+
+<p><em>Page</em> ini akan menampilkan formulir untuk menambahkan berita kedalam database aplikasi JAWARA e-Gov</p>
+
+<h3 id="12-tampilan-user">1.2 Tampilan User</h3>
+
+<h4 id="121-tampilan-halaman-awal">1.2.1 Tampilan Halaman Awal</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/awal-jawara-egov.png"><img src="../images/jawara-egov/pengembangan/awal-jawara-egov.png" alt="lihat Category" /></a></p>
+
+<p>Pada halaman awal ini user dapat melihat menu-menu yang terdapat pada bagian atas aplikasi. Dihalaman ini user dapat melihat aplikasi-aplikasi apa saja yang terdapat pada Pemerintahan Provinsi Banten yang jika diklik akan memindahkan ke link url aplikasi yang diklik tersebut.</p>
+
+<h4 id="122-tampilan-profil-provinsi">1.2.2 Tampilan Profil Provinsi</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/profil-provinsi.png"><img src="../images/jawara-egov/pengembangan/profil-provinsi.png" alt="lihat Category" /></a></p>
+
+<p>Pada Tampilan ini terdapat beberapa submenu yaitu Profil Banten, Sejarah Banten, Geografi, Demografi, Arti Lambang dan Kebudayaan.</p>
+
+<h4 id="123-tampilan-profil-pemerintah">1.2.3 Tampilan Profil Pemerintah</h4>
+
+<p><a href="../images/jawara-egov/pengembangan/profil-pemerintah.png"><img src="../images/jawara-egov/pengembangan/profil-pemerintah.png" alt="lihat Category" /></a></p>
+
+<p>Pada Tampilan ini terdapat beberapa submenu yaitu Profil Gubernur, Profil Wakil Gubernur, Daftar Nama Pegawai dan ILPPD.</p>
+
+<h4 id="124-tampilan-layanan-informasi">1.2.4 Tampilan Layanan Informasi</h4>
+
+<p>.<a href="../images/jawara-egov/pengembangan/layanan-informasi.png"><img src="../images/jawara-egov/pengembangan/layanan-informasi.png" alt="lihat Category" /></a></p>
+
+<p>Pada Tampilan ini terdapat beberapa submenu yaitu PPID, Dasar Hukum dan Pelayanan.</p>
+
+<h4 id="125-tampilan-informasi-pembangunan-daerah">1.2.5 Tampilan Informasi Pembangunan Daerah</h4>
+
+<p>.<a href="../images/jawara-egov/pengembangan/informasi-pembangunan-daerah.png"><img src="../images/jawara-egov/pengembangan/informasi-pembangunan-daerah.png" alt="lihat Category" /></a></p>
+
+<p>Pada Tampilan ini terdapat beberapa submenu yaitu Transparansi Pengelolaan Anggaran Daerah, Informasi Berkala, Informasi Serta Merta, KTDA, SLAD dan MOU Perjanjian Kerjasama.</p>
+
+<h4 id="126-tampilan-press-release">1.2.6 Tampilan Press Release</h4>
+
+<p>.<a href="../images/jawara-egov/pengembangan/press-release.png"><img src="../images/jawara-egov/pengembangan/press-release.png" alt="lihat Category" /></a></p>
+
+<p>Pada Tampilan ini terdapat beberapa submenu yaitu Gallery, News and Events dan Kontak.</p>
+
+<h2 id="2-tampilan-android">2. Tampilan Android</h2>
+
+<h3 id="21-tampilan-loading-jawara-e-gov">2.1 Tampilan Loading JAWARA e-Gov</h3>
+
+<p><a href="../images/jawara-egov/pengembangan/loading.jpeg"><img src="../images/jawara-egov/pengembangan/loading.jpeg" alt="lihat Category" /></a></p>
+
+<h3 id="21-tampilan-dashboard-jawara-e-gov">2.1 Tampilan Dashboard JAWARA e-Gov</h3>
+
+<p><a href="../images/jawara-egov/pengembangan/dashboard1.jpeg"><img src="../images/jawara-egov/pengembangan/dashboard1.jpeg" alt="lihat Category" /></a></p>
+
+<p>Pada tampilan ini <em>user</em> dapat melihat aplikasi-aplikasi yang telah terintegrasi dengan JAWARA e-Gov.</p>
+
+<h3 id="22-tampilan-apliaksi-pemerintah">2.2 Tampilan Apliaksi Pemerintah</h3>
+
+<p><a href="../images/jawara-egov/pengembangan/aplikasi-pemerintah1.jpeg"><img src="../images/jawara-egov/pengembangan/aplikasi-pemerintah1.jpeg" alt="lihat Category" /></a></p>
+
+<p>Pada tampilan ini <em>user</em> dapat melihat aplikasi-aplikasi yang digunakan khusus untuk pemerintahan saja.</p>
+
+<h3 id="23-tampilan-apliaksi-publik">2.3 Tampilan Apliaksi Publik</h3>
+
+<p><a href="../images/jawara-egov/pengembangan/aplikasi-publik1.jpeg"><img src="../images/jawara-egov/pengembangan/aplikasi-publik1.jpeg" alt="lihat Category" /></a></p>
+
+<p>Pada tampilan ini <em>user</em> dapat melihat aplikasi-aplikasi yang dapat digunakan oleh masyarakat khususnya dalam ruang lingkiup Provinsi Banten.</p>
+
+<h3 id="24-tampilan-jelajah-banten">2.4 Tampilan Jelajah Banten</h3>
+
+<p><a href="../images/jawara-egov/pengembangan/jelajah-banten.jpeg"><img src="../images/jawara-egov/pengembangan/jelajah-banten.jpeg" alt="lihat Category" /></a></p>
+
+<p>Pada tampilan ini <em>user</em> dapat melihat lokasi-lokasi daerah seperti ATM, Bank, Tempat Ibadah, Rumah Sakit dll.</p>
 
             </div>
             

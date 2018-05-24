@@ -125,8 +125,8 @@
                         </ul>
                     </li> 
                     <li>
-                        <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
-                        <ul class="collapse list-unstyled" id="ssoSubmenu">
+                        <a href="#simbadaSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
+                        <ul class="collapse list-unstyled" id="simbadaSubmenu">
                             
                               <li><a href="/simbada/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
@@ -142,13 +142,13 @@
                         <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">SSO</a>
                         <ul class="collapse list-unstyled" id="ssoSubmenu">
                             
-                              <li><a href="/sop_online/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
+                              <li><a href="/sso/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
-                              <li><a href="/sop_online/implementasi.html">Implementasi</a></li>
+                              <li><a href="/sso/implementasi.html">Implementasi</a></li>
                              
-                              <li><a href="/sop_online/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
+                              <li><a href="/sso/integrasi-dan-pengujian.html">Integrasi dan Pengujian</a></li>
                              
-                              <li><a href="/sop_online/pengembangan.html">Pengembangan</a></li>
+                              <li><a href="/sso/pengembangan.html">Pengembangan</a></li>
                             
                         </ul>
                     </li>
@@ -224,18 +224,32 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
                     <a href="/yankes/integrasi-dan-pengujian.html">Yankes - Integrasi dan Pengujian</a>
                 </h3>
             
-                
-            
             <div class="post-content">
-            <h1 id="integrasi-dan-pengujian-dashboard-pimpinan">Integrasi dan Pengujian Dashboard Pimpinan</h1>
+            <h1 id="integrasi-dan-pengujian-aplikasi-mobile-yankes">Integrasi dan Pengujian Aplikasi Mobile Yankes</h1>
 
 <p>Pada laporan ini akan membahas tentang Pengujian dan Integrasi Dashboard Pimpinan, untuk pengujiannya menggunakan User Acceptance Test.</p>
 
 <h2 id="daftar-isi">Daftar Isi</h2>
 <ul id="markdown-toc">
-  <li><a href="#integrasi-dan-pengujian-dashboard-pimpinan" id="markdown-toc-integrasi-dan-pengujian-dashboard-pimpinan">Integrasi dan Pengujian Dashboard Pimpinan</a>    <ul>
+  <li><a href="#integrasi-dan-pengujian-aplikasi-mobile-yankes" id="markdown-toc-integrasi-dan-pengujian-aplikasi-mobile-yankes">Integrasi dan Pengujian Aplikasi Mobile Yankes</a>    <ul>
       <li><a href="#daftar-isi" id="markdown-toc-daftar-isi">Daftar Isi</a></li>
       <li><a href="#1-integrasi" id="markdown-toc-1-integrasi">1. Integrasi</a></li>
+      <li><a href="#2--user-acceptance-test" id="markdown-toc-2--user-acceptance-test">2.  User Acceptance Test</a>        <ul>
+          <li><a href="#21-tampilan-awal" id="markdown-toc-21-tampilan-awal">2.1 Tampilan Awal</a></li>
+          <li><a href="#22-tampilan-menu-rumah-sakit" id="markdown-toc-22-tampilan-menu-rumah-sakit">2.2 Tampilan Menu Rumah Sakit</a></li>
+          <li><a href="#23-tampilan-profile-rumah-sakit" id="markdown-toc-23-tampilan-profile-rumah-sakit">2.3 Tampilan Profile Rumah Sakit</a></li>
+          <li><a href="#24-tampilan-menu-dokter" id="markdown-toc-24-tampilan-menu-dokter">2.4 Tampilan Menu Dokter</a></li>
+          <li><a href="#25-tampilan-profile-dokter" id="markdown-toc-25-tampilan-profile-dokter">2.5 Tampilan Profile Dokter</a></li>
+          <li><a href="#26-tampilan-menu-rawat-inap" id="markdown-toc-26-tampilan-menu-rawat-inap">2.6 Tampilan Menu Rawat Inap</a></li>
+          <li><a href="#27-tampilan-detail-rawat-inap" id="markdown-toc-27-tampilan-detail-rawat-inap">2.7 Tampilan Detail Rawat Inap</a></li>
+          <li><a href="#28-tampilan-menu-ambulance" id="markdown-toc-28-tampilan-menu-ambulance">2.8 Tampilan Menu Ambulance</a></li>
+          <li><a href="#29-tampilan-detail-ambulance" id="markdown-toc-29-tampilan-detail-ambulance">2.9 Tampilan Detail Ambulance</a></li>
+          <li><a href="#210-tampilan-menu-berita" id="markdown-toc-210-tampilan-menu-berita">2.10 Tampilan Menu Berita</a></li>
+          <li><a href="#211-tampilan-detail-menu-berita" id="markdown-toc-211-tampilan-detail-menu-berita">2.11 Tampilan Detail Menu Berita</a></li>
+          <li><a href="#212-tampilan-menu-artikel" id="markdown-toc-212-tampilan-menu-artikel">2.12 Tampilan Menu Artikel</a></li>
+          <li><a href="#213-tampilan-detail-menu-artikel" id="markdown-toc-213-tampilan-detail-menu-artikel">2.13 Tampilan Detail Menu Artikel</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -252,11 +266,311 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
 
 <p>Application Programming Interface mekanisme terdefinisi dibuat untuk berhubungan dengan sumber daya seperti server aplikasi, middleware, dan basis data.</p>
 
-<p>Dibawah ini adalah contoh method, parameter dan response yang terdapat didalam Dashboard Pimpinan:</p>
+<p>Dibawah ini adalah contoh method, parameter dan response yang terdapat didalam aplikasi mobile yankes:</p>
+
+<h2 id="2--user-acceptance-test">2.  User Acceptance Test</h2>
+
+<h3 id="21-tampilan-awal">2.1 Tampilan Awal</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan awal</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-dashboard-yankes.png" alt="tampilan awal" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tampilan ini adalah tampilan awal dari Aplikasi Mobile Yankes.</p>
+
+<h3 id="22-tampilan-menu-rumah-sakit">2.2 Tampilan Menu Rumah Sakit</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan menu rumah sakit</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-menu-rs.png" alt="tampilan menu rs" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Didalam page ini user dapat melihat informasi tentang rumah sakit.Untuk melihat lebih detail tentang informasi rumah sakit user dapat memilih tombol “LIHAT” dibawah gambar rumah sakit.</p>
+
+<h3 id="23-tampilan-profile-rumah-sakit">2.3 Tampilan Profile Rumah Sakit</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan profile rumah sakit</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-detail-rs.png" alt="tampilan profile rs" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Disaat membuka salah satu rumah sakit yang ada di aplikasi akan timbul tampilan seperti diatas, yang berisi dari nama rumah sakit tersebut, alamat, email, no telf, serta yang berhubungan dengan rumah sakit tersebut.</p>
+
+<h3 id="24-tampilan-menu-dokter">2.4 Tampilan Menu Dokter</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan menu dokter</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-menu-dokter.png" alt="tampilan menu dokter" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ditampilan ini user bisa melihat informasi tentang dokter yang terdaftar diaplikasi YANKES dan untuk melihat informasi lebih lengkap user dapat memilih tombol “PROFILE” dibawah informasi dokter.</p>
+
+<h3 id="25-tampilan-profile-dokter">2.5 Tampilan Profile Dokter</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan profile dokter</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-detail-dokter.png" alt="tampilan profile dokter" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ditampilan ini user dapat melihat informasi dokter serta jadwal jaga dokter dan terdapat menu konsultasi didalam tampilan ini.</p>
+
+<h3 id="26-tampilan-menu-rawat-inap">2.6 Tampilan Menu Rawat Inap</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan menu rawat inap</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-menu-rawat-inap.png" alt="tampilan menu rawat" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Didalam tampilan ini user dapat melihat list rumah sakit dan kamar rawat inap yang tersedia dirumah sakit tersebut. Serta dapat melihat “Detail” ada beberapa kamar yang kosong dan tersedia dari rumah sakit tersebut.</p>
+
+<h3 id="27-tampilan-detail-rawat-inap">2.7 Tampilan Detail Rawat Inap</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan detail rawat inap</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-detail-rawat-inap.png" alt="tampilan detail rawat" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Didalam tampilan ini user dapat melihat ada berapa kamar yang tersedia serta ruangan-ruangan yang ada dari rumah sakit tersebut tanpa harus kita telf atau mendatangi rumah sakit tersebut.</p>
+
+<h3 id="28-tampilan-menu-ambulance">2.8 Tampilan Menu Ambulance</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan menu ambulance</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-menu-ambulance.png" alt="tampilan menu ambulance" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Didalam tampilan ini user dapat melihat list rumah sakit dan Ambulance yang digunakan rumah sakit tersebut, berapa jumlah Ambulance yang tersedia apakah Ambulance tersebut sedang kosong atau tidak.</p>
+
+<h3 id="29-tampilan-detail-ambulance">2.9 Tampilan Detail Ambulance</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan detail ambulance</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-detail-rawat-inap.png" alt="tampilan detail ambulance" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Didalam tampilan ini user dapat melihat detail dari rumah sakit dan Ambulance yang di sediakan dari rumah sakit tersebut.</p>
+
+<h3 id="210-tampilan-menu-berita">2.10 Tampilan Menu Berita</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan menu berita</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-menu-berita.png" alt="tampilan menu berita" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ditampilan ini user dapat melihat berita berita terkait yang berada di Provinsi Banten, untuk melihat lebih detail tentang berita user dapat memilih tombol “ BACA”.</p>
+
+<h3 id="211-tampilan-detail-menu-berita">2.11 Tampilan Detail Menu Berita</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan detail berita</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-detail-berita.png" alt="tampilan detail berita" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tampilan ini user dapat membaca berita mengenai kesehatan secara keseluruhan, jika dalam tampilan menu berita tadi hanya ditampilkan list nya dan jika kita Klik baca maka user dapat membaca berita yang kita pilih sampai selesai.</p>
+
+<h3 id="212-tampilan-menu-artikel">2.12 Tampilan Menu Artikel</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan menu artikel</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-menu-artikel.png" alt="tampilan menu artikel" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Didalam tampilan ini user dapat melihat artikel-artikel terkait kesehatan yang berada di Provinsi Banten, untuk melihat detail blog user dapat memilih tombol “BACA”.</p>
+
+<h3 id="213-tampilan-detail-menu-artikel">2.13 Tampilan Detail Menu Artikel</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan detail artikel</td>
+      <td><a href="http://ehibahbansos.bantenprov.go.id/"><img src="../images/yankes/integrasi-dan-pengujian/android-detail-artikel.png" alt="tampilan detail artikel" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tampilan ini user dapat membaca artikel/blog mengenai kesehatan secara keseluruhan, jika dalam tampilan menu berita tadi hanya ditampilkan list nya dan jika kita Klik baca maka user dapat membaca berita yang kita pilih sampai selesai.</p>
+
 
             </div>
-            
-                
             
             </div>
           </div>

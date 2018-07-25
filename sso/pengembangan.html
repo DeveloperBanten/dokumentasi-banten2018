@@ -249,13 +249,129 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
             <div class="well">
                 <h3>
 
-                    <a href="/sso/pengembangan.html"> - Pengembangan</a>
+                    <a href="/sso/pengembangan.html">SSO - Pengembangan</a>
                 </h3>
             
                 
             
             <div class="post-content">
-            <p>Pengembangan.md</p>
+            <h2 id="daftar-isi">Daftar Isi</h2>
+
+<p>[TOC]</p>
+
+<p>SSO (Single Sign On) adalah Sistem pada pemerintahan Provinsi Banten yang memungkinkan masyarakat khususnya pada Provinsi Banten untuk dapat mengakses semua fasilitas aplikasi dan layanan yang terdapat pada pemerintahan Provinsi Banten dengan melakukan otentikasi menggunakan satu akun id. Deskripsi Umum kebutuhan aplikasi yang akan diimplementasikan meliputi semua informasi yang bersifat teknis dan menjadi acuan dalam pengembangan apliksi.</p>
+
+<p>Berikut ini adalah tampilan - tampilan yang terdapat didalam apliaksi SSO:</p>
+
+<h2 id="1-tampilan-awal-sso">1. Tampilan Awal SSO</h2>
+
+<p>Untuk memulai akses terhadap aplikasi SSO (Single Sign On), buka web browser (IE, Mozila Firefox atau yang lainnya) dengan menulis alamat url https://sso.bangunbanten.com/ kemudian tekan Enter pada tombol keyboard atau klik tombol Go pada browser. Sehingga akan muncul tampilan seperti dibawah ini :</p>
+
+<h3 id="11-tampilan-home-sso">1.1 Tampilan Home SSO</h3>
+
+<p><a href="../images/sso/pengembangan/20180724_awal_home.png"><img src="../images/sso/pengembangan/20180724_awal_home.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Pada tampilan ini <em>user</em> dapat melihat informasi mengenai aplikasi SSO seperti aplikasi yang sudah terdaftar pada SSO, info kontak dan pada tampilan ini user dapat melakukan registrasi dan login.</p>
+
+<h3 id="12-tampilan-dokumentasi">1.2 Tampilan Dokumentasi</h3>
+
+<h4 id="121-web-redirect">1.2.1 Web Redirect</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_awal_dokumentasi_web-redirect.png"><img src="../images/sso/pengembangan/20180724_awal_dokumentasi_web-redirect.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan mengklik “Web Redirect” pada modul “Dokumentasi”. Tampilan ini memberitahukan cara pemakaian aplikasi SSO melalui web seperti mendaftar sebagai member, login, membuat SSo Apps, dll.</p>
+
+<h4 id="122-android">1.2.2 Android</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_awal_dokumentasi_android.png"><img src="../images/sso/pengembangan/20180724_awal_dokumentasi_android.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan mengklik “Android” pada modul “Dokumentasi”. Tampilan ini memberitahukan cara pemakaian aplikasi SSO melalui Android seperti mendaftar sebagai member, login, membuat SSo Apps, dll.</p>
+
+<h3 id="13-tampilan-registrasi">1.3 Tampilan Registrasi</h3>
+
+<p><a href="../images/sso/pengembangan/20180724_awal_registrasi.png"><img src="../images/sso/pengembangan/20180724_awal_registrasi.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan mengklik modul “Registrasi” pada kanan atas halaman home SSO atau mengklik “Gabung Sekarang” pada halaman SSO. Pada tampilan ini <em>user</em> bisa mendaftarkan dirinya sebagai member aplikasi SSO dengan cara mengisi beberapa <em>field</em> yang tersedia pada form registrasi.</p>
+
+<h3 id="14-tampilan-login">1.4 Tampilan Login</h3>
+
+<p><a href="../images/sso/pengembangan/20180724_awal_login.png"><img src="../images/sso/pengembangan/20180724_awal_login.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan mengklik modul “Android” pada kanan atas halaman home SSO. Pada tampilan ini member yang sudah terdaftar pada aplikasi SSO dapat melakukan login untu masuk kedalam dashboard member.</p>
+
+<h2 id="2-tampilan-member-sso">2. Tampilan Member SSO</h2>
+
+<p>Tampilan ini dapat diakses ketika member aplikasi SSO berhasil melakukan Login.</p>
+
+<h3 id="21-tampilan-dashboard-member">2.1 Tampilan Dashboard Member</h3>
+
+<p><a href="../images/sso/pengembangan/20180724_member_dashboard.png"><img src="../images/sso/pengembangan/20180724_member_dashboard.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini yang akan pertama kali muncul setelah member sukses melakukan login, pada halaman ini terdapat beberapa informasi mengenai berapa banyaknya SSO Apps yang sudah didaftarkan member dan My Apps dari member.</p>
+
+<h3 id="22-tampilan-my-profile">2.2 Tampilan My Profile</h3>
+
+<p>Tampilan ini dapat diakses oleh member dengan mengklik modul “My Profile” pada daftar menu dari <em>Main Navigation</em>.</p>
+
+<h4 id="221-profile">2.2.1 Profile</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_member_my-profile_profile.png"><img src="../images/sso/pengembangan/20180724_member_my-profile_profile.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Pada tampilan ini member dapat mengganti atau melengkapi data pribadinya. Pada tampilan terdapat beberapa <em>field</em> yang dapat diisi oleh member seperti Username, Email, <em>First Name</em>, <em>Last Name</em>, NIP, Tanggal Masuk, Tanggal Pensiun dan Jabatan.</p>
+
+<h4 id="222-password">2.2.2 Password</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_member_my-profile_password.png"><img src="../images/sso/pengembangan/20180724_member_my-profile_password.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Pada tampilan ini member dapat mengganti password yang lama dengan password yang baru.</p>
+
+<h4 id="223-avatar">2.2.3 Avatar</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_member_my-profile_avatar.png"><img src="../images/sso/pengembangan/20180724_member_my-profile_avatar.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Pada tampilan ini dapat mengganti avatar dari memeber tersebut.</p>
+
+<h3 id="23-tampilan-sso-apps">2.3 Tampilan SSO Apps</h3>
+
+<p>Tampilan ini dapat diakses oleh member dengan mengklik modul “SSO Apps” pada daftar menu dari <em>Main Navigation</em>.</p>
+
+<h4 id="231-create-sso-apps">2.3.1 Create SSO Apps</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_member_sso-apps_create-sso-apps.png"><img src="../images/sso/pengembangan/20180724_member_sso-apps_create-sso-apps.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan cara mengklik sub modul Create SSo Apps pada modul SSO Apps. Pada sub modul ini member dapat mendaftarkan aplikasi SSO apps, SSO Apps yang telah didaftarkan secara otomatis akan mendapatkan App ID dan Secret Key.</p>
+
+<h4 id="232-sso-apps">2.3.2 SSO Apps</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_member_sso-apps_sso-apps.png"><img src="../images/sso/pengembangan/20180724_member_sso-apps_sso-apps.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan cara mengklik sub modul SSo Apps pada modul SSO Apps. Pada sub modul ini member dapat melihat tabel SSO Apps apa saja yang telah didaftarkan oleh member.</p>
+
+<h2 id="3-tampilan-superadmin-sso">3. Tampilan Superadmin SSO</h2>
+
+<p>Tampilan ini dapat diakses ketika superadmin aplikasi SSO berhasil melakukan Login.</p>
+
+<h3 id="31-tampilan-dashboard-superadmin">3.1 Tampilan Dashboard Superadmin</h3>
+
+<p><a href="../images/sso/pengembangan/20180724_superadmin_dashboard.png"><img src="../images/sso/pengembangan/20180724_superadmin_dashboard.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini yang akan pertama kali muncul setelah superadmin sukses melakukan login.</p>
+
+<h3 id="32-member--apps-management">3.2 Member &amp; Apps Management</h3>
+
+<p>Tampilan ini dapat diakses oleh superadmin dengan mengklik modul “Member &amp; Apps Management” pada daftar menu dari <em>Main Navigation</em>.</p>
+
+<h4 id="321-member">3.2.1 Member</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_superadmin_member.png"><img src="../images/sso/pengembangan/20180724_superadmin_member.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan mengklik sub modul Member pada modul Member &amp; Apps Management. Pada tampilan ini superadmin dapat melihat tabel data member yang sudah terdaftar pada aplikasi.</p>
+
+<h4 id="322-apps">3.2.2 Apps</h4>
+
+<p><a href="../images/sso/pengembangan/20180724_superadmin_apps.png"><img src="../images/sso/pengembangan/20180724_superadmin_apps.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Tampilan ini dapat diakses dengan mengklik sub modul Apps pada modul Member &amp; Apps Management. Pada tampilan ini superadmin dapat melihat tabel data aplikasi yang sudah terdaftar didalam aplikasi SSO</p>
 
             </div>
             

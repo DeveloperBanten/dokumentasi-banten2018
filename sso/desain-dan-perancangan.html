@@ -249,13 +249,235 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
             <div class="well">
                 <h3>
 
-                    <a href="/sso/desain-dan-perancangan.html"> - Desain dan Perancangan</a>
+                    <a href="/sso/desain-dan-perancangan.html">SSO - Desain dan Perancangan</a>
                 </h3>
             
                 
             
             <div class="post-content">
-            <p>Desain dan Perancangan.md</p>
+            <h2 id="abstrak">ABSTRAK</h2>
+<p>Dewasa ini perkembangan teknologi komputer sangatlah pesat. Dengan menggunakan aplikasi komputer akan didapat informasi mengenai suatu tampilan objek yang ditampilkan lebih hidup dan menarik. Dengan banyaknya aplikasi pada pemerintahan sehingga membutuhkan suatu aplikasi yang mengijinkan <em>user</em> untuk mengakses semua aplikasi dengan satu akun login.</p>
+
+<h2 id="daftar-isi">Daftar Isi</h2>
+
+<p>[TOC]</p>
+
+<h2 id="1-pendahuluan">1. Pendahuluan</h2>
+<p>Pada saat ini perkembangan dunia informasi semakin berkembang dengan pesat khusunya pada pemerintahan Provinsi Banten dengan banyaknya apliaksi yang dibuat untuk mempermudah dalam kegiatan pemerintahan.</p>
+
+<p>Web portal merupakan sebuah teknologi yang akan berkembang pada teknologi web di masa depan. Satu halaman portal terdiri dari berbagai macam portlets yang dapat mengirimkan informasi dari banyak sumber (Braun et al, 2004). Selain informasi web portal juga dapat menggabungkan berbagai aplikasi web menjadi satu kesatuan, sebagai contoh adalah Banten Satu Data Jawara e-Gov.</p>
+
+<p>Dalam sebuah web aplikasi, tentu tidak lepas dari pembahasan keamanannya. Ketika mengevaluasi keamanan sebuah web aplikasi, ada dikenal “CI4A” (<em>Confidentiality, Integrity, Authentication, Authorization, Availability, and Accountability</em>) (Lebanidze, 2006). Dari banyak kriteria keamanan web aplikasi, yang sering diabaikan adalah <em>authentication</em>, dan <em>authorization</em>. <em>Single sign-on</em> (SSO) adalah sebuah <em>session</em> atau proses autentikasi <em>user</em> yang mengijinkan user untuk menyediakan sebuah credential sekali dengan maksud untuk mengakses banyak aplikasi (Wikipedia, 2007n; Aaslund et al, 2007). <em>Single sign on</em> (SSO)
+mengautentikasi <em>user</em> untuk mengakses semua aplikasi yang telah di-<em>authorized</em> untuk diakses. Ini menghilangkan permintaan <em>authenticaton</em> lagi ketika user mengganti aplikasi selama <em>session</em> berlaku (Aaslund et al, 2007). Untuk menyambungkan data - data tersebut diperlukan API untuk mengintegrasikan semua aplikasi dengan aplikasi SSO.</p>
+
+<h2 id="2-metode-penelitian">2. Metode Penelitian</h2>
+<p>Untuk memperoleh data yang dapat menunjang aplikasi ini, maka di perlukan data teoritis dan data dinas terkait untuk mendapatkan data dan informasi yang berhubungan dengan aplikasi ini.
+Adapun penyusun melakukan beberapa penelitian yang dilakukan dengan :</p>
+
+<h3 id="21-metode-perancangan">2.1 Metode Perancangan</h3>
+<p>Metode yang dilakukan adalah perancangan proses yang berupa diagram alir (flowchart). Diagram alir (flowchart) ini merupakan diagram yang menjelaskan hubungan dan urutan proses yang berjalan dalam sistem.
+Ilustrasi alur 
+<a href="../images/sso/desain-dan-perancangan/20180723_alur-sso.png"><img src="../images/sso/desain-dan-perancangan/20180723_alur-sso.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h3 id="22-metode-pengumpulan-data">2.2 Metode Pengumpulan Data</h3>
+<p>Untuk mengumpulkan data yang diperlukan untuk membangun sistem ini diadakan wawancara dan studi pustaka.</p>
+<ol>
+  <li>Wawancara ini dilakukan kepada Pemprov Banten. Wawancara dilakukan kepada sistem analist Pemprov Banten untuk mengetahui permasalahan dalam proses pendataan yang sedang berjalan sekarang.</li>
+  <li>Studi Pustaka, Melakukan pengumpulan melalui buku text, internet sebagai referensi.</li>
+</ol>
+
+<h2 id="3-hasil-dan-pembahasan">3. HASIL DAN PEMBAHASAN</h2>
+<h3 id="31-kebutuhan-software-dan-hardware">3.1 Kebutuhan Software dan Hardware</h3>
+<p>Adapun alat bantu software dan hardware dalam melakukan analisis dan perancangan adalah sebagai berikut:</p>
+
+<h4 id="311-software">3.1.1 Software</h4>
+<ol>
+  <li>Ubuntu 17.04</li>
+  <li>Typora (Markdown) &amp; dillinger.io</li>
+  <li>Gliffy Diagram</li>
+</ol>
+
+<h4 id="312-hardware">3.1.2 Hardware</h4>
+<p>Laptop dengan spesifikasi sebagai berikut:</p>
+<ol>
+  <li>Intel Celeron N2830 Speed 2.16 Ghz Turbo Boost 2.14 Ghz</li>
+  <li>Memori DDR3 2GB</li>
+  <li>Hard disk 500GB</li>
+</ol>
+
+<h3 id="32-analisis-permasalahan">3.2 Analisis Permasalahan</h3>
+<p>Permasalahan yang terjadi pada saat ini adalah sebagai berikut:</p>
+<ol>
+  <li>Belum adanya suatu aplikasi yang memungkinkan <em>user</em> untuk mengakses semua aplikasi menggunakan satu akun login.</li>
+</ol>
+
+<h3 id="33-solusi">3.3 Solusi</h3>
+<p>Solusi yang kami tawarkan adalah pembuatan aplikasi <em>Single Sign Out</em> (SSO) yang memungkinkan <em>user</em> untuk mengakses semua aplikasi dengan menggunakan satu akun login.</p>
+
+<h3 id="34-perancangan-aplikasi">3.4 Perancangan Aplikasi</h3>
+<p>“Aplikasi <em>Single Sign Out</em> (SSO)” adalah sebuah aplikasi yang memberikan proses autentikasi <em>user</em> untuk melakukan login kepada semua apliaksi yang terdaftar pada aplikasi dengan menggunakan satu akun login.</p>
+
+<h3 id="35-perancangan-database">3.5 Perancangan Database</h3>
+<p>pada database yang digunakan oleh single user atau hanya beberapa user saja, perancangan database tidak sulit. tetapi jika ukuran database yang sedang atau besar ( 25 - ratusan user yang berisikan jutaan bytes informasi dan melibatkan ratusan query dan program program aplikasi) perancangan database menjadi sangat komplek. Oleh karena itu para pemakai mengharapkan penggunaan database yang sedemikian rupa sehingga sistem harus dapat memenuhi kebutuhan-kebutuhan seluruh user tersebut.</p>
+
+<h4 id="351-tujuan-perancangan-database">3.5.1 Tujuan perancangan database:</h4>
+<ol>
+  <li>Untuk memenuhi informasi yang diberisikan kebutuhan-kebutuhan user secara khusus dan aplikasi-aplikasinya.</li>
+  <li>Memudahkan pengertian struktur informasi</li>
+  <li>Mendukung kebutuhan-kebutuhan pemrosesan dan beberapa obyek penampilan (response time, processing time dan storage space)</li>
+</ol>
+
+<h3 id="36-perancangan-sistem">3.6 Perancangan Sistem</h3>
+<p>Permodelan rancangan sistem yang dgunakan adalah UML (Unified Modeling Language). Menurut Whitten dan Bentley (2007, p.381), Unified Modeling Language adalah kumpulan rancangan diagram untuk membangun sebuah sistem atau aplikasi yang dimana setiap diagram menyediakan sistem informasi kepada tim pengembang dengan berbagai sudut pandang yang berbeda-beda. UML yang kami gunakan terdiri dari use case diagram, activity diagram, sequence diagram, state chart diagram, class diagram, technology diagram dan deployment diagram.</p>
+
+<h4 id="361-use-case-diagram">3.6.1 Use Case Diagram</h4>
+
+<h5 id="3611-use-case-diagram-superadmin">3.6.1.1 Use Case Diagram Superadmin</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180721_usecase-superadmin.png"><img src="../images/sso/desain-dan-perancangan/20180721_usecase-superadmin.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h5 id="3612-use-case-diagram-user">3.6.1.2 Use Case Diagram User</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180721_usecase-user.png"><img src="../images/sso/desain-dan-perancangan/20180721_usecase-user.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h4 id="362-activity-diagram">3.6.2 Activity Diagram</h4>
+
+<h5 id="3621-activity-diagram-superadmin">3.6.2.1 Activity Diagram Superadmin</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_activitydiagram-superadmin.png"><img src="../images/sso/desain-dan-perancangan/20180723_activitydiagram-superadmin.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h5 id="3622-activity-diagram-user">3.6.2.2 Activity Diagram User</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_activitydiagram-user.png"><img src="../images/sso/desain-dan-perancangan/20180723_activitydiagram-user.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h4 id="363-sequence-diagram">3.6.3 Sequence Diagram</h4>
+
+<h5 id="3631-sequence-diagram-superadmin">3.6.3.1 Sequence Diagram Superadmin</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_sequencediagram-superadmin.png"><img src="../images/sso/desain-dan-perancangan/20180723_sequencediagram-superadmin.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h5 id="3632-sequence-diagram-user">3.6.3.2 Sequence Diagram User</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_sequencediagram-user.png"><img src="../images/sso/desain-dan-perancangan/20180723_sequencediagram-user.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h4 id="364-state-chart-diagram">3.6.4 State Chart Diagram</h4>
+
+<h5 id="3641-dtate-chart-diagram-superadmin">3.6.4.1 Dtate Chart Diagram Superadmin</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_statechart-superadmin.png"><img src="../images/sso/desain-dan-perancangan/20180723_statechart-superadmin.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h5 id="3642-dtate-chart-diagram-user">3.6.4.2 Dtate Chart Diagram User</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_statechart-user.png"><img src="../images/sso/desain-dan-perancangan/20180723_statechart-user.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h4 id="365-deployment-diagram">3.6.5 Deployment Diagram</h4>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_deployment-diagram.png"><img src="../images/sso/desain-dan-perancangan/20180723_deployment-diagram.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h4 id="366-technology-stack-diagram">3.6.6 Technology Stack Diagram</h4>
+
+<p><a href="../images/sso/desain-dan-perancangan/technology-stack-diagram.jpg"><img src="../images/sso/desain-dan-perancangan/technology-stack-diagram.jpg" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h3 id="37-tahapan-pekerjaan">3.7 Tahapan Pekerjaan</h3>
+
+<p>Tahap-tahap atau langkah yang dilakukan dalam pembuatan aplikasi SSO adalah sebagai berikut:</p>
+
+<h4 id="371-analisis-dan-perancangan">3.7.1 Analisis dan Perancangan</h4>
+
+<p><strong>Analisis</strong></p>
+
+<p>Tim pengembang aplikasi akan melakukan analisis jika diperlukan dapat dilakukan survey pendahuluan untuk melihat sejauh mana kebutuhan pengguna akan sistem yang akan dibangun, fasiitas yang akan dibangun, data-data yang dibutuhkan, dll. Dalam analisis ini akan dilakukan diskusi-diskusi dengan bagian terkait pada satuan kerja.</p>
+
+<p><strong>Perancangan Sistem</strong></p>
+
+<p>Perancangan sistem dilaksanakan setelah proses analisis dilaksanakan dan telah disepakati modul dan prosedur-prosedur yang akan diterapkan dalam sistem.</p>
+
+<h4 id="372-pembangunan-sistem">3.7.2 Pembangunan Sistem</h4>
+
+<p>Setelah proses analisis dan perancangan sistem selesai dilakukan, tahapan selanjutnya adalah pembangunan sistem, yang meliputi kegiatan: pembuatan struktur database, pembuatan kode program/coding, pembuatan laporan-laporan.</p>
+
+<h4 id="373-integrasi-dan-pengujian">3.7.3 Integrasi dan Pengujian</h4>
+
+<p><strong>Integrasi</strong></p>
+
+<p>Setelah proses pengembangan sistem selesai dilakukan, tahapan selanjutnya adalah Integrasi sistem, yang meliputi kegiatan: pembuatan struktur database terkait integrasi, pembuatan kode program/coding terkait integrasi, pembuatan laporan-laporan terkait integrasi.</p>
+
+<p><strong>Pengujian</strong></p>
+
+<p>Sistem yang telah selesai dibuat akan diuji coba menggunakan data test sebelum sistem dijalankan. Dalam uji coba sistem ini akan diterapkan metode <em>prototype</em>, yaitu jika terjadi kesalahan/kekurangan baik proses maupun <em>output</em> sistem, maka kesalahan/kekurangan tersebut akan diperbaiki/ditambahkan,
+sehingga memungkinkan pengembang untuk kembali ke tahapan pertama yaitu analisa (jika kekurangan sistem memang tidak terdefinisikan dalam dokumen perancangan sistem).</p>
+
+<h3 id="38-hasil">3.8 Hasil</h3>
+
+<p>Berikut ini adalah hasil eksekusi aplikasi SSO</p>
+
+<h4 id="381-layout-tampilan-awal">3.8.1 Layout Tampilan Awal</h4>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-depan.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-depan.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout tampilan awal ini akan muncul ketika <em>user</em> masuk kedalam aplikasi SSO.</p>
+
+<h4 id="382-layout-tampilan-registrasi">3.8.2 Layout Tampilan registrasi</h4>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-form-registrasi.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-form-registrasi.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini akan muncul ketika <em>user</em> mengklik tombol Registrasi pada kanan atas web, layout ini digunakan bagi <em>user</em> yang belum mepunyai id.</p>
+
+<h4 id="383-layout-tampilan-login">3.8.3 Layout Tampilan Login</h4>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-form-login.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-form-login.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini akan muncul ketika <em>user</em> mengklik tombol Login pada kanan atas web, Layout ini digunakan bagi <em>user</em> yang ingin masuk kedalam aplikasi SSO.</p>
+
+<h4 id="384-layout-tampilan-superadmin">3.8.4 Layout Tampilan Superadmin</h4>
+
+<h5 id="3841-layout-dashboard-superadmin">3.8.4.1 Layout Dashboard Superadmin</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-dashboard-superadmin.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-dashboard-superadmin.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini akan muncul setelah superadmin melakukan login kedalam aplikasi.</p>
+
+<h5 id="3842-layout-members">3.8.4.2 Layout Members</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-members-superadmin.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-members-superadmin.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini dapat diakses dengan mengklik Members pada modul Members &amp; Apps Management, pada layout ini superadmin dapat me<em>manage members</em> seperti melihat <em>member</em> yang sudah terdaftar, mengedit data <em>member</em> atau memblock <em>member</em>.</p>
+
+<h5 id="3843-layout-apps">3.8.4.3 Layout Apps</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-sso-apps-superadmin.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-sso-apps-superadmin.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini dapat diakses dengan mengklik Apps pada modul Members &amp; Apps Management, pada layout ini superadmin dapat me<em>manage</em> aplikasi yang dapat di akses oleh member seperti melihat <em>aplikasi</em> yang sudah terdaftar atau memblock aplikasi.</p>
+
+<h4 id="385-layout-tampilan-usermember">3.8.5 Layout Tampilan User/Member</h4>
+
+<h5 id="3851-layout-dashboard-usermember">3.8.5.1 Layout Dashboard User/Member</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-dashboard-user.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-dashboard-user.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout dapat diakses setelah member melakukan login pada aplikasi SSO.</p>
+
+<h5 id="3852-layout-my-profile">3.8.5.2 Layout My Profile</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-my-profile-user.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-my-profile-user.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini dapat diakses dengan mengklik modul My Profile, pada layout ini member dapat mengedit data member seperti mengedit profile, pasword dan avatar dari member.</p>
+
+<h5 id="3853-layout-create-sso-apps">3.8.5.3 Layout Create SSO Apps</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-create-sso-app.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-create-sso-app.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini dapat diakses dengan mengklik Create SSO Apps pada modul SSO Apps, pada modul ini member dapat mendaftarkan aplikasi apa saja yang ingin diakses oleh member setelah mendaftarkan aplikasi tersebut maka akan mendapatkan App ID sehingga dapat melakukan login kepada aplikasi tersebut tanpa melakukan registrasi lagi pada aplikasi tersebut.</p>
+
+<h5 id="3854-layout-sso-apps">3.8.5.4 Layout SSO Apps</h5>
+
+<p><a href="../images/sso/desain-dan-perancangan/20180723_layout-sso-app.png"><img src="../images/sso/desain-dan-perancangan/20180723_layout-sso-app.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Layout ini dapat diakses dengan mengklik SSO Apps pada modul SSO Apps, pada layout ini member dapat melihat daftar aplikasi apa saja yang telah didaftarkan pada aplikasi SSO ini.</p>
+
+<h2 id="4-penutup">4. Penutup</h2>
+
+<p>Dengan adanya pembuatan aplikasi SSO ini dapat membantu/memudahkan <em>user/member</em> dalam mengakses aplikasi - aplikasi yang diinginkan tanpa perlu melakukan registrasi pada setiap aplikasi dengan resiko lupa akan password atau id pada aplikasi - aplikasi tersebut.</p>
 
             </div>
             

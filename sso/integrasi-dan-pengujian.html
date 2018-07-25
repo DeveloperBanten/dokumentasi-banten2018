@@ -249,13 +249,381 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
             <div class="well">
                 <h3>
 
-                    <a href="/sso/integrasi-dan-pengujian.html"> - Integrasi dan Pengujian</a>
+                    <a href="/sso/integrasi-dan-pengujian.html">SSO - Integrasi dan Pengujian</a>
                 </h3>
             
                 
             
             <div class="post-content">
-            <p>Integras dan Pengujian.md</p>
+            <h2 id="daftar-isi">Daftar Isi</h2>
+
+<p>[TOC]</p>
+
+<h2 id="integrasi-dan-pengujian-uat-sso">Integrasi dan Pengujian (UAT) SSO</h2>
+
+<p>Pada laporan ini akan membahas tentang Pengujian dan Integrasi aplikasi SSO, untuk pengujiannya menggunakan User Acceptance Test (UAT).</p>
+
+<h2 id="1-integrasi">1. Integrasi</h2>
+<p>SSO (<em>Single Sign On</em>) adalah Sistem pada pemerintahan Provinsi Banten yang memungkinkan masyarakat khususnya pada Provinsi Banten untuk dapat mengakses semua fasilitas aplikasi dan layanan yang terdapat pada pemerintahan Provinsi Banten dengan melakukan otentikasi menggunakan satu akun id. Dalam kegiatannnya setiap kegiatan akan terdapat integrasi terhadap server yang bertujuan untuk melakukan integrasi aplikasi data, integrasi dilakukan tanpa membuat perubahan signifikan pada aplikasi dan sumber data.</p>
+
+<p>Untuk melakukan integrasi dapat dilakukan dengan melakukan http request untuk mendapatkan detail <em>user</em> dengan token yang telah dikirim oleh SSO serverseperti pada gambar dibawah ini</p>
+
+<p><a href="../images/sso/integrasi-dan-pengujian/20180724_integrasi_http-request.png"><img src="../images/sso/integrasi-dan-pengujian/20180724_integrasi_http-request.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p><a href="../images/sso/integrasi-dan-pengujian/20180724_integrasi_callback-success.png"><img src="../images/sso/integrasi-dan-pengujian/20180724_integrasi_callback-success.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<p>Yang akan menghasilkan 2 response yaitu:</p>
+
+<ul>
+  <li>Success Response seperti pada gambar dibawah ini</li>
+</ul>
+
+<p><a href="../images/sso/integrasi-dan-pengujian/20180724_integrasi_success-response.png"><img src="../images/sso/integrasi-dan-pengujian/20180724_integrasi_success-response.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<ul>
+  <li>Fail Response</li>
+</ul>
+
+<p><a href="../images/sso/integrasi-dan-pengujian/20180724_integrasi_fail-response.png"><img src="../images/sso/integrasi-dan-pengujian/20180724_integrasi_fail-response.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h2 id="2-pengujian-atau-user-acceptance-test-uat">2. Pengujian atau <em>User Acceptance Test</em> (UAT)</h2>
+
+<h3 id="21-tampilan-awal-sso">2.1 Tampilan Awal SSO</h3>
+
+<h4 id="211-home">2.1.1 Home</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Home</td>
+      <td><a href="../images/sso/pengembangan/20180724_awal_home.png"><img src="../images/sso/pengembangan/20180724_awal_home.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Home apliksi SSO, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik menu Home, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="212-dokumentasi">2.1.2 Dokumentasi</h4>
+
+<h5 id="2121-web-redirect">2.1.2.1 Web Redirect</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Web Redirect</td>
+      <td><a href="../images/sso/pengembangan/20180724_awal_dokumentasi_web-redirect.png"><img src="../images/sso/pengembangan/20180724_awal_dokumentasi_web-redirect.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Sub Menu Web Redirect pada Menu Dokumentasi, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Sub Menu Web Redirect pada Menu Dokumentasi, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2122-android">2.1.2.2 Android</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Android</td>
+      <td><a href="../images/sso/pengembangan/20180724_awal_dokumentasi_android.png"><img src="../images/sso/pengembangan/20180724_awal_dokumentasi_android.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Sub Menu Android pada Menu Dokumentasi, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Sub Menu Android pada Menu Dokumentasi, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="213-registrasi">2.1.3 Registrasi</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Registrasi</td>
+      <td><a href="../images/sso/pengembangan/20180724_awal_registrasi.png"><img src="../images/sso/pengembangan/20180724_awal_registrasi.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Menu Registrasi, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Menu Registrasi, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="214-login">2.1.4 Login</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Login</td>
+      <td><a href="../images/sso/pengembangan/20180724_awal_login.png"><img src="../images/sso/pengembangan/20180724_awal_login.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Menu Login, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Menu Login, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h3 id="22-tampilan-member-sso">2.2 Tampilan Member SSO</h3>
+
+<h4 id="221-dashboard-member">2.2.1 Dashboard Member</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dashboard</td>
+      <td><a href="../images/sso/pengembangan/20180724_member_dashboard.png"><img src="../images/sso/pengembangan/20180724_member_dashboard.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Dashboard, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Modul Dashboard pada daftar menu dari <em>Main Navigation</em>, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="222-my-profile">2.2.2 My Profile</h4>
+
+<h5 id="2221-profile">2.2.2.1 Profile</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Profile</td>
+      <td><a href="../images/sso/pengembangan/20180724_member_my-profile_profile.png"><img src="../images/sso/pengembangan/20180724_member_my-profile_profile.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Profile, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tabel Profile pada modul My Profile, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2222-password">2.2.2.2 Password</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Password</td>
+      <td><a href="../images/sso/pengembangan/20180724_member_my-profile_password.png"><img src="../images/sso/pengembangan/20180724_member_my-profile_password.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Password, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tabel Password pada modul My Profile, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2223-avatar">2.2.2.3 Avatar</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Avatar</td>
+      <td><a href="../images/sso/pengembangan/20180724_member_my-profile_avatar.png"><img src="../images/sso/pengembangan/20180724_member_my-profile_avatar.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Avatar, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tabel Avatar pada modul My Profile, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="223-sso-apps">2.2.3 SSO Apps</h4>
+
+<h5 id="2231-create-sso-apps">2.2.3.1 Create SSO Apps</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Create SSO Apps</td>
+      <td><a href="../images/sso/pengembangan/20180724_member_sso-apps_create-sso-apps.png"><img src="../images/sso/pengembangan/20180724_member_sso-apps_create-sso-apps.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Create SSO Apps, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik sub modul Create SSO Apps pada modul SSO Apps, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2232-sso-apps">2.2.3.2 SSO Apps</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SSO Apps</td>
+      <td><a href="../images/sso/pengembangan/20180724_member_sso-apps_sso-apps.png"><img src="../images/sso/pengembangan/20180724_member_sso-apps_sso-apps.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka SSO Apps, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik sub modul SSO Apps pada modul SSO Apps, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h3 id="23-tampilan-superadmin-sso">2.3 Tampilan Superadmin SSO</h3>
+
+<h4 id="231-dashboard-superadmin">2.3.1 Dashboard Superadmin</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dashboard</td>
+      <td><a href="../images/sso/pengembangan/20180724_superadmin_dashboard.png"><img src="../images/sso/pengembangan/20180724_superadmin_dashboard.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Dashboard, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Modul Dashboard pada daftar menu dari <em>Main Navigation</em>, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="232-member--apps-management">2.3.2 Member &amp; Apps Management</h4>
+
+<h5 id="2321-member">2.3.2.1 Member</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Member</td>
+      <td><a href="../images/sso/pengembangan/20180724_superadmin_member.png"><img src="../images/sso/pengembangan/20180724_superadmin_member.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Member, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik sub modul Member pada modul Member &amp; Apps Management, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2322-apps">2.3.2.2 Apps</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apps</td>
+      <td><a href="../images/sso/pengembangan/20180724_superadmin_apps.png"><img src="../images/sso/pengembangan/20180724_superadmin_apps.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dalam tabel ini <em>user</em> dapat melakukan test ketika membuka Apps, apakah sudah dapat diakses oleh <em>user</em> atau tidak. Untuk mengecek dapat diakses tidaknya, user dapat mengklik sub modul Apps pada modul Member &amp; Apps Management, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
 
             </div>
             

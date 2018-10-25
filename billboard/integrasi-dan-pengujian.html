@@ -124,7 +124,7 @@
                             
                         </ul>
                     </li> 
-                    <li>
+                    <!--<li>
                         <a href="#simbadaSubmenu" data-toggle="collapse" aria-expanded="false">Simbada</a>
                         <ul class="collapse list-unstyled" id="simbadaSubmenu">
                             
@@ -137,7 +137,7 @@
                               <li><a href="/simbada/pengembangan.html">Pengembangan</a></li>
                             
                         </ul>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="#ssoSubmenu" data-toggle="collapse" aria-expanded="false">SSO</a>
                         <ul class="collapse list-unstyled" id="ssoSubmenu">
@@ -152,7 +152,7 @@
                             
                         </ul>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#ppdbSubmenu" data-toggle="collapse" aria-expanded="false">PPDB Android</a>
                         <ul class="collapse list-unstyled" id="ppdbSubmenu">
                             
@@ -165,7 +165,7 @@
                               <li><a href="/ppdb_android/pengembangan.html">Pengembangan</a></li>
                             
                         </ul>
-                    </li>
+                    </li>-->
                     <li>
                         <a href="#new_ehibahbansos" data-toggle="collapse" aria-expanded="false">New Ehibahbansos</a>
                         <ul class="collapse list-unstyled" id="new_ehibahbansos">
@@ -184,13 +184,13 @@
                         <a href="#new_billboard" data-toggle="collapse" aria-expanded="false">Billboard</a>
                         <ul class="collapse list-unstyled" id="new_billboard">
                             
+                              <li><a href="/billboard/pengembangan.html">Pengembangan</a></li>
+                             
                               <li><a href="/billboard/desain-dan-perancangan.html">Desain dan Perancangan</a></li>
                              
                               <li><a href="/billboard/implementasi.html">Implementasi</a></li>
                              
                               <li><a href="/billboard/integrasi-dan-pengujian.html">Integrasi Dan Pengujian</a></li>
-                             
-                              <li><a href="/billboard/pengembangan.html">Pengembangan</a></li>
                             
                         </ul>
                     </li>
@@ -283,7 +283,1176 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
                 
             
             <div class="post-content">
-            
+            <h2 id="daftar-isi">Daftar Isi</h2>
+
+<p>[TOC]</p>
+
+<h2 id="integrasi-dan-pengujian-uat-media-ruang">Integrasi dan Pengujian (UAT) Media Ruang</h2>
+
+<p>Pada laporan ini akan membahas tentang Pengujian dan Integrasi aplikasi Media Ruang, untuk pengujiannya menggunakan User Acceptance Test (UAT).</p>
+
+<h2 id="1-integrasi">1. Integrasi</h2>
+<p>Sistem Media Ruang Provinsi Banten ini dibangun dengan tujuan untuk memudahkan pemerintah dan masyarakat dalam mencari informasi mengenai lokasi, status, serta demografi Media Ruang yang terdapat pada Provinsi Banten. Deskripsi Umum kebutuhan aplikasi yang akan diimplementasikan meliputi semua informasi yang bersifat teknis dan menjadi acuan dalam pengembangan aplikasi. Dalam kegiatannnya setiap kegiatan akan terdapat integrasi terhadap server yang bertujuan untuk melakukan integrasi aplikasi data, integrasi dilakukan tanpa membuat perubahan signifikan pada aplikasi dan sumber data.</p>
+
+<p>Berikut ini adalah integrasi antara website Media Ruang dengan android Media Ruang</p>
+
+<h3 id="11-get-coordinate">1.1 Get Coordinate</h3>
+
+<p><a href="../images/billboard/Integrasi-dan-pengujian/getcoordinate1.png"><img src="../images/billboard/Integrasi-dan-pengujian/getcoordinate1.png" alt="ilustrasi-alur-prototyping" /></a>
+<a href="../images/billboard/Integrasi-dan-pengujian/getcoordinate2.png"><img src="../images/billboard/Integrasi-dan-pengujian/getcoordinate2.png" alt="ilustrasi-alur-prototyping" /></a>
+<a href="../images/billboard/Integrasi-dan-pengujian/getcoordinate3.png"><img src="../images/billboard/Integrasi-dan-pengujian/getcoordinate3.png" alt="ilustrasi-alur-prototyping" /></a>
+<a href="../images/billboard/Integrasi-dan-pengujian/getcoordinate4.png"><img src="../images/billboard/Integrasi-dan-pengujian/getcoordinate4.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h3 id="12-get-list">1.2 Get List</h3>
+
+<p><a href="../images/billboard/Integrasi-dan-pengujian/getlist1.png"><img src="../images/billboard/Integrasi-dan-pengujian/getlist1.png" alt="ilustrasi-alur-prototyping" /></a>
+<a href="../images/billboard/Integrasi-dan-pengujian/getlist2.png"><img src="../images/billboard/Integrasi-dan-pengujian/getlist2.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h3 id="13-get-req-handler">1.3 Get Req Handler</h3>
+
+<p><a href="../images/billboard/Integrasi-dan-pengujian/getreqhandler.png"><img src="../images/billboard/Integrasi-dan-pengujian/getreqhandler.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h3 id="14-post-req-handler">1.4 Post Req Handler</h3>
+
+<p><a href="../images/billboard/Integrasi-dan-pengujian/postreqhandler1.png"><img src="../images/billboard/Integrasi-dan-pengujian/postreqhandler1.png" alt="ilustrasi-alur-prototyping" /></a>
+<a href="../images/billboard/Integrasi-dan-pengujian/postreqhandler2.png"><img src="../images/billboard/Integrasi-dan-pengujian/postreqhandler2.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h3 id="15-send-data">1.5 Send Data</h3>
+
+<p><a href="../images/billboard/Integrasi-dan-pengujian/senddata1.png"><img src="../images/billboard/Integrasi-dan-pengujian/senddata1.png" alt="ilustrasi-alur-prototyping" /></a>
+<a href="../images/billboard/Integrasi-dan-pengujian/senddata2.png"><img src="../images/billboard/Integrasi-dan-pengujian/senddata2.png" alt="ilustrasi-alur-prototyping" /></a>
+<a href="../images/billboard/Integrasi-dan-pengujian/senddata3.png"><img src="../images/billboard/Integrasi-dan-pengujian/senddata3.png" alt="ilustrasi-alur-prototyping" /></a></p>
+
+<h2 id="2-pengujian-atau-user-acceptance-test-uat">2. Pengujian atau <em>User Acceptance Test</em> (UAT)</h2>
+
+<h3 id="21-tampilan-website">2.1 Tampilan Website</h3>
+
+<h4 id="211-tampilan-awal-aplikasi">2.1.1 Tampilan Awal Aplikasi</h4>
+
+<h5 id="2111-home">2.1.1.1 Home</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Home</td>
+      <td><a href="../images/billboard/pengembangan/20180809_awal_home.png"><img src="../images/billboard/pengembangan/20180809_awal_home.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_awal_home1.png"><img src="../images/billboard/pengembangan/20180809_awal_home1.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_awal_home2.png"><img src="../images/billboard/pengembangan/20180809_awal_home2.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan ini <em>user</em> dapat melihat informasi - informasi yang terdapat pada aplikasi Media Ruang seperti map dan data - data Media Ruang yang sudah terpetakan dalam aplikasi. Untuk mengecek dapat diakses tidaknya, user dapat mengklik menu Home, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2112-tampilan-map">2.1.1.2 Tampilan Map</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan Map</td>
+      <td><a href="../images/billboard/pengembangan/20180809_awal_map.png"><img src="../images/billboard/pengembangan/20180809_awal_map.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_awal_map1.png"><img src="../images/billboard/pengembangan/20180809_awal_map1.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan Map ini <em>user</em> dapat melihat map yang berisikan informasi letak - letak Media Ruang pada daerah Banten. Pada Halaman ini <em>user</em> dapat melakukan pencarian Media Ruang berdasarkan lokasi Kota, Kecamatan dan Kelurahan. Untuk mengecek dapat diakses tidaknya, user dapat mengklik menu Map, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2113-tampilan-login">2.1.1.3 Tampilan Login</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tampilan Login</td>
+      <td><a href="../images/billboard/pengembangan/20180809_awal_login.png"><img src="../images/billboard/pengembangan/20180809_awal_login.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan ini <em>user</em> akan disajikan dengan form Login, Form login ini dapat digunakan oleh OPD dan Superadmin untuk masuk kedalam aplikasi Media Ruang sesuai dengan tupoksi nya masing - masing.. Untuk mengecek dapat diakses tidaknya, user dapat mengklik menu Login, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="212-tampilan-opd">2.1.2 Tampilan OPD</h4>
+
+<h5 id="2121-tampilan-home">2.1.2.1 Tampilan Home</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Home</td>
+      <td><a href="../images/billboard/pengembangan/20180809_opd_home.png"><img src="../images/billboard/pengembangan/20180809_opd_home.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_awal_home1.png"><img src="../images/billboard/pengembangan/20180809_awal_home1.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_awal_home2.png"><img src="../images/billboard/pengembangan/20180809_awal_home2.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan ini OPD dapat melihat informasi - informasi yang terdapat pada aplikasi Media Ruang seperti map dan data - data Media Ruang yang sudah terpetakan dalam aplikasi. pada tampilan ini terdapat beberapa modul yaitu Home, Map dan Buat Laporan. Untuk mengecek dapat diakses tidaknya, user dapat mengklik menu Home, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2122-tampilan-map">2.1.2.2 Tampilan Map</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Map</td>
+      <td><a href="../images/billboard/pengembangan/20180809_opd_map.png"><img src="../images/billboard/pengembangan/20180809_opd_map.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_opd_map1.png"><img src="../images/billboard/pengembangan/20180809_opd_map1.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan Map ini OPD dapat melihat map yang berisikan informasi letak - letak Media Ruang pada daerah Banten. Pada Halaman ini <em>user</em> dapat melakukan pencarian Media Ruang berdasarkan lokasi Kota, Kecamatan dan Kelurahan. Untuk mengecek dapat diakses tidaknya, user dapat mengklik menu Map, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2123-tampilan-buat-laporan">2.1.2.3 Tampilan Buat Laporan</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Buat Laporan</td>
+      <td><a href="../images/billboard/pengembangan/20180809_opd_buat-laporan.png"><img src="../images/billboard/pengembangan/20180809_opd_buat-laporan.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_opd_buat-laporan1.png"><img src="../images/billboard/pengembangan/20180809_opd_buat-laporan1.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan Buat Laporan ini OPD dapat membuat data Media Ruang untuk memetakan Media Ruang dengan mengisi form buat laporan seperti pada gambar diatas. Untuk mengecek dapat diakses tidaknya, user dapat mengklik menu Buat Laporan, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2124-tampilan-profile-opd">2.1.2.4 Tampilan Profile OPD</h5>
+
+<p>Modul Profile OPD ini dapat diakses dengan mengklik tulisan “Nama OPD” pada pojok kanan atas aplikasi, pada modul ini terdapat 2 submodul yaitu :</p>
+
+<h6 id="21241-account">2.1.2.4.1 Account</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Account Setting</td>
+      <td><a href="../images/billboard/pengembangan/20180809_opd_account.png"><img src="../images/billboard/pengembangan/20180809_opd_account.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan ini dapat diakses dengan mengklik tulisan Account pada “Nama OPD”. Pada tampilan ini OPD dapat mengatur data profile OPD dengan mengisi form Account Setting. Untuk mengecek dapat diakses tidaknya, user dapat mengklik sub menu Account pada menu Tulisan “Nama OPD”, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h6 id="21242-log-out">2.1.2.4.2 Log Out</h6>
+<p>Sub modul Log Out ini dapat diakses dengan mengklik tulisan Log Out pada “Nama OPD”. Sub modul ini digunakan OPD untu melakukan Log Out atau keluar dari Tampilan OPD. Untuk pengujian nya <em>user</em> yang berhasil login bisa melakukan log out pada aplikasi Media Ruang atau tidak.</p>
+
+<h4 id="213-tampilan-superadmin">2.1.3 Tampilan Superadmin</h4>
+
+<h5 id="2131-tampilan-dashboard">2.1.3.1 Tampilan Dashboard</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dashboard</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_dashboard.png"><img src="../images/billboard/pengembangan/20180809_sa_dashboard.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Dashboard ini dapat diakses ketika superadmin berhasil melakukan Login kedalam apilaksi Media Ruang. Pada halam ini superadmin dapat meilhat informasi - informasi yang terdapat didalam aplikasi Media Ruang, pada tapilan ini terdapat beberapa modul yang terdapat pada bagian atas aplikasi seperti Dashboard, Media Ruang, Pengaturan dan Users &amp; Permission. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Dashboard pada menu aplikasi jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2132-tampilan-media-ruang">2.1.3.2 Tampilan Media Ruang</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Media Ruang</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_billboard.png"><img src="../images/billboard/pengembangan/20180809_sa_billboard.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Media Ruang ini dapat diakses dengan mengklik tulisan Media Ruang pada bagian atas aplikasi. pada tampilan ini superadmin dapat melihat tabel data Media Ruang yang telah terinput kedalam aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah Media Ruang, publish, lihat detail, edit dan delete. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Media Ruang pada menu aplikasi jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h6 id="21321-kolom-pencarian">2.1.3.2.1 Kolom Pencarian</h6>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel Media Ruang. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<h6 id="21322-tambah-media-ruang">2.1.3.2.2 Tambah Media Ruang</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Media Ruang</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_billboard_tambah.png"><img src="../images/billboard/pengembangan/20180809_sa_billboard_tambah.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_sa_billboard_tambah1.png"><img src="../images/billboard/pengembangan/20180809_sa_billboard_tambah1.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Media Ruang ini dapat diakses dengan mengklik tombol Tambah Media Ruang pada bagian kanan atas tabel Media Ruang. Pada tampilan ini superadmin dapat menambahkan data baru Media Ruang pada aplikasi dengan mengisi form tambah Media Ruang. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah Media Ruang pada bagian atas tabel Media Ruang, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h6 id="21323-publish-media-ruang">2.1.3.2.3 Publish Media Ruang</h6>
+
+<p>Publish Media Ruang ini dapat diakses dengan mengklik icon gembok pada kolom action Media Ruang. pada Publish Media Ruang ini superadmin dapat mengatur apakah data Media Ruang akan dipublish atau tidak.. Untuk pengujian nya <em>user</em> dapat mengklik icon gembok apakah ada perubahan atau tidak.</p>
+
+<h6 id="21324-lihat-detail-media-ruang">2.1.3.2.4 Lihat Detail Media Ruang</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lihat Detail Media Ruang</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_billboard_detail.png"><img src="../images/billboard/pengembangan/20180809_sa_billboard_detail.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_sa_billboard_detail1.png"><img src="../images/billboard/pengembangan/20180809_sa_billboard_detail1.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Lihat Detail Media Ruang ini dapat diakses dengan mengklik icon mata pada kolom action di tabel Media Ruang. Pada tampilan ini superadmin dapat melihat detail Media Ruang. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon mata pada kolom action Media Ruang, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h6 id="21325-edit-media-ruang">2.1.3.2.5 Edit Media Ruang</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Media Ruang</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_billboard_edit.png"><img src="../images/billboard/pengembangan/20180809_sa_billboard_edit.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_sa_billboard_edit1.png"><img src="../images/billboard/pengembangan/20180809_sa_billboard_edit1.png" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/billboard/pengembangan/20180809_sa_billboard_edit2png"><img src="../images/billboard/pengembangan/20180809_sa_billboard_edit2.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit Media Ruang ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel Media Ruang. Pada tampilan ini superadmin dapat mengedit / merubah data Media Ruang. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action Media Ruang, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h6 id="21326-delete-media-ruang">2.1.3.2.6 Delete Media Ruang</h6>
+
+<p>Delete Media Ruang ini dapat diakses dengan mengklik icon tong sampah pada kolom action Media Ruang. pada Delete Media Ruang ini superadmin dapat menghapus data Media Ruang. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action Media Ruang apakah ada data Media Ruang terhapus atau tidak</p>
+
+<h5 id="2133-pengaturan">2.1.3.3 Pengaturan</h5>
+
+<p>Pada modul Pengaturan ini terdapat beberapa modul yaitu Banner, Video dan Sosial Media.</p>
+
+<h6 id="21331-banner">2.1.3.3.1 Banner</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Banner</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_banner.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_banner.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Banner ini dapat diakses dengan mengklik tulisan Banner pada Modul Pengaturan. pada tampilan ini superadmin dapat melihat tabel data banner yang telah terinput kedalam aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah banner, edit dan delete. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tulisan Banner pada menu Pengaturan, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Kolom Pencarian</strong></li>
+</ul>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel banner. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<ul>
+  <li><strong>Tambah Banner</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Banner</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_banner_tambah.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_banner_tambah.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Banner ini dapat diakses dengan mengklik tombol Tambah Banner pada bagian kanan atas tabel banner. Pada tampilan ini superadmin dapat menambahkan data baru Banner pada aplikasi dengan mengisi form tambah Banner.. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah Banner pada bagian atas tabel banner, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Edit Banner</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Banner</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_banner_edit.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_banner_edit.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit Banner ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel banner. Pada tampilan ini superadmin dapat mengedit / merubah data banner. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action banner, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Delete Banner</strong></li>
+</ul>
+
+<p>Delete Banner ini dapat diakses dengan mengklik icon tong sampah pada kolom action banner. pada Delete Banner ini superadmin dapat menghapus data banner. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action banner apakah ada data banner terhapus atau tidak.</p>
+
+<h6 id="21332-video">2.1.3.3.2 Video</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Video</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_banner.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_banner.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Video ini dapat diakses dengan mengklik tulisan Video pada Modul Pengaturan. pada tampilan ini superadmin dapat melihat tabel data video yang telah terinput kedalam aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah, edit dan delete video. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tulisan Video pada menu Pengaturan, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Kolom Pencarian</strong></li>
+</ul>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel video. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<ul>
+  <li><strong>Tambah Video</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Video</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_video_tambah.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_video_tambah.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Video ini dapat diakses dengan mengklik tombol Tambah Video pada bagian kanan atas tabel video. Pada tampilan ini superadmin dapat menambahkan data baru Video pada aplikasi dengan mengisi form tambah Video. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah Video pada bagian atas tabel video, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Edit Video</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Video</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_video_edit.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_video_edit.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit Video ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel Video. Pada tampilan ini superadmin dapat mengedit / merubah data Video.. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action video, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Delete Video</strong></li>
+</ul>
+
+<p>Delete Video ini dapat diakses dengan mengklik icon tong sampah pada kolom action video. pada Delete Video ini superadmin dapat menghapus data video. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action video apakah ada data video terhapus atau tidak.</p>
+
+<h6 id="21333-kategori">2.1.3.3.3 Kategori</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kategori</td>
+      <td><a href="../images/sso/pengembangan/20180821_sa_pengaturan_kategori.png"><img src="../images/billboard/pengembangan/20180821_sa_pengaturan_kategori.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Kategori ini dapat diakses dengan mengklik tulisan Kategori pada Modul Pengaturan. pada tampilan ini superadmin dapat melihat tabel data kategori yang telah terinput kedalam aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah, edit dan delete kategori. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tulisan Kategori pada menu Pengaturan, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Kolom Pencarian</strong></li>
+</ul>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel kategori. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<ul>
+  <li><strong>Tambah Kategori</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Kategori</td>
+      <td><a href="../images/sso/pengembangan/20180821_sa_pengaturan_kategori_tambah.png"><img src="../images/billboard/pengembangan/20180821_sa_pengaturan_kategori_tambah.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Kategori ini dapat diakses dengan mengklik tombol Tambah Kategori pada bagian kanan atas tabel kategori. Pada tampilan ini superadmin dapat menambahkan data baru kategori pada aplikasi dengan mengisi form tambah kategori. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah Kategori pada bagian atas tabel kategori, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Edit Kategori</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Kategori</td>
+      <td><a href="../images/sso/pengembangan/20180821_sa_pengaturan_kategori_edit.png"><img src="../images/billboard/pengembangan/20180821_sa_pengaturan_kategori_edit.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit kategori ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel kategori. Pada tampilan ini superadmin dapat mengedit / merubah data kategori. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action sosial media, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Delete Kategori</strong></li>
+</ul>
+
+<p>Delete Kategori ini dapat diakses dengan mengklik icon tong sampah pada kolom action kategori. pada Delete Kategori ini superadmin dapat menghapus data kategori. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action kategori apakah ada data kategori atau tidak.</p>
+
+<h6 id="21334-sosial-media">2.1.3.3.4 Sosial Media</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sosial Media</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_sosmed.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_sosmed.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Sosial Media ini dapat diakses dengan mengklik tulisan Sosial Media pada Modul Pengaturan. pada tampilan ini superadmin dapat melihat tabel data Sosial Media yang telah terinput kedalam aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah, edit dan delete sosial media. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tulisan Sosial Media pada menu Pengaturan, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Kolom Pencarian</strong></li>
+</ul>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel sosial media. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<ul>
+  <li><strong>Tambah Sosial Media</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Sosial Media</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_sosmed_tambah.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_sosmed_tambah.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Sosial Media ini dapat diakses dengan mengklik tombol Tambah Sosmed pada bagian kanan atas tabel sosial media. Pada tampilan ini superadmin dapat menambahkan data baru sosial media pada aplikasi dengan mengisi form tambah sosial media. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah Sosmed pada bagian atas tabel sosial media, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Edit Sosial Media</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Sosial Media</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_pengaturan_sosmed_edit.png"><img src="../images/billboard/pengembangan/20180809_sa_pengaturan_sosmed_edit.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit Sosial Media ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel sosial media. Pada tampilan ini superadmin dapat mengedit / merubah data sosial media. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action sosial media, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Delete Sosial Media</strong></li>
+</ul>
+
+<p>Delete Sosial Media ini dapat diakses dengan mengklik icon tong sampah pada kolom action sosial media. pada Delete Sosial Media ini superadmin dapat menghapus data sosial media. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action sosial media apakah ada data sosial media terhapus atau tidak.</p>
+
+<h5 id="2134-users--permission">2.1.3.4 Users &amp; Permission</h5>
+
+<p>Pada modul Users &amp; Permission ini terdapat beberapa modul yaitu User, Permission dan Role.</p>
+
+<h6 id="21341-users">2.1.3.4.1 Users</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Users</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_user.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_user.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Users ini dapat diakses dengan mengklik tulisan User pada Modul Users &amp; Permission. pada tampilan ini superadmin dapat melihat tabel data user yang terdapat pada aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah, edit dan delete user. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tulisan Users pada menu Users &amp; Permission, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Kolom Pencarian</strong></li>
+</ul>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel users. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<ul>
+  <li><strong>Tambah Users</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Users</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_user_tambah.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_user_tambah.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah User ini dapat diakses dengan mengklik tombol Tambah User pada bagian kanan atas tabel user. Pada tampilan ini superadmin dapat menambahkan data baru user pada aplikasi dengan mengisi form tambah user. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah User pada bagian atas tabel user, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Edit Users</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Users</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_user_edit.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_user_edit.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit User ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel user. Pada tampilan ini superadmin dapat mengedit / merubah data user. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action user, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Delete Users</strong></li>
+</ul>
+
+<p>Delete User ini dapat diakses dengan mengklik icon tong sampah pada kolom action user. pada Delete User ini superadmin dapat menghapus data user. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action user apakah ada data permission terhapus atau tidak.</p>
+
+<h6 id="21342-permission">2.1.3.4.2 Permission</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Permission</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_permission.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_permission.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Permission ini dapat diakses dengan mengklik tulisan Permission pada Modul Users &amp; Permission. pada tampilan ini superadmin dapat melihat tabel data permission yang terdapat pada aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah, lihat detail, edit  dan delete permission. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tulisan Permission pada menu Users &amp; Permission, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Kolom Pencarian</strong></li>
+</ul>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel permission. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<ul>
+  <li><strong>Tambah Permission</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah permission</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_permission_tambah.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_permission_tambah.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Permission ini dapat diakses dengan mengklik tombol Tambah Permission pada bagian kanan atas tabel permission. Pada tampilan ini superadmin dapat menambahkan data baru permission pada aplikasi dengan mengisi form tambah permission. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah Permission pada bagian atas tabel permission, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Lihat Detail Permission</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lihat Detail Permission</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_permission_detail.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_permission_detail.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Lihat Detail Permission ini dapat diakses dengan mengklik icon mata pada kolom action di tabel permission. Pada tampilan ini superadmin dapat melihat detail permission. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon mata pada kolom action permission, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Edit Permission</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit Permission</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_permission_edit.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_permission_edit.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit Permission ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel permission. Pada tampilan ini superadmin dapat mengedit / merubah data permission. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action permission, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Delete Permission</strong></li>
+</ul>
+
+<p>Delete Permission ini dapat diakses dengan mengklik icon tong sampah pada kolom action permission. pada Delete Permission ini superadmin dapat menghapus data permission. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action permission apakah ada data permission terhapus atau tidak.</p>
+
+<h6 id="21343-role">2.1.3.4.3 Role</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Role</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_role.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_role.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Role ini dapat diakses dengan mengklik tulisan Role pada Modul Users &amp; Permission. pada tampilan ini superadmin dapat melihat tabel data role yang terdapat pada aplikasi. pada tampilan ini terdapat beberapa bantuan seperti kolom pencarian, tambah, lihat detail, edit, Add Permission dan delete role. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tulisan Role pada menu Users &amp; Permission, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Kolom Pencarian</strong></li>
+</ul>
+
+<p>Kolom Pencarian ini dapat diakses dengan mengetik <em>keyword</em> yang di inginkan pada kotak pencarian yang berada di kiri atas tabel role. Untuk pengujian nya <em>user</em> dapat mengetik keyword apa saja pada kolom pencarian, apakah data pencarian sesuai dengan kolom pencarian.</p>
+
+<ul>
+  <li><strong>Tambah Role</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Role</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_role_tambah.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_role_tambah.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Role ini dapat diakses dengan mengklik tombol Tambah Role pada bagian kanan atas tabel role. Pada tampilan ini superadmin dapat menambahkan data baru role pada aplikasi dengan mengisi form tambah role. Untuk mengecek dapat diakses tidaknya, user dapat mengklik Tombol Tambah Role pada bagian atas tabel role, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Lihat Detail Role</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lihat Detail Role</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_role_detail.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_role_detail.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Lihat Detail Role ini dapat diakses dengan mengklik icon mata pada kolom action di tabel role. Pada tampilan ini superadmin dapat melihat detail role. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon mata pada kolom action role, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Edit Role</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edit role</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_role_edit.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_role_edit.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Edit Role ini dapat diakses dengan mengklik icon pensil pada kolom action di tabel role. Pada tampilan ini superadmin dapat mengedit / merubah data role. Untuk mengecek dapat diakses tidaknya, user dapat mengklik icon pensil pada kolom action role, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Add Permission</strong></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Add Permission</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_unp_role_tambah-permission.png"><img src="../images/billboard/pengembangan/20180809_sa_unp_role_tambah-permission.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Add Permission ini dapat diakses dengan mengklik tombol Add Permission pada kolom action di tabel role. Pada tampilan ini superadmin dapat memberikan permission / hak akses kepada role yang diinginkan. Untuk mengecek dapat diakses tidaknya, user dapat mengklik tombol Add Permission pada kolom action role, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<ul>
+  <li><strong>Delete Role</strong></li>
+</ul>
+
+<p>Delete Role ini dapat diakses dengan mengklik icon tong sampah pada kolom action role. pada Delete Role ini superadmin dapat menghapus data role. Untuk pengujian nya <em>user</em> dapat mengklik icon tong sampah pada kolom action role apakah ada data role terhapus atau tidak.</p>
+
+<h5 id="2135-tampilan-profile-superadmin">2.1.3.5 Tampilan Profile Superadmin</h5>
+
+<p>Modul Profile Superadmin ini dapat diakses dengan mengklik tulisan “Superadmin” pada pojok kanan atas aplikasi, pada modul ini terdapat 2 submodul yaitu :</p>
+
+<h6 id="21351-account">2.1.3.5.1 Account</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Account Setting</td>
+      <td><a href="../images/billboard/pengembangan/20180809_sa_account.png"><img src="../images/billboard/pengembangan/20180809_sa_account.png" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan ini dapat diakses dengan mengklik tulisan Account pada “Superadmin”. Pada tampilan ini Superadmin dapat mengatur data profile Superadmin dengan mengisi form Account Setting. Untuk mengecek dapat diakses tidaknya, user dapat mengklik sub menu Account pada menu Tulisan “Superadmin”, jika sudah dapat diakses user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h6 id="21352-log-out">2.1.3.5.2 Log Out</h6>
+
+<p>Sub modul Log Out ini dapat diakses dengan mengklik tulisan Log Out pada Menu “Superadmin”. Sub modul ini digunakan Superadmin untu melakukan Log Out atau keluar dari Tampilan Superadmin. Untuk pengujian nya <em>user</em> yang berhasil login bisa melakukan log out pada aplikasi Media Ruang atau tidak.</p>
+
+<h3 id="22-tampilan-android">2.2 Tampilan Android</h3>
+
+<h4 id="221-tampilan-login">2.2.1 Tampilan Login</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Login</td>
+      <td><a href="../images/billboard/pengembangan/20180809_and_login.jpeg"><img src="../images/billboard/pengembangan/20180809_and_login.jpeg" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Login ini akan muncul ketika <em>user</em> membuka aplikasi, pada tampilan login ini terdapat 2 (dua) <em>field</em> yang harus diisi oleh <em>user</em> yaitu NIK dan Password. Untuk pengujiannya <em>user</em> dapat membuka aplikasi Media Ruang melalui android, jika form login dapat diakses oleh <em>user</em>, user dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="222-view-list">2.2.2 View List</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>View List</td>
+      <td><a href="../images/billboard/pengembangan/20180809_and_view-list.jpeg"><img src="../images/billboard/pengembangan/20180809_and_view-list.jpeg" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan View List ini <em>user</em> dapat melihat list Media Ruang yang sudag terdaftar pada aplikasi. Untuk pengujiannya <em>user</em> dapat mengklik tombol View List pada bagian bawah aplikasi. Jika menu View List ini dapat diakses, <em>user</em> dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h5 id="2221-view-list-detail">2.2.2.1 View List Detail</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>View List Detail</td>
+      <td><a href="../images/billboard/pengembangan/20180809_and_view-list_detail.jpeg"><img src="../images/billboard/pengembangan/20180809_and_view-list_detail.jpeg" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan View List Detail ini dapat diakses dengan mengklik Media Ruang yang akan dilihat detailnya pada tampilan View List. Pada tampilan ini <em>user</em> dapat melihat detail Media Ruang yang sudah terdaftar pada aplikasi. Untuk pengujiannya <em>user</em> dapat mengklik gambar Media Ruang yang akan dilihat pada list View List. Jika menu View List Detailini dapat diakses, <em>user</em> dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="223-view-map">2.2.3 View Map</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>View Map</td>
+      <td><a href="../images/billboard/pengembangan/20180809_and_view-maps.jpeg"><img src="../images/billboard/pengembangan/20180809_and_view-maps.jpeg" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Pada tampilan View Maps ini <em>user</em> dapat melihat denah lokasi Media Ruang pada peta yang disediakan. Pada tampilan ini <em>user</em> dapat memfilter pencarian Media Ruang berdasarkan Kota, Kecamatan dan Kelurahan. Untuk pengujiannya <em>user</em> dapat mengklik tombol View Map pada bagian bawah aplikasi. Jika menu View Map ini dapat diakses, <em>user</em> dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
+
+<h4 id="224-tambah-media-ruang">2.2.4 Tambah Media Ruang</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tampilan</th>
+      <th>URL/ Image</th>
+      <th>Ada</th>
+      <th>Tidak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tambah Media Ruang</td>
+      <td><a href="../images/sso/pengembangan/20180809_and_tambah-billboard.jpeg"><img src="../images/billboard/pengembangan/20180809_and_tambah-billboard.jpeg" alt="ilustrasi-alur-prototyping" /></a> <a href="../images/sso/pengembangan/20180809_and_tambah-billboard1.jpeg"><img src="../images/billboard/pengembangan/20180809_and_tambah-billboard1.jpeg" alt="ilustrasi-alur-prototyping" /></a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tampilan Tambah Media Ruang ini dapat diakses dengan megklik “+” pada lingkaran berwarna pink pada aplikasi. Pada tampilan ini akan ditampilkan form untuk menambah data Media Ruang ke aplikasi Media Ruang. Untuk pengujiannya <em>user</em> dapat mengklik “+” pada lingkaran berwarna pink di aplikasi. Jika menu Tambah Media Ruang ini dapat diakses, <em>user</em> dapat ceklis pada kolom <strong>Ada</strong>, jika belum dapat diakses maka user dapat ceklis pada kolom <strong>Tidak</strong>.</p>
 
             </div>
             
@@ -292,8 +1461,6 @@ Wujudkan Banten E-Government Terintegrasi, Sukseskan Banten Satu Data
             </div>
           </div>
           <div class="pagination">
-              
-                <a class="btn btn-default" href="/billboard/pengembangan.html" class="next">Newer Post</a>
               
               
                 <a class="btn btn-default" href="/billboard/implementasi.html" class="previous">Older Post</a>
